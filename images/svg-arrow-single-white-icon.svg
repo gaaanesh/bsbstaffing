@@ -1,0 +1,11 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 23" width="20" height="23">
+	<title>svg-arrow-single-icon-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="Group_253">
+		<path id="Path_29" class="shp0" d="M7.32 0L0 0L12.07 11.07L19.33 11.07L7.32 0Z" />
+		<path id="Path_30" class="shp0" d="M19.09 11.07L11.77 11.07L1.08 22.14L8.35 22.14L19.09 11.07Z" />
+	</g>
+</svg>

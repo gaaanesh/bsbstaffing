@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bsb Job Portal</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/style-search.css">
+    <link rel="stylesheet" type="text/css" href="css/common-style.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style-search.css">
+    
+    <link rel="stylesheet" type="text/css" href="../src/styles.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/bootstrap/dist/css/bootstrap.min.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/font-awesome/css/font-awesome.min.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/toastr/build/toastr.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/flatpickr/dist/flatpickr.min.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/sweetalert2/dist/sweetalert2.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/font-awesome.min.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/ngx-lightbox/lightbox.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/jquery.fancybox.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/slick.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/style.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/schedule.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/modal.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/summernote/dist/summernote-lite.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/materialize.min.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/common-style.css">
+              <link rel="stylesheet" type="text/css" href="css/v2-form-style.css">
+
+              <link rel="stylesheet" type="text/css" href="css/search-by.css">
+           
+
+    <!-- remove after submit -->
+    <style>
+        .profileMenu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .newProfileSection {
+                padding: 60px 0 20px 0;
+            }
+        }
+
+        .tab-navigation input[type=text]:not(.browser-default) {
+            font-size: 1.75rem;
+            font-family: roboto;
+            font-weight: 500;
+            color: #212529
+        }
+    </style>
+</head>
+
+<body>
+    <!-- START HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="logoContainer">
+                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-9 col-sm-6 col-6">
+                    <div class="navMenu">
+                    </div>
+                    <div class="menuhold">
+                        <div class="profileMenu">
+                            <a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                            <ul>
+                                <li><a href="#">Messages <span>1</span></a></li>
+                                <li><a href="#">Notifications <span>1</span></a></li>
+                                <li><a href="#">LogOut</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="hmburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <div class="menu-wrap">
+                            <span class="menuClose">
+                                <span class="item"></span>
+                                <span class="item"></span>
+                                <span class="item"></span>
+                            </span>
+                            <div class="navMenuOuter">
+                                <ul class="mobileMenu">
+                                    <li><a href="employee-dashboard.html">Dashboard</a></li>
+                                    <li class="hasDropdown"><a href="#">Search by Category</a>
+                                        <ul>
+                                            <li><a href="search-result-listing.html">Search by Country</a></li>
+                                            <li><a href="search-result-listing.html">Search by City</a></li>
+                                            <li><a href="search-result-listing.html">Search by Job Role</a></li>
+                                            <li><a href="search-result-listing.html">Search by Industry</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hasDropdown"><a href="#">Jobs For You</a>
+                                        <ul>
+                                            <li><a href="employee-job-alerts.html">Job Alerts</a></li>
+                                            <li><a href="employee-applied-jobs.html">Applied Job</a></li>
+                                            <li><a href="employee-savedjobs.html">Saved Job</a></li>
+                                            <li><a href="employee-apply-hiring.html">Local Walk-in</a></li>
+                                            <li><a href="">International Walk-in</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="employee-application-status.html">Application Status</a></li>
+                                    <!-- <li><a href="#">Recruiter Action</a></li> -->
+                                    <li class="hasDropdown"><a href="#">We Offer Training</a>
+                                        <ul>
+                                            <li><a href="training_getting_job.html">Training Getting Job</a></li>
+                                            <li><a href="working_visa_training.html">Working Visa Training</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="employee-mailbox.html">Mailbox</a></li>
+                                    <li class="hasDropdown"><a href="employee-profile.html" class="active">Profile</a>
+                                        <ul>
+                                            <li><a href="#">Change Password</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-0 col-sm-12 col-xs-12">
+                    <ul class="afterLoginEmployee">
+                        <li>
+                            <h5>Welcome User</h5>
+                        </li>
+                        <li><a href="#"><img src="images/msgIcon.png" alt="msgIcon"><span class="count">1</span></a>
+                        </li>
+                        <li><a href="#"><img src="images/bellIcon.png" alt="bellIcon"><span class="count">1</span></a>
+                        </li>
+                        <li><a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                            <ul>
+                                <li><a href="#">LogOut</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- START SECOND HEADER -->
+    <section class="menuBar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <ul>
+                        <li><a href="employee-dashboard.html">Dashboard</a></li>
+                        <li class="hasDropdown"><a href="#">Search by Category</a>
+                            <ul>
+                                <li><a href="employee-search-country.html">Search by Country</a></li>
+                                <li><a href="employee-search-city.html">Search by City</a></li>
+                                <li><a href="employee-search-jobrole.html">Search by Job Role</a></li>
+                                <li><a href="employee-search-industry.html">Search by Industry</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasDropdown"><a href="#">Jobs For You</a>
+                            <ul>
+                                <li><a href="employee-job-alerts.html">Job Alerts</a></li>
+                                <li><a href="employee-applied-jobs.html">Applied Job</a></li>
+                                <li><a href="employee-savedjobs.html">Saved Job</a></li>
+                                <li><a href="employee-apply-hiring.html">Local Walk-in</a></li>
+                                <li><a href="employee-apply-hiring-international.html">International Walk-in</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="employee-application-status.html">Application Status</a></li>
+                        <li class="hasDropdown"><a href="#">We Offer Training</a>
+                            <ul>
+                                <li><a href="training_getting_job.html">Training Getting Job</a></li>
+                                <li><a href="working_visa_training.html">Working Visa Training</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="employee-mailbox.html">Mailbox</a></li>
+                        <li><a href="employee-profile.html">Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECOND HEADER -->
+    <!-- START REGISTRATION FORM -->
+    <section class="newSearchSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-md-flex justify-content-md-between">
+                    <h1 class="h3 mt-2 d-inline-flex justify-content-between">
+                        <div>Cadidate search by
+                            <div class="tab-navigation d-inline-block search-by-input" style="width: auto;">
+                                <select id="select-box-search">
+                                    <option value="1">Title</option>
+                                    <option value="2">Country</option>
+                                    <option value="3">City</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        </h1>
+                        <div class="d-md-inline-flex justify-content-md-end custom-pagination align-items-center mt-3 mt-md-0">   
+                            <span class="mr-3 small only-text d-inline">1-10 0f 28 results</span>
+                            <ul class="pagination p-0 d-md-flex d-inline">
+                                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                                <li class="active"><span><input  value="1" type="text" class="validate textbox-pagination" /></span></li>
+                                <li><span class="only-text">of</span></li>
+                                <li class="waves-effect"><a href="#!">3</a></li>
+                                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                            </ul>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                    <div class="input-field col-md-4">
+                        <span class="material-icons  prefix">
+                           search
+                        </span>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Search</label>
+                      </div>
+               
+                <div class="col-md-8 text-center text-md-left">
+                    <ul class="alphabet-search d-md-flex justify-content-md-around mt-5">
+                        <li><a href="#selectOne" class="active">A</a></li>
+                        <li><a href="#">B </a></li>
+                        <li><a href="#">C</a></li>
+                        <li><a href="#">D </a></li>
+                        <li><a href="#">E </a></li>
+                        <li><a href="#">F </a></li>
+                        <li><a href="#">G </a></li>
+                        <li><a href="#">H </a></li>
+                        <li><a href="#">I </a></li>
+                        <li><a href="#">J </a></li>
+                        <li><a href="#">K </a></li>
+                        <li><a href="#">L </a></li>
+                        <li><a href="#">M </a></li>
+                        <li><a href="#">N </a></li>
+                        <li><a href="#">O </a></li>
+                        <li><a href="#">P </a></li>
+                        <li><a href="#">Q </a></li>
+                        <li><a href="#">R </a></li>
+                        <li><a href="#">S </a></li>
+                        <li><a href="#">T </a></li>
+                        <li><a href="#">U </a></li>
+                        <li><a href="#">V </a></li>
+                        <li><a href="#">W </a></li>
+                        <li><a href="#">X </a></li>
+                        <li><a href="#">Y </a></li>
+                        <li><a href="#">Z </a></li>
+                      </ul>
+                </div>
+            </div>
+            <div class="card border shadow-none rounded">
+                <div class="card-content">
+                 
+                   
+                    <div id="tabsearch-1" class="tab-content-search">
+                      <div class="row searchby-badges">
+                          <div class="col-md-3 col-badges">
+                            <span class="badge badge-jobs">Client Support Specialist</span><span
+                            class="badge badge-jobs">Civil Faculty</span><span
+                            class="badge badge-jobs">Instructional Designer</span><span
+                            class="badge badge-jobs">Head of Sales - Solutions and Technology Alliances </span><span
+                            class="badge badge-jobs">Security Guard</span><span
+                            class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                            class="badge badge-jobs">Software Engineer</span><span
+                            class="badge badge-jobs">Telecaller Outbound</span><span
+                            class="badge badge-jobs">Security Guard</span><span
+                            class="badge badge-jobs">Sales Executive, India</span><span
+                            class="badge badge-jobs">Software Engineer</span><span
+                            class="badge badge-jobs">Painting and Coating Worker</span><span 
+                            class="badge badge-jobs">Client Support Specialist</span><span
+                            class="badge badge-jobs">Civil Faculty</span><span
+                            class="badge badge-jobs">Instructional Designer</span><span
+                            class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                            class="badge badge-jobs">Software Engineer</span><span
+                            class="badge badge-jobs">Telecaller Outbound</span>
+                          </div>
+                          <div class="col-md-3 col-badges">
+                            <span class="badge badge-jobs">Client Support Specialist</span><span
+                            class="badge badge-jobs">Civil Faculty</span><span
+                            class="badge badge-jobs">Instructional Designer</span><span
+                            class="badge badge-jobs">Head of Sales - Solutions and Technology Alliances </span><span
+                            class="badge badge-jobs">Security Guard</span><span
+                            class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                            class="badge badge-jobs">Software Engineer</span><span
+                            class="badge badge-jobs">Telecaller Outbound</span><span
+                            class="badge badge-jobs">Security Guard</span><span
+                            class="badge badge-jobs">Sales Executive, India</span><span
+                            class="badge badge-jobs">Software Engineer</span><span
+                            class="badge badge-jobs">Painting and Coating Worker</span><span 
+                            class="badge badge-jobs">Client Support Specialist</span><span
+                            class="badge badge-jobs">Civil Faculty</span><span
+                            class="badge badge-jobs">Instructional Designer</span><span
+                            class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                            class="badge badge-jobs">Software Engineer</span><span
+                            class="badge badge-jobs">Telecaller Outbound</span>
+                          </div>
+                          <div class="col-md-3 col-badges">
+                            <span class="badge badge-jobs">Client Support Specialist</span><span
+                            class="badge badge-jobs">Civil Faculty</span><span
+                            class="badge badge-jobs">Instructional Designer</span><span
+                            class="badge badge-jobs">Head of Sales - Solutions and Technology Alliances </span><span
+                            class="badge badge-jobs">Security Guard</span><span
+                            class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                            class="badge badge-jobs">Software Engineer</span><span
+                            class="badge badge-jobs">Telecaller Outbound</span><span
+                            class="badge badge-jobs">Security Guard</span><span
+                            class="badge badge-jobs">Sales Executive, India</span><span
+                            class="badge badge-jobs">Software Engineer</span><span
+                            class="badge badge-jobs">Painting and Coating Worker</span><span 
+                            class="badge badge-jobs">Client Support Specialist</span><span
+                            class="badge badge-jobs">Civil Faculty</span><span
+                            class="badge badge-jobs">Instructional Designer</span><span
+                            class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                            class="badge badge-jobs">Software Engineer</span><span
+                            class="badge badge-jobs">Telecaller Outbound</span>
+                          </div>
+                          <div class="col-md-3 col-badges">
+                            <span class="badge badge-jobs">Client Support Specialist</span><span
+                            class="badge badge-jobs">Civil Faculty</span><span
+                            class="badge badge-jobs">Instructional Designer</span><span
+                            class="badge badge-jobs">Head of Sales - Solutions and Technology Alliances </span><span
+                            class="badge badge-jobs">Security Guard</span><span
+                            class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                            class="badge badge-jobs">Software Engineer</span><span
+                            class="badge badge-jobs">Telecaller Outbound</span><span
+                            class="badge badge-jobs">Security Guard</span><span
+                            class="badge badge-jobs">Sales Executive, India</span><span
+                            class="badge badge-jobs">Software Engineer</span><span
+                            class="badge badge-jobs">Painting and Coating Worker</span><span 
+                            class="badge badge-jobs">Client Support Specialist</span><span
+                            class="badge badge-jobs">Civil Faculty</span><span
+                            class="badge badge-jobs">Instructional Designer</span><span
+                            class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                            class="badge badge-jobs">Software Engineer</span><span
+                            class="badge badge-jobs">Telecaller Outbound</span>
+                          </div>
+                      </div>
+                    </div>
+                    <div id="tabsearch-2" class="tab-content-search">
+                        2
+                    </div>
+                    <div id="tabsearch-3" class="tab-content-search">
+                        3
+                    </div>
+
+
+                </div>
+
+               
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- END REGISTRATION FORM -->
+
+    
+
+
+    <!-- START FOOTER -->
+    <footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12 col-xs-12">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12">
+                        <div class="copyrightPara">
+                            <p>&copy; 2018. All rights reserved. Developed by <a href="#" target="_blank">Pixel
+                                    Solutionz</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- START FOOTER -->
+
+    <!-- jQuery first, then Bootstrap JS -->
+
+    <!-- <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script> -->
+
+    <script type="text/javascript" src=".././node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/toastr/build/toastr.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/flatpickr/dist/flatpickr.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/sweetalert2/dist/sweetalert2.js"></script>
+    <script type="text/javascript" src=".././node_modules/sharer.js/sharer.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="../node_modules/summernote/dist/summernote-lite.js"></script>
+    <script type="text/javascript" src=".././node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/jszip/dist/jszip.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/jszip-utils/dist/jszip-utils.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/file-saver/dist/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/othersource/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/othersource/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/othersource/circular_test.js"></script>
+    <script type="text/javascript" src="../src/assets/js/othersource/TextPlugin.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/custom.js"></script>
+
+    <script type="text/javascript">
+        //hide all tabs first
+        $('.tab-content-search').hide();
+        //show the first tab content
+        $('#tabsearch-1').show();
+
+        $('#select-box-search').change(function () {
+            dropdown = $('#select-box-search').val();
+            //first hide all tabs again when a new option is selected
+            $('.tab-content-search').hide();
+            //then show the tab content of whatever option value was selected
+            $('#' + "tabsearch-" + dropdown).show();
+        });
+    </script>
+
+    <script>
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
+    <script>
+  
+
+
+      
+  $('.dropdown-trigger').dropdown();
+
+
+    </script>
+
+
+</body>
+
+</html>

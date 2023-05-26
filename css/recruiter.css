@@ -1,0 +1,353 @@
+.bannerSecSection{
+	position: relative;
+    background: url(../images/recrutiterBanner.png) no-repeat;
+    background-position: 80% 0%;
+    margin: 65px 0 0px 0;
+    padding: 45px 0 75px 0;
+}
+.bannerSecSection h2{
+	font-size: 40px;
+    line-height: 46px;
+    color: #fff;
+    position: relative;
+    margin: 0;
+}
+.bannerSecSection h2 span{
+	color: #f0f0f0;
+	font-size: 25px;
+	line-height: 25px;
+	display: block;
+	text-align: right;
+	position: absolute;
+    bottom: -25px;
+    left: 100px;
+}
+.bannerSecSection h2:after{
+	content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 1px;
+    width: 23px;
+    height: 3px;
+    background: #fff;
+}
+.welcomeRecruiterSection{
+	padding: 50px 0 50px 0;
+	background: #f0f0f0;
+}
+h3.recruiterTitle{
+	font-size: 30px;
+	line-height: 36px;
+	color: #ec0122;
+	margin: 0 0 30px 0;
+}
+h3.recruiterTitle span{
+	display: block;
+	font-size: 35px;
+	line-height: 40px;
+	color: #4154f1;
+	font-weight: 600;
+}
+.welcomeRecruiterSection p{
+	font-size: 16px;
+    line-height: 25px;
+    color: #484848;
+    margin: 0 0 15px 0;
+    font-weight: 200;
+    text-align: justify;
+}
+.welcomeRecruiterImg{
+	padding: 30px 0 0 0;
+}
+.recruiterServices{
+	padding: 50px 0 50px 0;
+}
+.recruiterServices h3{
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+.recruiterServices h3 span{
+	display: inline-block;
+}
+.recruiterServicesOuter {
+	display: table;
+	width: 100%;
+	margin: 0 0 30px 0;
+}
+.recruiterServicesLeft{
+	display: table-cell;
+	vertical-align: top;
+	width: 60px;
+    padding-right: 10px;
+}
+.recruiterServicesLeft img{
+	width: 40px;
+}
+.recruiterServicesRight{
+	vertical-align: top;
+	display: table-cell;
+}
+.recruiterServicesRight h4{
+	font-size: 22px;
+	line-height: 26px;
+	color: #000;
+	font-weight: 600;
+	margin: 0 0 15px 0;
+}
+.recruiterServicesRight p{
+	font-size: 17px;
+	line-height: 24px;
+	color: #000;
+	font-weight: 200;
+	margin: 0 0 10px 0;
+}
+.recruiterServicesRight p a{
+	color: #4154f1;
+}
+.recruiterServicesRight p a:hover{
+	color: #000;
+}
+.globalSection {
+	background: #f0f0f0;
+	padding: 50px 0 50px 0;
+}
+.globalSection h3{
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+.globalSection h3 span{
+	display: inline-block;
+}
+.globalSection ul{
+	background: url(../images/curveLine.png) no-repeat 0px 30px;
+    background-size: 100%;
+    list-style: none;
+    padding: 0px 0 0 0;
+    margin: 0;
+    text-align: center;
+}
+.globalSection ul li{
+	display: inline-block;
+	padding: 0 30px 0 0;
+	width: 19%;
+	vertical-align: top;
+}
+.globalSection ul li span{
+	width: 130px;
+    height: 130px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    margin: 0 auto 10px;
+    display: block;
+}
+.globalSection ul li span img{
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	height: 70px;
+}
+.globalSection ul li h4{
+	font-size: 18px;
+	line-height: 24px;
+	color: #1a1b1c;
+	margin: 0;
+	font-weight: 600;
+	text-align: center;
+}
+.hiringCompany{
+	margin: 0 0 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+}
+/*Details*/
+.empHomeDetails{
+	padding: 50px 0 50px 0;
+}
+.empHomeDetails h3{
+	text-align: center;
+}
+.empHomeDetails h3 span{
+	display: inline-block;
+}
+.serviceInner{
+	margin: 0 0 40px 0;
+    /* box-shadow: -1px 8px 19px #cccccc; */
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.serviceInner:last-child{
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.serviceInner h4{
+	font-size: 24px;
+    line-height: 30px;
+    color: #4154f1;
+    font-family: Roboto;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+.serviceInner h4 img{
+	height: 32px;
+    margin-right: 5px;
+}
+.serviceInner p{
+	font-size: 16px;
+	line-height: 25px;
+	color: #333;
+	font-family: Roboto;
+	margin: 0 0 10px 0;
+	text-align: justify;
+}
+
+@media (max-width: 1199px){
+	.bannerSecSection{
+		background-position: 70% 0%;
+	}
+	.bannerSecSection h2 {
+	    font-size: 35px;
+	    line-height: 40px;
+	}
+	.bannerSecSection h2 span{
+		font-size: 19px;
+	}
+	h3.recruiterTitle{
+		font-size: 25px;
+    	line-height: 30px;
+	}
+	h3.recruiterTitle span{
+		font-size: 28px;
+    	line-height: 30px;
+	}
+	.recruiterServicesRight h4{
+		font-size: 20px;
+	    line-height: 24px;	
+	    margin: 0 0 10px 0;
+	}
+	.recruiterServicesRight p {
+	    font-size: 15px;
+	    line-height: 22px;
+	}
+}
+@media (max-width: 991px){
+	.bannerSecSection {
+	    background-position: 50% 0%;
+	    margin: 15px 0 0 0;
+	}
+	.welcomeRecruiterSection {
+    	padding: 30px 0 20px 0;
+    }
+    .recruiterServices {
+	    padding: 30px 0 30px 0;
+	}
+	.recruiterServices h3,
+	.globalSection h3{
+		margin: 0 0 30px 0;
+	}
+	.globalSection ul li h4 {
+	    font-size: 18px;
+	    line-height: 24px;
+	}
+	.globalSection ul li h4 {
+	    font-size: 18px;
+	    line-height: 24px;
+	}
+	.globalSection{
+		padding: 30px 0 30px 0;
+	}
+	.globalSection ul{
+		background: url(../images/curveLine.png) no-repeat 0px 20px;
+		background-size: 100%;
+	}
+	.globalSection ul li span {
+	    width: 100px;
+	    height: 100px;
+	}
+	.globalSection ul li span img{
+		height: 50px;
+	}
+	.empHomeDetails{
+		padding: 30px 0 30px 0;
+	}
+	.serviceInner {
+	    margin: 0 0 20px 0;
+	    padding-bottom: 10px;
+	}
+}
+@media (max-width: 767px){
+	.bannerSecSection {
+	    background-position: 40% 0%;
+	}
+	.bannerSecSection h2 {
+	    font-size: 25px;
+	    line-height: 34px;
+	}
+	.bannerSecSection h2 span{
+		bottom: -20px;
+    	left: 63px;
+    	font-size: 16px;
+	}
+	h3.recruiterTitle {
+	    font-size: 20px;
+	    line-height: 30px;
+	    margin: 0 0 20px 0;
+	}
+	h3.recruiterTitle span {
+	    font-size: 22px;
+	    line-height: 30px;
+	}
+	.welcomeRecruiterSection p{
+		margin: 0 0 10px 0;
+	}
+	.recruiterServicesOuter{
+		margin: 0 0 20px 0;
+	}
+	.recruiterServicesRight h4{
+		font-size: 19px;
+	}
+	.recruiterServices {
+    	padding: 30px 0 0px 0;
+	}
+	.globalSection ul li{
+		width: 100%;
+	}
+	.globalSection ul li span img{
+		max-width: 70%;
+	}
+	.globalSection ul{
+		background: transparent;
+	}
+	.globalSection ul li span{
+		width: 120px;
+		height: 120px;
+	}
+	.globalSection ul li{
+		padding: 0 0 30px 0;
+		position: relative;
+	}
+	.serviceInner h4{
+		font-size: 19px;
+	}
+	.serviceInner p{
+		font-size: 15px;
+	}
+	/*.globalSection ul li:after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, 0);
+		-moz-transform: translate(-50%, 0);
+		width: 1px;
+		height: 50px;
+		border-left: 1px dashed #e51b27;
+	}*/
+}

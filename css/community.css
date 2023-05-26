@@ -1,0 +1,2595 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
+
+body{
+	/*font-family: 'IBM Plex Sans', sans-serif;*/
+	font-family: Roboto;
+}
+
+/*START HEADER*/
+	header{
+		background: #052195;
+	}
+	.logoContainerSec{
+		padding: 10px 0 0 0;
+	}
+	.communityMenu{
+		list-style: none;
+		padding: 5px 0 0 0;
+		margin: 0;
+		text-align: right;
+	}
+	.communityMenu li{
+		display: inline-block;
+		padding: 0 18px;
+		text-align: center;
+		vertical-align: top;
+	}
+	.communityMenu li:last-child{
+		padding-right: 0;
+	}
+	.communityMenu li.mbSearch{
+		display: none;
+	}
+	.communityMenu li a{
+		display: inline-block;
+	    color: #fff;
+	    font-size: 14px;
+	    line-height: 20px;
+	}
+	.communityMenu li a:hover{
+		color: #b1b1b1;
+	}
+	.communityMenu li a span{
+		display: block;
+	}
+	.communityMenu li a img{
+		
+	}
+	.communityMenu li a svg{
+		width: 20px;
+		fill: #505667;
+	}
+	.communityMenu li a:hover svg{
+		fill: #e20015;
+	}
+	.communityMenu li a.communitydp {
+		background: url(../images/downArrow5.png) no-repeat;
+		background-position: calc(100% - 0px) center;
+		padding: 0 20px 0 0;
+	}
+	.communityMenu li a.communitydp img{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		margin-right: 2px;
+		border: 2px solid #fff;
+	}
+	.communityMenu li a.communitydp span{
+		display: inline-block;
+	}
+	.communitySearch{
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		background: #052195;
+		padding: 4px;
+		text-align: center;
+	}
+	.communityMenu li a.communitySearch img{
+		margin-right: 0;
+		height: auto;
+	}
+	.comSearchOuter{
+		position: relative;
+		margin-top: 7px;
+	}
+	.comSearchOuter input{
+		border: 1px solid #fff !important;
+	    padding: 8px!important;
+	    height: auto!important;
+	    box-sizing: border-box!important;
+	    margin: 0!important;
+	    padding-right: 60px!important;
+	    background: #fff !important;
+	    border-radius: 3px !important;
+	}
+	.comSearchOuter button{
+		position: absolute;
+	    top: 0px;
+	    right: 0px;
+	    background: #6d6d6d;
+	    border: none;
+	    padding: 9px 18px 8px 18px;
+	    border-radius: 0 3px 3px 0;
+	}
+	.mobileHmburgerOuter{
+		display: none;
+	}
+/*END HEADER*/
+/*START COMMUNITY SECTION*/
+	.communitySection{
+		padding: 80px 0 60px 0;
+		background: #e6ecf0;
+	}
+	.communityLeftpanel{
+	}
+	.commProfile{
+		background-size: cover;
+		padding: 0px 0px 0 0;
+		text-align: center;
+		margin: 0 0 15px 0;
+		background: #fff;
+	}
+	.communitydpHolder{
+		margin: 0 0 10px 0;
+	}
+	.profileName{
+		font-size: 16px;
+	    line-height: 22px;
+	    color: #052195;
+	    margin: 0 0 6px 0;
+		font-weight: 700;
+		text-align: left;
+	}
+	.commProfileInner {
+		display: table;
+		width: 100%;
+	}
+	.communitydpHolder{
+		display: table-cell;
+		width: 110px;
+		vertical-align: top;
+		text-align: left;
+	}
+	.communitydpHolder img{
+		width: 90px;
+		height: 90px;
+		margin: 0 auto;
+		border-radius: 50%;
+	}
+	.commProfileInnerRight{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.commProfileInner p{
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 400;
+		color: #535353;
+		text-align: left;
+	}
+	.commProfileInner p span{
+		font-weight: 700;
+		color: #000000;
+		display: block;
+	}
+	.commProfileInner{
+		padding: 15px 10px;
+    	border-bottom: 1px solid #ccc;
+	}
+	.viewInfo{
+		padding: 10px 10px;
+	}
+	.viewInfo p{
+		overflow: hidden;
+		height: 100%;
+		margin: 0 0 4px 0;
+	}
+	.viewInfo p .viewLeft{
+		float: left;
+		width: 80%;
+		text-align: left;
+		font-size: 14px;
+		line-height: 20px;
+		color: #535353;
+		font-weight: 400;
+	}
+	.viewInfo p .viewRight{
+		float: right;
+		width: 20%;
+		text-align: right;
+		color: #000000;
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 700;
+	}
+	.companyPageInfo{
+		background: #fff;
+		margin: 0 0 10px 0;
+	}
+	.companyPageInfoHead{
+		padding: 0 10px;
+	}
+	.companyPageInfoHead{		
+		border-bottom: 1px solid #c5c5c5;
+		display: table;
+		width: 100%;
+		padding: 15px 10px;
+	}
+	.companyPageInfoHeadLeft {
+		display: table-cell;
+		vertical-align: top;
+		width: 110px;
+	}
+	.companyPageInfoHeadRight{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.companyPageInfoHeadLeft span{
+		width: 90px;
+	    height: 90px;
+	    border-radius: 50%;
+	    display: block;
+	    background: #f2f2f2;
+	    text-align: left;
+	}
+	.companyPageInfoHeadLeft span img{
+		width: 90px;
+	    height: 90px;
+	    border-radius: 50%;
+	    object-fit: contain;
+	}
+	.companyPageInfoHeadRight p{
+		font-size: 14px;
+	    line-height: 20px;
+	    font-weight: 400;
+	    color: #535353;
+	    text-align: left;
+	}
+	.updateShare a{
+		display: block;
+		padding: 10px 10px;
+		background: #d6d6d6;
+		color: #1c1b16;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 700;
+		text-align: center;
+	}
+	.updateShare a:hover{
+		color: #000;
+	}
+	.promoteOuter{
+		margin: 0 0 10px 0;
+	}
+	.promoteOuter a{
+		display: inline-block;
+	    padding: 6px 10px;
+	    background: #4154f1;
+	    color: #fff;
+	    font-size: 16px;
+	    line-height: 22px;
+	    vertical-align: middle;
+	}
+	.promoteOuter a:hover{
+		background: #505667;
+	}
+	.otherInfo{
+		border: 1px solid #c5c5c5;
+		background: #fff;
+		padding: 10px;
+		height: 200px;
+		margin: 0 0 10px 0;
+	}
+	.startpost{
+		background: #fff;
+		margin: 0 0 10px 0;
+		padding: 15px 20px;
+	}
+	.startpostHead{
+		margin: 0 0 14px 0;
+	}
+	.startpostHead p{
+		font-size: 14px;
+		line-height: 20px;
+		margin: 0;
+		font-weight: 600;
+	}
+	.startpostHead p a{
+		color: #000;
+	}
+	.startpostHead p a img{
+		margin-right: 5px;
+	}
+	.attachingBottom ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.attachingBottom ul li{
+		display: inline-block;
+		padding: 0 10px;
+	}
+	.attachingBottom ul li:first-child{
+		padding-left: 0;
+	}
+	.attachingBottom ul li a{
+		display: inline-block;
+		padding: 0 0px;
+	}
+	.attachingBottom ul li a svg{
+		width: 20px;
+		fill: #fff;
+	}
+	.startpostHeadLeft p{
+		font-size: 14px;
+		line-height: 20px;
+		color: #000;
+		margin: 0;
+	}
+	.startpostHeadLeft p a{
+		display: block;
+		color: #fff;
+	}
+	.startpostHeadLeft p svg{
+		margin-right: 5px;
+		width: 25px;
+		fill: #fff;
+	}
+	.startpost textarea{
+		border: none;
+		padding: 10px;
+		font-size: 15px;
+		line-height: 22px;
+		height: 70px;
+		margin: 0 0 10px 0;
+		background: #f0f0f0;
+	}
+	.startpost textarea:focus{
+		outline: none;
+	}
+	.postContent{
+		/*background: #fff;*/
+		margin: 0 0 10px 0;
+	}
+	.postHead{
+		background: #fff;
+		padding: 14px 20px 0 20px;
+	}
+	.postHead p{
+		font-size: 15px;
+		line-height: 20px;
+		color: #7b7b7b;
+		margin: 0;
+	}
+	.postHead p a{
+		display: inline-block;
+		color: #052195;
+	}
+	.postHead p a:hover{
+		color: #000;
+	}
+	.postBtnOuter{
+		text-align: right;
+	}
+	.postBtnOuter a{
+		padding: 7px 18px;
+	    font-size: 15px;
+	    line-height: 20px;
+		display: inline-block;
+		background: #ea4756;
+		color: #fff;
+	}
+	.postBtnOuter a:hover{
+		background: #4154f1;
+	}
+	#postModal{
+		background: transparent;
+		box-shadow: none;
+	}
+	#postModal .modal-content h2{
+		color: #4154f1;
+		font-size: 20px;
+		line-height: 26px;
+		font-family: Raleway;
+		margin: 0 0 10px 0;
+		text-align: left;
+	}
+	#postModal .modal-content .modal-close{
+		position: absolute;
+		top: 5px;
+		right: 20px;
+		color: #4e2974;
+    	opacity: 1;
+    	z-index: 99;
+    	font-size: 28px;
+    	line-height: 28px;
+	}
+	#postModal .modal-content {
+	    padding: 20px 20px 20px 20px;
+	    border: none;
+	    border-radius: 0;
+	}
+	#postModal .modal-content .postbody textarea{
+		margin: 0 0 20px 0;
+	}
+	#postModal .modal-content .postbody ul{
+		list-style: none;		
+    	padding: 0px;
+		margin: 0;
+	}
+	#postModal .modal-content .postbody ul li{
+		display: inline-block;
+	    padding: 10px 10px 6px 10px;
+	    background: #f2f2f2;
+	    margin-right: 2px;
+	}
+	#postModal .modal-content .postbody ul li input[type="file"]{
+		display: none;
+	}
+	#postModal .modal-content .postbody ul li input[type="file"] + label {
+		cursor: pointer;
+		margin: 0;
+	}
+	#postModal .modal-content .postbody ul li input[type="file"] + label img{
+		height: 30px;
+	}
+	#postModal .modal-content .postbody ul li a{
+		display: inline-block;
+	}
+	#postModal .modal-content .postbody ul li a img{
+		height: 30px;
+	}
+	#postModal .modal-content .privacyOuter label{
+		font-size: 16px;
+		line-height: 22px;
+		display: none;
+		width: 48%;
+	}
+	#postModal .modal-content .privacyOuter select{
+		display: block;
+	    border: 1px solid #ddd;
+	    padding: 5px 4px;
+	    height: auto;
+	    font-size: 14px;
+	    line-height: 22px;
+	    max-width: 40%;
+	}
+	#postModal .modal-content .privacyOuter {
+		margin: 0 0 20px 0;
+	}
+	.submitOuter {
+		text-align: right;
+	}
+	.submitOuter .blueBtn{
+		font-family: Roboto;
+		font-size: 16px;
+		line-height: 22px;
+		color: #fff;
+		background: #ea4756;
+		padding: 10px 20px;
+	    border: none;
+	}
+	.submitOuter .blueBtn:hover{
+		background: #4154f1;
+		text-decoration: none;
+		color: #fff;
+	}
+	.submitOuter .blueBtn:focus{
+		outline: none;
+	}
+	.postbody{
+		padding: 20px 0 0 0;
+	}
+	.postbody textarea{
+		border-radius: 0;
+	}
+	.dropdownDotOuter{
+		text-align: right;
+		position: relative;
+		margin: 0 0 2px 0;
+	}
+	.dropdownDotOuter a{
+		display: inline-block;
+		line-height: 10px;
+	}
+	.dropdownDot{
+		display: inline-block;
+	}
+	.dropdownDotOuter ul{
+		position: absolute;
+	    top: 30px;
+	    right: 0;
+	    width: 300px;
+	    background: #fff;
+	    text-align: left;
+	    z-index: 10;
+	    box-shadow: 3px 10px 18px #a2a2a2;
+	    display: none;
+	}
+	.dropdownDotOuter ul:after{
+		content: '';
+	    position: absolute;
+	    top: -12px;
+	    right: 10px;
+	    border-bottom: 15px solid #fff;
+	    border-left: 15px solid transparent;
+	    border-right: 15px solid transparent;
+	}
+	.dropdownDotOuter ul li{
+		display: block;
+	}
+	.dropdownDotOuter ul li a{
+		font-size: 16px;
+		line-height: 22px;
+		color: #292929;
+		padding: 15px;
+		border-bottom: 1px solid #ccc;
+		display: table;
+		width: 100%;
+	}
+	.dropdownDotOuter ul li:last-child a{
+		border-bottom: none;
+	}
+	.dropdownDotOuter ul li a:hover{
+		color: #000;
+		background: #f2f2f2;
+	}
+	.dropdownDotOuter ul li a .dropdownTxt {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.dropdownDotOuter ul li a .dropdownImg {
+		padding-right: 8px;
+		width: 60px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.dropdownDotOuter ul li a .dropdownImg span{
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		border-radius: 50%;
+		background: #ebf2f5;
+		padding: 12px;
+	}
+	.dropdownDotOuter ul li a .dropdownTxt span {
+		font-size: 13px;
+		color: #7d7d7d;
+		display: block;
+	}
+	.dropdownDot span{
+		width: 6px;
+		height: 6px;
+		background: #9f9f9f;
+		border-radius: 50%;
+		margin: 0 1px;
+		display: inline-block;
+	}
+	.postContentBody{
+		padding: 15px 20px;
+		background: #fff;
+	}
+	.userDetails{
+		overflow: hidden;
+		height: 100%;
+		margin: 0 0 15px 0;
+	}
+	.userDetails span.userLogo{
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		margin-right: 15px;
+		display: inline-block;
+		float: left;
+	}
+	.userDetails span.userLogo img{
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		object-fit: cover;
+    	object-position: top center;
+	}
+	.userDetails h4{
+		font-size: 16px;
+		line-height: 22px;
+		color: #000;
+		margin: 0 0 0px 0;
+	}
+	.userDetailsInner{
+		margin-left: 60px;
+	}
+	.userDetails h5{
+		font-size: 15px;
+		line-height: 20px;
+		color: #7c7c7c;
+		margin: 0 0 0px 0;
+	}
+	.postContentBody .userDetails p{
+		font-size: 14px;
+		line-height: 20px;
+		color: #7b7b7b;
+		margin: 0 0 0px 0;
+	}
+	.postHead p span.follow {
+		font-size: 15px;
+		line-height: 22px;
+		color: #4a4a4a;
+		font-weight: 600;
+	    padding: 0 10px;
+	}
+	.postHead p span.follow a {
+		display: inline-block;
+	    color: #ea4756;
+	    font-size: 15px;
+	    line-height: 22px;
+	    text-decoration: none;
+	}
+	.postHead p span.follow a:hover {
+		color: #505667;
+	}
+	.postContentBody p{
+		font-size: 15px;
+	    line-height: 22px;
+	    color: #666666;
+	    margin: 0 0 10px 0;
+		text-align: justify;
+	}
+	.postContentBody p a {
+		color: #ea4756;
+		display: inline-block;
+		font-weight: 600;
+	}
+	.postContentBody p a:hover {
+		color: #000;
+	}
+	.postImgHolder{
+		/*margin: 0 0 20px 0;*/
+	}
+	.commentingSection{
+		background: #fff;
+	}
+	.commentingSectionTop{
+		border-top: 1px solid #d6d6d6;
+    	padding: 10px 15px 10px 15px;
+	}
+	.commentingSectionBottom{
+		padding: 15px 10px 15px 10px;
+    	border-top: 1px solid #d6d6d6;
+	}
+	.commentingSection ul{
+		list-style: none;
+		padding: 2px 0 0 0;
+		margin: 0;
+	}
+	.commentingSection ul li{
+		display: inline-block;
+		padding: 0 8px;
+	}
+	.commentingSection ul li a{
+		font-size: 16px;
+		line-height: 22px;
+		color: #000000;
+		display: inline-block;
+	}
+	.commentingSection ul li a img{
+		margin-right: 4px;
+		width: 20px;
+	}
+	.likeOuter p{
+		margin: 0;
+	}	
+	.likeOuter ul li a{
+		font-size: 14px;
+		line-height: 20px;
+		color: #666;
+	}
+	.boostOuter {
+		text-align: right;
+	}
+	.boostOuter a{
+		display: inline-block;
+	    background: transparent;
+	    color: #ea4756;
+	    font-size: 14px;
+	    line-height: 20px;
+	    vertical-align: middle;
+	    border: 1px solid #ea4756;
+	    padding: 3px 5px;
+	}
+	.boostOuter a:hover{
+		color: #505667;
+		border: 1px solid #505667;
+	}
+	.boostOuter span{
+		font-size: 13px;
+	}
+	.commentCountouter{
+		text-align: right;
+	}
+	.commentCountouter a{
+		font-size: 14px;
+		line-height: 22px;
+		color: #666;
+		display: inline-block;
+	}
+	.commentCountouter a:hover{
+		color: #000;
+	}
+	.commentCountouter a img{
+		width: 20px;
+	}
+	.dot{
+		display: inline-block;
+		width: 5px;
+		height: 5px;
+		background: #666;
+		border-radius: 50%;
+		vertical-align: middle;
+    	margin: 0 2px;
+	}
+	.aidOuter{
+		/*height: 200px;*/
+		border: 1px solid #ccc;
+		background: #fff;
+		/*padding: 10px;*/
+		margin: 0 0 10px 0;
+	}
+	.profileBoost{
+		border: 1px solid #ccc;
+		background: #fff;
+		margin: 0 0 10px 0;
+		padding: 10px;
+	}
+	.profileBoost h4{
+		font-size: 20px;
+	    line-height: 26px;
+	    margin: 0 0 10px 0;
+	    color: #051969;
+	}
+	.profileBoost ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.profileBoost ul li{
+		display: block;
+		border-bottom: 1px solid #ccc;
+		display: table;
+		padding: 10px 0;
+		width: 100%;
+	}
+	.profileBoost ul li:last-child{
+		border-bottom: none;
+	}
+	.profileBoost ul li .profileBoostLeft{
+		display: table-cell;
+	    vertical-align: top;
+	    width: 70%;
+	}
+	.profileBoost ul li .profileBoostLeft img{
+		width: 40px;
+	    height: 40px;
+	    border-radius: 50%;
+	    object-fit: cover;
+	    float: left;
+	    margin: 0 5px 5px 0;
+	}
+	.profileBoost ul li .profileBoostLeft h5{
+		font-size: 14px;
+	    line-height: 20px;
+	    margin: 0 0 0px 0;
+	    font-weight: 600;
+	    color: #052195;
+	}
+	.profileBoost ul li .profileBoostLeft p{
+		font-size: 12px;
+	    line-height: 20px;
+	    color: #666;
+	    margin: 0;
+	}
+	.profileBoost ul li .profileBoostRight{
+		display: table-cell;
+	    vertical-align: top;
+	    width: 20%;
+	}
+	.profileBoost ul li .profileBoostRight a{
+		font-size: 14px;
+	    line-height: 22px;
+	    color: #ea4756;
+	    font-weight: 600;
+	}
+	.profileBoost ul li .profileBoostRight a:hover{
+		color: #505667;
+	}
+	.viewProfile{
+		font-size: 15px;
+		line-height: 22px;
+		color: #656262;
+		display: inline-block;
+		font-weight: 600;
+	}
+	.viewProfile:hover{
+		color: #052195;
+	}
+	.commentingOuter{
+		padding: 10px;
+	    background: #fff;
+	    position: relative;
+	    display: none;
+	    overflow: hidden;
+	}
+	.commentTxtarea{
+		display: inline-block;
+		vertical-align: top;
+		width: 90%;
+		float: right;
+	}
+	.commentingOuter textarea{
+	    height: 40px;
+	    padding: 10px;
+	    border-radius: 50px;
+	    border: 1px solid #9e9fa0;
+	    resize: none;
+	    padding-right: 30px;
+	}
+	.commentingOuter button{
+		position: absolute;
+	    top: 20px;
+	    right: 20px;
+	    background: transparent;
+	    border: none;
+	}
+	.commentingOuter textarea:focus,
+	.commentingOuter button:focus{
+		outline: none;
+	}
+	.commentdp{
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		margin-right: 10px;
+	}
+	.commentdp img{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+	.replyOuter{
+		padding: 10px 10px 15px 10px;
+		background: #fff;
+		overflow: hidden;
+	}
+	.replyInner{
+		background: #f3f3f3;
+	    display: inline-block;
+	    vertical-align: top;
+	    width: 90%;
+	    padding: 10px;
+	    border-radius: 10px;
+	    float: right;
+	}
+	.replyInner h5{
+		font-size: 15px;
+	    line-height: 22px;
+	    color: #075983;
+	    font-weight: 600;
+	    margin: 0 0 0px 0;
+	}
+	.replyInner p{
+		font-size: 14px;
+		line-height: 20px;
+		color: #666;
+		margin: 0 0 5px 0;
+	}
+	.replyInner span.tym{
+		display: block;
+		text-align: right;
+		font-size: 13px;
+		line-height: 20px;
+		color: #000;
+		font-weight: 600;
+	}
+	.profileHolder{
+		border: 1px solid #cacaca;
+		height: 300px;
+		overflow: hidden;
+	}
+	#postModal 	.submitOuter{
+		margin: 0;
+	}
+/*END COMMUNITY SECTION*/
+/*START COMMUNITY PROFILE*/
+	.profileCoverOuter{
+		/*background: #fff;*/
+		margin: 0 0 10px 0;
+		position: relative;
+	}
+	.profileCover{
+		position: relative;
+	}
+	.coveredit{
+		position: absolute;
+		top:20px;
+		right: 20px;
+	}
+	.coveredit input[type=file]{
+		display: none;
+	}
+	.coveredit label{
+		cursor: pointer;
+		font-size: 15px;
+	    line-height: 22px;
+	    color: #fff;
+	    background: #ea4756;
+	    padding: 8px 10px;
+	    font-weight: 400;
+	    font-family: 'IBM Plex Sans', sans-serif;
+	}
+	.coveredit label:hover{
+		background: #052195;
+	}
+	.profileCover > img{
+		height: 200px;
+		width: 100%;
+		object-fit: cover;
+	}
+	.genInfoEdit{
+		padding: 35px 0 0 0;
+		text-align: right;
+	}
+	.genInfoEdit a{
+		font-size: 15px;
+		line-height: 22px;
+		color: #fff;
+		background: #ea4756;
+		padding: 8px 10px;
+		font-weight: 400;
+		display: inline-block;
+		font-family: 'IBM Plex Sans', sans-serif;
+	}
+	.genInfoEdit a:hover{
+		background: #052195;
+	}
+	.commPic{
+		position: absolute;
+	    top: -50%;
+	    text-align: center;
+	    border-radius: 100%;
+	    overflow: hidden;
+	    width: 160px;
+	    height: 160px;
+	    border: 4px solid #fff;
+	}
+	.commPicSec{
+		left: 50%;
+	    width: 100%;
+	    transform: translate(-50%, 0);
+	    -webkit-transform: translate(-50%, 0);
+	    -moz-transform: translate(-50%, 0);
+	}
+	.commPic img{
+		width: 100%;
+	    height: 100%;
+	    object-fit: cover;
+	    object-position: top center;
+	}
+	.commPicInner input[type=file]{
+		display: none;
+	}
+	.commPicInner input[type=file] + label{
+		display: inline-block;
+	    padding: 6px 10px;
+	    font-size: 16px;
+	    line-height: 22px;
+	    width: auto !important;
+	    text-align: center;
+	    color: #e52033;
+	    position: relative;
+	    cursor: pointer;
+	}
+	.commPicInner input[type=file] + label img{
+		width: auto;
+	    height: auto;
+	    border: none;
+	    border-radius: 0;
+	    vertical-align: top;
+	    margin: 3px 5px 0 0;
+	}
+	.commPicInner input[type=file] + label:after{
+		content: '';
+	    position: absolute;
+	    bottom: 5px;
+	    left: 40px;
+	    width: 28px;
+	    height: 1px;
+	    background: #e52033;
+	}
+	.profilecommInfo{
+		padding: 15px 0;
+		position: relative;
+		margin: 0 0 0px 0;
+	}
+	.profilecommInfo h3 {
+	    font-size: 22px;
+	    line-height: 28px;
+	    color: #000000;
+	    margin: 0 0 7px 0;
+	    font-weight: 600;
+	}
+	.profilecommInfo p{
+		font-size: 14px;
+		line-height: 20px;
+		font-family: Roboto;
+		color: #535353;
+		margin: 0 0 4px 0;
+	}
+	.profilecommInfo p span{
+		color: #000;
+		font-weight: 600;
+	}
+	.communitystrength{
+		background: #fff;
+		padding: 15px 20px;
+	}
+	.communitystrength h4{
+		font-size: 18px;
+		line-height: 24px;
+		color: #000;
+		font-weight: 600;
+		font-family: Roboto;
+		margin: 0 0 45px 0;
+	}
+	.strengthOuter{
+		position: relative;
+	    background: #ffe1e4;
+	    border: 3px solid #fff;
+	    border-radius: 50px;
+	    height: 15px;
+	    width: 100%;
+	    box-shadow: 5px 5px 5px #cac6c6;
+	}
+	.strengthInner {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    background: linear-gradient(to right, #082193 30%, #e10016 100%);
+	    /* border: 2px solid #fff; */
+	    border-radius: 50px;
+	}
+	span.strengthTxt{
+		position: absolute;
+	    top: -44px;
+	    right: 0;
+	    display: inline-block;
+	    background: #ea4756;
+	    padding: 6px 15px;
+	    font-size: 16px;
+	    line-height: 22px;
+	    color: #fff;
+	    border-radius: 5px;
+	}
+	span.strengthTxt:after{
+		content: '';
+	    position: absolute;
+	    bottom: -10px;
+	    left: 50%;
+	    border-top: 10px solid #ea4756;
+	    border-left: 10px solid transparent;
+	    border-right: 10px solid transparent;
+	    transform: translate(-50%, 0%);
+	    -webkit-transform: translate(-50%, 0%);
+	    -moz-transform: translate(-50%, 0%);
+	}
+	.communityPending{
+		background: #c2cbf3;
+		padding: 15px 20px;
+		margin: 0 0 20px 0;
+	}
+	.communityPending h4{
+		font-size: 18px;
+		line-height: 24px;
+		color: #111f8e;
+		font-weight: 600;
+		font-family: Roboto;
+		margin: 0 0 5px 0;
+	}
+	.communityPending p{
+		font-size: 16px;
+		line-height: 22px;
+		color: #141414;
+		font-family: Roboto;
+		margin: 0 0 5px 0;
+	}
+	.communityPending a{
+		display: inline-block;
+		font-size: 16px;
+		line-height: 22px;
+		color: #df0017;
+	}
+	.communityPending a:hover{
+		color: #111f8e;
+	}
+	.communityPhoto{
+		background: #fff;
+		border:none;
+		margin: 0 0 20px 0;
+	}
+	.communityPhotohead{
+		padding: 20px;
+	}
+	.communityPhoto h4{
+		font-size: 18px;
+		line-height: 24px;
+		color: #000;
+		font-weight: 600;
+		font-family: Roboto;
+		margin: 10px 0;
+	}
+	.communityPhoto .tabpanel {
+	    border-radius: 0;
+	    box-shadow: none;
+	    margin: 0 0 0px 0;
+	    background: #e6ecf0;
+	    padding: 20px 40px;
+	    border: 1px solid #acb6df;
+	    border-top: none;
+	}
+	.communityPhoto .tabgallery .slick-next, .communityPhoto .tabgallery .owl-next{
+		width: 34px;
+	    height: 34px;
+	    background: #fff url(../images/rightArrow4.png) no-repeat center center !important;
+	    position: absolute;
+	    right: -20px;
+	    top: 50%;
+	    transform: translate(0,-50%);
+	    text-indent: -9999px;
+	    border: none;
+	    cursor: pointer;
+	    border-radius: 50%;
+	}
+	.communityPhoto .tabgallery .slick-prev, .communityPhoto .tabgallery .owl-prev {
+	    width: 34px;
+	    height: 34px;
+	    background: #fff url(../images/leftArrow2.png) no-repeat center center !important;
+	    position: absolute;
+	    left: -20px;
+	    top: 50%;
+	    transform: translate(0,-50%);
+	    text-indent: -9999px;
+	    z-index: 12;
+	    border: none;
+	    cursor: pointer;
+	    border-radius: 50%;
+	}
+	.communityEditOuter{
+		text-align: right;
+	}
+	.communityEditOuter a{
+		font-size: 15px;
+	    line-height: 22px;
+	    color: #fff;
+	    background: #ea4756;
+	    padding: 8px 10px;
+	    font-weight: 400;
+	    font-family: 'IBM Plex Sans', sans-serif;
+	}
+	.communityEditOuter a{
+		font-size: 15px;
+		line-height: 22px;
+		color: #4b4b4b;
+		background: transparent;
+		padding: 8px 10px;
+		font-weight: 400;
+		font-family: 'IBM Plex Sans', sans-serif;
+		border: 1px solid #acb6df;
+	}
+	.communityEditOuter a:hover{
+		color: #fff;
+		background: #ea4756;
+		border: 1px solid #ea4756;
+	}
+	.communityPhoto .tabpanel .nav-tabs .nav-item{
+		color: #4e4e4e;
+	    font-size: 16px;
+	    line-height: 22px;
+	    position: relative;
+	    padding: 0 0 10px 0;
+	    margin: 0 15px;
+	}
+	.communityPhoto .tabpanel .nav-tabs .nav-item:after{
+		content: '';
+	    position: absolute;
+	    top: 40%;
+	    right: -20px;
+	    width: 6px;
+	    height: 1px;
+	    background: #4e4e4e;
+	}
+	.communityPhoto .tabpanel .nav-tabs .nav-item:last-child:after{
+		display: none;
+	}
+	.communityPhoto .tabpanel .nav-tabs .nav-item.active {
+	    background: transparent;
+	    color: #ea4756;
+	    border: none;
+	    border-radius: 0;
+	}
+	.communityPhoto .tabpanel .nav-tabs .nav-item.active:before{
+		content: '';
+	    position: absolute;
+	    bottom: 5px;
+	    left: 0;
+	    width: 100%;
+	    height: 1px;
+	    background: #ea4756;
+	}
+	.communityPhoto .caption {
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    padding: 9px 15px;
+	    background: #fff;
+	    color: #000000;
+	    z-index: 12;
+	    width: 100%;
+	    text-align: center;
+	    font-size: 16px;
+	    line-height: 22px;
+	    text-align: center;
+	}
+	.communityPhoto .caption .cpSmall,
+	.communityPhoto .caption .dt{
+		font-size: 15px;
+		line-height: 22px;
+		color: #777777;
+	}
+	.communityPhoto .tabpanel .nav-tabs{
+		border: none;
+	}
+	.communityPhoto .videolist li{
+		display: inline-block;
+		width: 32%;
+		margin: 0 40px 0 0;
+	}
+	.communityPhoto .videolist li a{
+		display: inline-block;
+	}
+	.CommunityCompnyInfo p,
+	.commProfileBlock p{
+		font-size: 15px;
+		line-height: 22px;
+		font-family: Roboto;
+		color: #666;
+		margin: 0 0 4px 0;
+	}
+	.CommunityCompnyInfo{
+		padding: 20px;
+		border-top: 3px solid #2b808a;
+	}
+	.CommunityCompnyInfo h4,
+	.commProfileBlock h4{
+		font-size: 18px;
+	    line-height: 24px;
+	    color: #000;
+	    font-weight: 600;
+	    font-family: Roboto;
+	    margin: 0px 0 15px 0;
+	}
+	.commProfileBlock{
+		padding: 20px 20px;
+		background: #fff;
+		margin: 0 0 20px 0;
+	}
+	.commProfileBlockSec{
+		background: #e6ecf0;
+		padding: 0;
+	}
+	.commProfileBlock ul.dashboardListing {
+		text-align: center;
+		padding: 0;
+	}
+	.commProfileBlock ul.dashboardListing li{
+		display: inline-block;
+	    color: #606060;
+	    font-size: 16px;
+	    line-height: 22px;
+	    box-shadow: none;
+	    border: 1px solid #ccc;
+	    margin-left: -4px;
+	    border-right: none;
+	    width: 33%;
+	    padding: 10px;
+	}
+	.commProfileBlock ul.dashboardListing li:first-child{
+		border-radius: 50px 0 0 50px;
+	}
+	.commProfileBlock ul.dashboardListing li:last-child{
+		border-right: 1px solid #ccc;
+		border-radius: 0 50px 50px 0;
+	}
+	.commProfileBlock ul.dashboardListing li span{
+		color: #052195;
+		font-size: 24px;
+		line-height: 30px;
+		margin: 0;
+		font-weight: 600;
+	}
+	ul.followerList{
+		list-style: none;
+		padding: 0;
+		margin: 0 0 20px 0;
+	}
+	ul.followerList li{
+		font-size: 15px;
+		line-height: 22px;
+		color: #686869;
+		display: inline-block;
+		padding: 0 15px 0 0;
+	}
+	ul.followerList li a{
+		display: inline-block;
+		text-decoration: none;
+		color: #052195;
+	}
+	ul.followerList li a:hover{
+		color: #686869;
+	}
+	.articleBody{
+		background: #f4f4f4;
+		padding: 15px;
+		border: 1px solid #d8d8d8;
+	}
+	.articleBody .articleHead{
+		display: table;
+		width: 100%;
+		margin: 0 0 15px 0;
+	}
+	.articleLeft {
+		width: 140px;
+		display: table-cell;
+		vertical-align: top;
+	}
+	.articleLeft img{
+		width: 130px;
+		height: 110px;
+		object-fit: cover;
+	}
+	.postingUser{
+		overflow: hidden;
+	}
+	.postingUser img{
+		width: 50px;
+		height: 50px;
+		object-fit: cover;
+		border-radius: 50%;
+		float: left;
+		margin: 0 10px 0 0;
+	}
+	.postingUser h5{
+		font-size: 16px;
+		line-height: 22px;
+		color: #000;
+		margin: 0 0 5px 0;
+	}
+	.postingUser h6{
+		font-size: 15px;
+		line-height: 22px;
+		color: #7b7b7b;
+		margin: 0 0 5px 0;
+	}
+	.articleBody p{
+		font-size: 15px;
+		line-height: 22px;
+		color: #7b7b7b;
+		margin: 0 0 5px 0;
+	}
+	.commentingSectionSec {
+	    border: 1px solid #d8d8d8;
+	    border-top: none;
+	    background: #f4f4f4;
+	    padding: 10px 15px 15px 15px;
+	    margin: 0 0 20px 0;
+	}
+	.commProfileBlock .commentingSectionSec ul{
+		margin: 0;
+	}
+	.commProfileBlock .commentingSectionSec ul li{
+		margin: 0;
+	}
+	ul.activityList li{
+		overflow: hidden;
+		display: block;
+		padding: 0 0 20px 0;
+	}
+	ul.activityList li img{
+		width: 50px;
+		height: 50px;
+		object-fit: cover;
+		border-radius: 50%;
+		float: left;
+		margin: 0 10px 0 0;
+	}
+	ul.activityList li h5{
+		font-size: 16px;
+		line-height: 22px;
+		color: #000;
+		margin: 0 0 5px 0;
+	}
+	ul.activityList li h6{
+		font-size: 15px;
+		line-height: 22px;
+		color: #7b7b7b;
+		margin: 0 0 5px 0;
+	}
+	.commProfileBlock h4 a{
+		color: #000;
+	}
+	.commProfileBlock h4 a:hover{
+		color: #666;
+	}
+	.comprofileEditOuter {
+		text-align: right;
+	}
+	.comprofileEditOuter a{
+		font-size: 15px;
+	    line-height: 22px;
+	    padding: 8px 10px;
+	    font-weight: 400;
+	    font-family: 'IBM Plex Sans', sans-serif;
+		color: #555;
+	}
+	.comprofileEditOuter a:hover{
+		color: #666;
+	}
+	.commProfileBlock h5{
+		font-family: 'IBM Plex Sans', sans-serif;
+		font-size: 16px;
+		line-height: 22px;
+		color: #000;
+		margin: 0 0 10px 0;
+		font-weight: 500;
+	}
+	.commProfileBlock p{
+		font-family: 'IBM Plex Sans', sans-serif;
+		font-size: 15px;
+		line-height: 22px;
+		color: #333333;
+		margin: 0 0 10px 0;
+		font-weight: 500;
+		text-align: justify;
+	}
+	.commProfileBlock ul {
+		margin: 0 0 20px 0;
+	}
+	.commProfileBlock ul li{
+		font-family: 'IBM Plex Sans', sans-serif;
+		font-size: 15px;
+		line-height: 22px;
+		color: #333333;
+		padding: 0 0 5px 0;
+		font-weight: 500;
+	}
+	.commProfileBlock ul li span{
+		font-weight: 900;
+		color: #000;
+	}
+	.currentLogo{
+		text-align: center;
+	}
+	.currentLogo img{
+		width: 100px;
+	    height: 100px;
+	    margin: 0 auto;
+	    border: 2px solid #e2e2e2;
+	    border-radius: 50%;
+	    object-fit: contain;
+	}
+	.experienceSlider {
+		background: #e6ecf0;
+	}
+	.experienceSlider .owl-dots{
+		display: none;
+	}
+	.experienceInner{
+		padding: 20px 15px;
+		position: relative;
+		text-align: center;
+		background: #fff;
+		margin: 0 10px;
+	}
+	.experienceSlider img{
+		width: 100px !important;
+	    height: 100px;
+	    margin: 0 auto 10px;
+	    border: 2px solid #e2e2e2;
+	    border-radius: 50%;
+	    object-fit: contain;
+	}
+	.experienceSlider a.editExp{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		display: inline-block;
+	}
+	.experienceSlider a.editExp img{
+		width: auto !important;
+		height: auto;
+		border: none;
+		border-radius: 0;
+	}
+	.experienceSlider h3{
+		font-size: 17px;
+	    line-height: 22px;
+	    color: #ea4756;
+	    font-weight: 900;
+	    margin: 0 0 6px 0;
+	}
+	.experienceSlider h4{
+		font-size: 16px;
+	    line-height: 22px;
+	    color: #000000;
+	    font-weight: 700;
+	    margin: 0 0 6px 0;
+	}
+	.experienceSlider p{
+		font-size: 15px;
+		line-height: 22px;
+		color: #000000;
+		font-weight: 400;
+		text-align: center;
+		margin: 0 0 5px 0;
+	}
+	.experienceSlider .owl-nav{
+		display: block !important;
+	}
+	.experienceSlider .owl-prev{
+		width: 34px;
+	    height: 34px;
+	    background: #fff url(../images/leftArrow2.png) no-repeat center center !important;
+	    position: absolute;
+	    left: -10px;
+	    top: 50%;
+	    transform: translate(0,-50%);
+	    text-indent: -9999px;
+	    z-index: 12;
+	    border: none;
+	    cursor: pointer;
+	    border-radius: 50%;
+	}
+	.experienceSlider .owl-next{
+		width: 34px;
+	    height: 34px;
+	    background: #fff url(../images/rightArrow4.png) no-repeat center center !important;
+	    position: absolute;
+	    right: -10px;
+	    top: 50%;
+	    transform: translate(0,-50%);
+	    text-indent: -9999px;
+	    border: none;
+	    cursor: pointer;
+	    border-radius: 50%;
+	}
+	.commProfileBlock ul.projectList li a{
+		color: #052195;
+	}
+	.commProfileBlock ul.projectList li a:hover{
+		color: #333333;
+	}
+	.portfolioTab{
+		padding: 0;
+	}
+	.portfolioTab  .nav-tabs{
+		border: none;
+    	background: #e7e7e7;
+	}
+	.portfolioTab .nav-tabs .nav-item.active{
+		background: #ea4756;
+		border-radius: 0;
+	}
+	.portfolioTab .caption {
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    padding: 9px 15px;
+	    background: #fff;
+	    color: #000000;
+	    z-index: 12;
+	    width: 100%;
+	    text-align: center;
+	    font-size: 16px;
+	    line-height: 22px;
+	    text-align: center;
+	}
+	.portfolioTab .caption .cpSmall,
+	.portfolioTab .caption .dt{
+		font-size: 15px;
+		line-height: 22px;
+		color: #777777;
+	}
+	.portfolioTab .tabgallery .slick-next, .portfolioTab .tabgallery .owl-next{
+		width: 34px;
+	    height: 34px;
+	    background: #fff url(../images/rightArrow4.png) no-repeat center center !important;
+	    position: absolute;
+	    right: -20px;
+	    top: 50%;
+	    transform: translate(0,-50%);
+	    text-indent: -9999px;
+	    border: none;
+	    cursor: pointer;
+	    border-radius: 50%;
+	}
+	.portfolioTab .tabgallery .slick-prev, .portfolioTab .tabgallery .owl-prev {
+	    width: 34px;
+	    height: 34px;
+	    background: #fff url(../images/leftArrow2.png) no-repeat center center !important;
+	    position: absolute;
+	    left: -20px;
+	    top: 50%;
+	    transform: translate(0,-50%);
+	    text-indent: -9999px;
+	    z-index: 12;
+	    border: none;
+	    cursor: pointer;
+	    border-radius: 50%;
+	}
+	.tagTxtOuter{
+		padding: 15px 0 0 0;
+	}
+	.tagTxtOuter span{
+		display: inline-block;
+	    background: #6b6b6b;
+	    color: #fff;
+	    padding: 6px 18px;
+	    border-radius: 50px;
+	    font-size: 15px;
+	    line-height: 22px;
+	    margin: 0 15px 15px 0;
+	}
+	.skillTable table{
+		border: 1px solid #ccc;
+	}
+	.skillTable tr th{
+		background: #6b6b6b;
+		color: #fff;
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 400;
+		border-radius: 0;
+		text-align: center;
+	}
+	.skillTable tr td{ 
+		color: #4f4e4e;
+		font-size: 15px;
+		line-height: 22px;
+		text-align: center;
+	}
+	.skillTable tr:nth-child(even) td{
+		background: #fff;
+	}
+	.skillTable tr:nth-child(odd) td{
+		background: #dadada;
+	}
+	.communityRightpanelSec {
+		padding: 60px 0 0 0;
+	}
+	.communityProfileSection{
+		padding: 60px 0 60px 0;
+	}
+	.fancybox-can-zoomIn .fancybox-content {
+	    cursor: zoom-in;
+	    border: 20px solid #052195;
+	    border-radius: 20px;
+	}
+	.fancybox-navigation .fancybox-button div {
+	    padding: 5px;
+	}
+	.fancybox-navigation .fancybox-button--arrow_right,
+	.fancybox-navigation .fancybox-button--arrow_left {
+    	padding: 10px;
+    }
+    .fancybox-navigation .fancybox-button--arrow_right svg,
+    .fancybox-navigation .fancybox-button--arrow_left svg{
+    	width: 50px;
+    }
+/*END COMMUNITY PROFILE*/
+/*START COMMUNITY COMPANY PROFILE*/	
+	.followingList {
+		list-style: none;
+		padding: 10px 0 0 0;
+		margin: 0;
+		display: inline-block;
+	}
+	.followingList li{
+		display: inline-block;
+		margin-left: -25px;
+	}
+	.followingList li:first-child{
+		margin-left: 0;
+	}
+	.followingList li img{
+		width: 40px;
+		height: 40px;
+		object-fit: cover;
+		border-radius: 50%;
+		border: 1px solid #fff;
+	}
+	.followerCount{
+		display: inline-block;
+		color: #252424;
+		font-size: 14px;
+		line-height: 20px;
+		margin: 0 0 10px 10px;
+	}
+	.followerCount span{
+		font-weight: 600;
+	}
+	.visitSiteOuter {
+		text-align: right;
+	}
+	.visitSiteOuter a.followLink{
+		font-family: 'IBM Plex Sans', sans-serif;
+	    font-size: 15px;
+	    line-height: 24px;
+	    color: #535353;
+	    display: block;
+	    margin: 0 0 15px 0;
+	    vertical-align: middle;
+	}
+	.visitSiteOuter a.followLink:hover,
+	.visitSiteOuter a.followLink.active{
+		color: #ea4756;
+	}
+	.visitSiteOuter a.followLink span.followIcon{
+		width: 20px;
+	    height: 20px;
+	    background: url(../images/followIcon.png) no-repeat -8px 3px;
+	    margin-right: 1px;
+	    display: inline-block;
+	    vertical-align: top;
+	    transition: all 1s ease;
+	    -webkit-transition: all 1s ease;
+	    -moz-transition: all 1s ease;
+	}
+	.visitSiteOuter a.followLink:hover span.followIcon,
+	.visitSiteOuter a.followLink.active span.followIcon{
+		width: 20px;
+		height: 20px;
+		background: url(../images/followIcon.png) no-repeat -8px -28px;
+		transition: all 1s ease;
+	    -webkit-transition: all 1s ease;
+	    -moz-transition: all 1s ease;
+	}
+	.visitSite{
+		display: block;
+	    background: #052195;
+	    font-family: 'IBM Plex Sans', sans-serif;
+	    font-size: 15px;
+	    line-height: 22px;
+	    color: #fff;
+	    padding: 5px 10px;
+	    text-align: center;
+	}
+	.visitSite:hover{
+		background: #ea4756;
+		color: #fff;
+	}
+	.companyMenubar{
+		background: #052195;
+	}
+	.companyMenubar ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.companyMenubar ul li{
+		display: inline-block;
+		position: relative;
+	}
+	.companyMenubar ul li.hasdropdown > a{
+		background: url(../images/downArrow3.png) no-repeat;
+		background-position: calc(100% - 10px) center;
+	    padding-right: 30px;
+	}
+	.companyMenubar ul li.hasdropdown > a:hover,
+	.companyMenubar ul li.hasdropdown > a.active{
+		background: #ea4756 url(../images/downArrow3.png) no-repeat;
+		background-position: calc(100% - 10px) center;
+	}
+	.companyMenubar ul li a{
+		display: inline-block;
+		color: #5675f4;
+		font-size: 16px;
+		line-height: 22px;
+		padding: 18px 22px;	
+		position: relative;
+	}
+	.companyMenubar ul li a:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: -2px;
+		width: 1px;
+		height: 100%;
+		background: #5675f4;
+	}
+	.companyMenubar ul li:last-child a:after{
+		display: none;
+	}
+	.companyMenubar ul li a:hover,
+	.companyMenubar ul li a.active{
+		background: #ea4756;
+		color: #fff;
+	}
+	.companyMenubar ul li ul{
+		position: absolute;
+		top: 58px;
+		left: 0;
+		width: 200px;
+		background: #ea4756;
+		display: none;
+		border-top: 2px solid #fff;
+		z-index: 10;
+	}
+	.companyMenubar ul li:hover ul{
+		display: block;
+	}
+	.companyMenubar ul li ul li{
+		display: block;
+	}
+	.companyMenubar ul li ul li a{
+		display: block;
+		border-bottom: 1px solid #a7323d;
+		font-size: 15px;
+	    line-height: 22px;
+	    color: #fff;
+	    padding: 8px 12px;
+	}
+	.companyMenubar ul li ul li a:hover,
+	.companyMenubar ul li ul li a.active{
+		background: #052195;
+	}
+	.companyMenubar ul li ul li:last-child a{
+		border-bottom: none;
+	}
+	.companyInner{
+		padding: 20px 0 0 0;
+	}
+	.companyInner .postImgHolder{
+		margin: 0 0 15px 0;
+	}
+	.communityCompanyAbout{
+		background: #fff;
+    	padding: 20px;
+    	margin: 0 0 20px 0;
+	}
+	.communityCompanyAbout h4{
+		font-size: 18px;
+		line-height: 24px;
+		color: #000;
+		font-weight: 600;
+		margin: 0 0 20px 0;
+	}
+	.communityCompanyAbout p{
+		font-family: 'IBM Plex Sans', sans-serif;
+	    font-size: 15px;
+	    line-height: 22px;
+	    color: #212121;
+	    text-align: justify;
+	    margin: 0 0 25px 0;
+	    font-weight: 400;
+	}
+	.communityCompanyAbout ul{
+		list-style: none;
+		padding: 0 0 20px 0;
+		margin: 0;
+	}
+	.communityCompanyAbout ul li{
+		display: block;
+		padding: 5px 0;
+		font-size: 15px;
+		line-height: 22px;
+		color: #535353;
+	}
+	.communityCompanyAbout ul li span{
+		font-size: 15px;
+		line-height: 22px;
+		color: #000;
+		font-weight: 600;
+		width: 30%;
+		display: inline-block;
+	}
+	.communityCompanyAbout h5{
+		font-size: 15px;
+		line-height: 22px;
+		color: #000;
+		font-weight: 600;
+		margin: 0 0 15px 0;
+	}
+	.communityCompanyAbout h6{
+		font-size: 14px;
+		line-height: 20px;
+		color: #ea4756;
+		margin: 0 0 5px 0;
+	}
+	.companyBranch{
+		margin: 0 0 20px 0;
+	}
+	.companyBranch p {
+		margin: 0 0 5px 0;
+	}
+	.companyBranch a{
+		display: inline-block;
+		color: #052195;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 600;
+		position: relative;
+	}
+	.companyBranch a:after{
+		content: '';
+	    position: absolute;
+	    bottom: 0;
+	    left: 20px;
+	    width: 90px;
+	    height: 1px;
+	    background: #052195;
+	}
+	.branchMap {
+		border: 3px solid #e1e1e1;
+		padding: 10px;
+	}
+	.companyInner .countryInner{
+		min-height: 330px;
+		margin-bottom: 20px;
+	}
+	.companyEmployee{
+		background: #fff;
+		text-align: center;
+		padding: 0 0 20px 0;
+		margin: 0 0 20px 0;
+	}
+	.companyEmployee .employeeCoverImg{
+		position: relative;
+		margin: 0 0 60px 0;
+	}
+	.companyEmployee .employeeCoverImg > img{
+		height: 90px;
+	}
+	.companyEmpdp{
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, 0%);
+	    -webkit-transform: translate(-50%, 0%);
+	    -moz-transform: translate(-50%, 0%);
+	}
+	.companyEmpdp img{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 5px solid #fff;
+		object-position: top center;
+	}
+	.companyEmployee h4{
+		font-size: 17px;
+		line-height: 24px;
+		font-weight: 900;
+		color: #000;
+		margin: 0 0 5px 0;
+	}
+	.companyEmployee p{
+		font-size: 15px;
+		line-height: 22px;
+		color: #4b4b4b;
+		margin: 0 0 5px 0;
+	}
+	.companyEmployee a{
+		display: inline-block; 
+	    background: #ea4756;
+	    color: #fff;
+	    font-size: 15px;
+	    line-height: 22px;
+	    padding: 6px 25px;
+	    margin-top: 10px;
+	}
+	.companyEmployee a:hover{
+		background: #052195;
+	}
+	.companyLeader{
+		background: #f5f5f5;
+	    margin: 15px 0;
+	    padding: 15px;
+	}
+	.companyLeader img{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		float: left;
+		margin: 0 10px 10px 0;
+	}
+	.companyLeader h4{
+		font-size: 17px;
+		line-height: 24px;
+		font-weight: 900;
+		color: #000;
+		margin: 0 0 14px 0;
+	}
+	.companyLeaderInner h5{
+		font-size: 15px;
+	    line-height: 22px;
+	    font-weight: 600;
+	    color: #2f2f2f;
+	    margin: 0 0 2px 0;
+	}
+	.companyLeaderInner p{
+		font-size: 14px;
+		line-height: 22px;
+		color: #4b4b4b;
+		margin: 0 0 5px 0;
+	}
+	.companylifeContent h5{
+		font-size: 17px;
+	    line-height: 24px;
+	    font-weight: 600;
+	    color: #2f2f2f;
+	    margin: 0 0 2px 0;
+	}
+	.companylifeContent p{
+		font-size: 14px;
+		line-height: 22px;
+		color: #4b4b4b;
+		margin: 0 0 5px 0;
+		text-align: justify;
+	}
+	.companylifeContent p a{
+		display: inline-block;
+		color: #ea4756;
+		font-weight: 600;
+	}
+	.companyLifeOuter{
+		background: #fff;
+		padding: 15px 0;
+	}
+	.companyLifeInner{
+		padding: 20px 15px;
+	}
+	.companylifeVideo{
+		height: 220px;
+	}
+	.companylifeContent{
+		position: relative;
+	    top: 50%;
+	    transform: translate(0, -50%);
+	    -webkit-transform: translate(0, -50%);
+	    -moz-transform: translate(0, -50%);
+	}
+	.companyInner .bannerForm{
+		margin: 0 0 20px 0;
+	}
+/*END COMMUNITY COMPANY PROFILE*/	
+
+@media (max-width: 1199px) {	
+	.communityMenu li{
+		padding: 0 12px;
+	}
+	.communitydpHolder img,
+	.companyPageInfoHeadLeft span,
+	.companyPageInfoHeadLeft span img {
+	    width: 70px;
+	    height: 70px;
+	}
+	.communitydpHolder,
+	.companyPageInfoHeadLeft{
+		width: 80px;
+	}
+	.genInfoEdit a{
+		font-size: 14px;
+		line-height: 20px;
+		padding: 6px 8px;
+	}
+	.commProfileBlock ul.dashboardListing li{
+		font-size: 15px;
+	}
+	.commProfileBlock ul.dashboardListing li span {
+	    font-size: 20px;
+	    line-height: 26px;
+	}
+	.tabphotogallery1 .slick-dots{
+		display: none !important;
+	}
+	.commentTxtarea, .replyInner {
+	    width: 88%;
+	}
+	.communityPhoto h4{
+		font-size: 15px;
+		line-height: 22px;
+	}
+	.communityEditOuter a{
+		font-size: 14px;
+		padding: 6px 7px;
+	}
+}
+@media (max-width: 991px) {
+	.logoContainerSec a img{
+		max-width: 100%;
+	}
+	.communityMenu li a span{
+		display: none;
+	}
+	.communityMenu li{
+		padding: 0 10px;
+	}
+	.communityMenu li a{
+		font-size: 13px;
+		padding: 7px 0 0 0;
+	}
+	.startpostHead{
+		padding: 10px;
+	}
+	.startpostHeadRight ul:after{
+		display: none;
+	}
+	.startpostHeadLeft{
+		margin: 0 0 10px 0;
+	}
+	.startpostHeadLeft p{
+		text-align: center;
+	}
+	.startpostHeadRight ul {
+	    text-align: center;
+	    border-top: 1px solid #fff;
+	    padding: 5px 0 0 0;
+	}
+	.commProfileInner p span{
+		font-weight: 400;
+	}
+	.communityRightpanel{
+		display: none;
+	}
+	.viewInfo p{
+		font-size: 14px;
+	}
+	.commentTxtarea,
+	.replyInner{
+		width: 85%;
+	}
+	.userDetails h4{
+		font-size: 16px;
+	}
+	.userDetails h5{
+		font-size: 14px;
+	}
+	.postContentBody .userDetails p{
+		font-size: 13px;
+	}
+	.genInfoEdit{
+		padding: 0px 0 5px 0;
+	}
+	.profilecommInfo{
+		padding: 10px 0;
+	}
+	.profilecommInfo h3 {
+	    font-size: 20px;
+	    line-height: 26px;
+	}
+	.communityEditOuter{
+		text-align: center;
+	}
+	.communityPhoto h4{
+		text-align: center;
+	}
+}
+@media (max-width: 767px) {
+	.logoContainerSec {
+	    padding: 5px 0 5px 0;
+	}
+	.communityMenu{
+		text-align: center;
+	}
+	.comSearchOuter {
+		position: absolute;
+	    top: 40px;
+	    left: auto;
+	    background: #b3b3b3;
+	    padding: 5px;
+	    width: 280px;
+	    display: none;
+	}
+	.comSearchOuter.comSearchOuterOpen{
+		display: block;
+	}
+	.comSearchOuter button {
+	    top: 5px;
+	    right: 5px;
+	    padding: 9px 10px 8px 10px;
+	}
+	.communityMenu li {
+		width: 12%;
+		padding: 0 6px;
+	}
+	.communityMenu li:last-child{
+		width: auto;
+	}
+	.communityMenu li a span{
+		display: none;
+	}
+	.communitySection {
+    	padding: 98px 0 20px 0;
+    }
+    .companyPageInfoHead{
+    	padding: 0 10px;
+    }    
+    .commentingSection ul{
+    	margin: 0 0 15px 0;
+    }
+    .boostOuter{
+    	margin: 0;
+    }
+    .commentingSection ul li {
+    	padding: 0 6px;
+    }
+    .commentingSection ul li a{
+    	font-size: 15px;
+    }
+    .commentTxtarea, .replyInner {
+	    width: 80%;
+	}
+	#postModal .modal-content .privacyOuter label{
+		width: 100%;
+		display: block;
+	}
+	#postModal .modal-content .privacyOuter select{
+		width: 100%;
+		display: block;
+	}
+	#postModal .modal-content .postbody ul li input[type="file"] + label img {
+	    height: 20px;
+	}
+	#postModal .modal-content .postbody ul li a img {
+	    height: 20px;
+	}
+	.dropdownDotOuter ul{
+		width: 270px;
+	}
+	.dropdownDotOuter ul li a{
+		padding: 8px;
+		font-size: 15px;
+	}
+	.mobileHmburgerOuter{
+		display: block;
+	}
+	.mobileHmburger{
+		text-align: right;
+		padding: 8px 0 0 0;
+	}
+	.mobileHmburger a{
+		display: inline-block;
+	}
+	.mobileHmburger a span{
+		width: 25px;
+	    height: 3px;
+	    background: #fff;
+		margin: 0 0 3px 0;
+		display: block;
+	}
+	.mobileHmburger a span:last-child{
+		margin: 0;
+	}
+	.mbleftPanel{
+		background: #fff;
+	    width: 310px;
+	    padding: 10px;
+	    position: fixed;
+	    top: 0px;
+	    right: -1000px;
+	    z-index: 99;
+	    transition: 1.5s;
+	    -webkit-transition: 1.5s;
+	    height: 95%;
+	    overflow: scroll;
+	    border: 1px solid #ccc;
+	    box-shadow: 5px 5px 5px #a9a8a8;
+	}
+	.mbleftPanel.mbleftPanelOpen{
+		right: 0;
+	}
+	.panelclose{
+		display: inline-block;
+	    text-decoration: none;
+	    /*background: #052195;
+	    padding: 5px;*/
+	}
+	.panelclose img{
+		/*width: 20px;*/
+	}
+	.leftPanelInfo{
+		padding: 10px 0;
+	}
+	.leftPanelInfoBlock{
+		border-bottom: 1px solid #848484;
+    	margin: 0 0 20px 0;
+	}
+	.leftPanelInfoRow{
+		overflow: hidden;
+		margin: 0 0 2px 0;
+		padding: 8px 0;
+		border-bottom: 1px solid #ccc;
+	}
+	.leftPanelInfoRow:last-child{
+		border-bottom: none;
+	    text-align: left;
+	    padding-left: 50px;
+	}
+	.leftPanelInfoRow span.dpforMb{
+		margin-right: 10px;
+		float: left;
+	}
+	.leftPanelInfoRow span.dpforMb img{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+	.leftPanelInfoRow p{
+		font-size: 14px;
+	    line-height: 20px;
+	    color: #535353;
+	    font-weight: 400;
+		font-family: Roboto;
+		margin: 0 0 5px 0;
+	}
+	.leftPanelInfoRow p span{
+		color: #000;
+		font-size: 15px;
+		font-weight: 600;
+	}
+	.leftPanelInfoRow:first-child p{
+		margin-left: 50px;
+	}
+	.leftPanelInfoRow h5{
+		margin-left: 50px;
+		font-size: 16px;
+		line-height: 22px;
+		color: #710d16;
+		font-family: Roboto;
+		margin: 0 0 5px 0;
+		font-weight: 600;
+	}
+	.leftPanelInfo .updateShare{
+		padding: 10px 0 0 0;
+	}
+	.leftPanelInfo .updateShare a{
+		background: #d6d6d6;
+	}
+	.communityLeftpanel{
+		display: none;
+	}
+	.commPicSec{
+		position: absolute;
+	    top: -60px;
+	    left: 0px;
+	    transform: translate(0, 0);
+	    -webkit-transform: translate(0, 0);
+	    -moz-transform: translate(0, 0);
+	    text-align: center;
+	    width: 100%;
+	}
+	.CommunityCompnyInfo h4, .commProfileBlock h4{
+		font-size: 17px;
+	}
+	.profileCover > img {
+    	height: 150px;
+    }
+    .coveredit label{
+    	padding: 5px 10px;
+    }
+    .commPic img {
+	    width: 100px;
+	    height: 100px;
+	}
+	.profilecommInfo h3{
+		text-align: center;
+	}
+	.profilecommInfo {
+	    padding:10px 0 0px 0;
+	}
+	.profilecommInfo p{
+		margin: 0 0 6px 0;
+		text-align: center;
+	}
+	.profileCoverOuter{
+		margin: 0 0 10px 0;
+	}
+	.communityEditOuter a{
+		font-size: 14px;
+	    line-height: 20px;
+	    padding: 6px 6px;
+	    margin: 0 4px 4px 0;
+	}
+	.genInfoEdit a span{
+		display: none;
+	}
+	/*.skillTable tr{
+		display: block;
+	}
+	.skillTable tr td,
+	.skillTable tr th{
+		display: block;
+	}*/
+	.CommunityCompnyInfo h4, .commProfileBlock h4, .communityPhoto h4{
+		margin: 0 0 10px 0;
+	}
+	.comprofileEditOuter{
+		margin: 0 0 10px 0;		
+	}
+	.communityPhotohead {
+	    padding: 15px;
+	}
+	.communityEditOuter {
+	    text-align: center;
+	}
+	.communityPhoto .tabpanel .nav-tabs .nav-item:after{
+		display: none;
+	}
+	.communityPhoto .tabpanel{
+		padding: 20px 14px;
+	}
+	.communityPhoto .tabpanel .nav-tabs .nav-item{
+		margin: 0;
+	}
+	.commProfileBlock ul.dashboardListing li{
+		width: 100%;
+	}
+	.commProfileBlock ul.dashboardListing li:first-child,
+	.commProfileBlock ul.dashboardListing li:last-child,
+	.commProfileBlock ul.dashboardListing li{
+		border-radius: 50px;
+		border-right: 1px solid #ccc;
+		margin: 0 0 5px 0;
+	}
+	.articleLeft{
+		width: auto;
+	    display: block;
+	    vertical-align: top;
+	    margin: 0 0 8px 0;
+	}
+	.articleLeft img {
+	    width: 80px;
+	    height: 70px;
+	}
+	.tagTxtOuter span{
+		margin: 0 8px 8px 0;
+	}
+	.commProfileBlock{
+		padding: 15px 15px;
+    	margin: 0 0 10px 0;
+	}
+	.commProfileBlock ul.activityList{
+		margin: 0 0 10px 0;
+	    border-top: 1px solid #ccc;
+	    padding: 10px 0 0 0;
+	    border-bottom: 1px solid #ccc;
+	}
+	.activityListOuter h4{
+		margin: 0;
+		text-align: center;
+	}
+	.activityListOuter h4{
+		text-transform: uppercase;
+	}
+	.currentLogo {
+	    text-align: left;
+	    margin: 0 0 20px 0;
+	}
+	.visitSiteOuter {
+	    text-align: left;
+	    margin: 0 0 15px 0;
+	    overflow: hidden;
+	}
+	.visitSiteOuter a.followLink{
+		margin: 4px 0 4px 0;
+	    float: left;
+	}
+	.visitSite{
+		float: right;
+	}	
+	.companyMenubar ul li ul {
+	    right: 0;
+	    left: auto;
+	}
+	.companyOuter{
+		padding: 20px 0 0 0;
+	}
+	.communityCompanyAbout ul li span{
+		width: 40%;
+	}
+
+	.commPic {
+	    position: inherit;
+	    top: 0;
+	    text-align: center;
+	    border-radius: 100%;
+	    overflow: hidden;
+	    width: 90px;
+	    height: 90px;
+	    border: 2px solid #fff;
+	    margin: 0 auto;
+	    margin-top: -40px;
+	}
+
+	.genInfoEdit {
+	    padding: 12px 0 5px 0;
+	    border-top: 1px solid #fff;
+	}
+
+	.albm-frm .form-inline .form-group{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+
+	.communityEditOuter a{
+		margin: 5px 2px;
+	}
+}
+
+@media (max-width: 599px) {
+    .commentCountouter{
+    	text-align: left;
+    	padding: 5px 0px 0 0;
+    }
+    .boostOuter{
+		text-align: left;
+	}
+	.companyMenubar ul li a{
+		font-size: 14px;
+	    line-height: 20px;
+	    padding: 10px 9px;
+	}
+	.companyMenubar ul li ul {
+	    top: 40px;
+	}
+	.companyMenubar ul li.hasdropdown > a {
+	    background: url(../images/downArrow3.png) no-repeat;
+	    background-position: calc(100% - 5px) center;
+	    padding-right: 20px;
+	    background-size: 9px;
+	}
+	.companyMenubar ul li.hasdropdown > a:hover {
+	    background: #ea4756 url(../images/downArrow3.png) no-repeat;
+	    background-position: calc(100% - 5px) center;
+	    background-size: 9px;
+	}
+	.communityCompanyAbout ul li span{
+		width: 100%;
+	}
+}
+@media (max-width: 479px) {
+	.communityEditOuter a {
+	    font-size: 12px;
+	    line-height: 20px;
+	    padding: 3px 3px;
+	    margin: 0px 2px 2px 0;
+	    margin: 5px 2px;
+	}
+	.CommunityCompnyInfo h4, .commProfileBlock h4 {
+	    font-size: 16px;
+	}
+}
+@media (max-width: 400px) {
+	.companyMenubar ul li a{
+		padding: 10px 6px;
+	}
+}
+@media (max-width: 374px) {
+	.companyMenubar ul li {
+		display: block;
+	}
+	.companyMenubar ul li a{
+		display: block;
+	}
+	.companyMenubar ul li a:after {
+	    content: '';
+	    position: absolute;
+	    top: auto;
+	    right: auto;
+	    width: 100%;
+	    height: 1px;
+	    background: #5675f4;
+	    bottom: 0;
+	    left: 0;
+	}
+}

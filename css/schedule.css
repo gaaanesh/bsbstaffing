@@ -1,0 +1,159 @@
+.scheduleSelectOuter{
+	background: #f2f2f2;
+	padding: 10px;
+	/*width: 70%;
+	display: inline-block;*/
+}
+.scheduleSelectHead{
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+}
+.scheduleSelectHead h4{
+	font-size: 22px;
+	line-height: 28px;
+	font-family: Raleway;
+	margin: 0;
+	color: #062195;
+	text-align: center;
+}
+.scheduleSelectBody{
+	border: 1px solid #ddd;
+}
+.scheduleSelectWeek {
+	display: table;
+	width: 100%;
+}
+.scheduleSelectWeekCol {
+	display: table-cell;
+	vertical-align: top;
+	padding: 10px;
+	width: 14.28%;
+	text-align: center;
+	background: #616362;
+    border-right: 1px solid #3c3e3d;
+}
+.scheduleSelectWeekCol:last-child{
+	border-right: none;
+}
+.scheduleSelectWeekCol p{
+	font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    font-family: Raleway;
+}
+.scheduleSelectDay {
+	display: flex;
+	width: 100%;
+}
+.scheduleSelectDayCol {
+	display: table-cell;
+	vertical-align: top;
+	padding: 10px;
+	width: 14.28%;
+}
+.scheduleSelectDayCol label span:before,
+.scheduleSelectDayCol label span:after{
+	display: none;
+}
+.scheduleSelectDayCol label {
+	display: block;
+	width: 100%;
+}
+.scheduleSelectDayCol input[type="checkbox"]+span:not(.lever){
+	border: 1px solid #b7b5b5;
+    padding: 3px 8px;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: Roboto;
+    color: #757575;
+    height: 30px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.scheduleSelectDayCol input[type="checkbox"]:checked+span:not(.lever) {
+	background: #1f8263;
+	color: #fff;
+}
+.timeSelect {
+	/*width: 27%;
+    display: inline-block;*/
+    background: #f9f9f9;
+    padding: 20px 30px;
+    display: none;
+    /*margin-left: 20px;*/
+}
+.timeSelect select {
+    display: block !important;
+    border: none !important;
+    border-bottom: 1px solid #8591b9 !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../images/downArrow1.png) no-repeat !important;
+    background-position: calc(100% - 10px) center !important;
+    padding-left: 0px;
+    font-size: 15px;
+}
+.timeSelect select:focus{
+	outline: none;
+}
+.prevCal{
+	display: inline-block;
+	text-decoration: none;
+	width: 20px;
+	height: 20px;
+	background: url(../images/leftArrow4.png) no-repeat 0px 5px;
+    background-size: 10px;
+}
+.nxtCal{
+	display: inline-block;
+	text-decoration: none;
+	width: 20px;
+	height: 20px;
+	background: url(../images/rightArrow7.png) no-repeat 10px 5px;
+    background-size: 10px;
+}
+.registrationForm button{
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+	background: #4154f1;
+	padding: 10px;
+	border-radius: 5px;
+	background-image: linear-gradient(#e21f26, #ab1318);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
+	border: none;
+}
+.registrationForm button:hover{
+	background-size: 100% 100%;
+	color: #fff;
+}
+.registrationForm button:focus{
+	outline: none;
+}
+
+@media (max-width: 479px){
+	.scheduleSelectBody{
+		overflow-x: scroll;
+	}
+	.scheduleSelectWeek,
+	.scheduleSelectDay{
+		width: 430px;
+		display: inline-block;
+	}
+	.scheduleSelectWeekCol,
+	.scheduleSelectDayCol{
+		display: inline-block;
+		width: 13.5%;
+	}
+	.scheduleSelectWeek{
+		background: #616362;
+	}
+}

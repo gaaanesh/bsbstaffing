@@ -1,0 +1,1135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bsb Job Portal</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/style-search.css">
+    <link rel="stylesheet" type="text/css" href="css/common-style.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style-search.css">
+    
+    <link rel="stylesheet" type="text/css" href="../src/styles.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/bootstrap/dist/css/bootstrap.min.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/font-awesome/css/font-awesome.min.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/toastr/build/toastr.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/flatpickr/dist/flatpickr.min.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/sweetalert2/dist/sweetalert2.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/font-awesome.min.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/ngx-lightbox/lightbox.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/jquery.fancybox.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/slick.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/style.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/schedule.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/modal.css">
+              <link rel="stylesheet" type="text/css" href=".././node_modules/summernote/dist/summernote-lite.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/materialize.min.css">
+              <link rel="stylesheet" type="text/css" href="../src/assets/css/common-style.css">
+              <link rel="stylesheet" type="text/css" href="css/v2-form-style.css">
+           
+
+    <!-- remove after submit -->
+    <style>
+        .profileMenu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .newProfileSection {
+                padding: 60px 0 20px 0;
+            }
+        }
+
+        .tab-navigation input[type=text]:not(.browser-default) {
+            font-size: 1.75rem;
+            font-family: roboto;
+            font-weight: 500;
+            color: #212529
+        }
+    </style>
+</head>
+
+<body>
+    <!-- START HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="logoContainer">
+                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-9 col-sm-6 col-6">
+                    <div class="navMenu">
+                    </div>
+                    <div class="menuhold">
+                        <div class="profileMenu">
+                            <a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                            <ul>
+                                <li><a href="#">Messages <span>1</span></a></li>
+                                <li><a href="#">Notifications <span>1</span></a></li>
+                                <li><a href="#">LogOut</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="hmburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <div class="menu-wrap">
+                            <span class="menuClose">
+                                <span class="item"></span>
+                                <span class="item"></span>
+                                <span class="item"></span>
+                            </span>
+                            <div class="navMenuOuter">
+                                <ul class="mobileMenu">
+                                    <li><a href="employee-dashboard.html">Dashboard</a></li>
+                                    <li class="hasDropdown"><a href="#">Search by Category</a>
+                                        <ul>
+                                            <li><a href="search-result-listing.html">Search by Country</a></li>
+                                            <li><a href="search-result-listing.html">Search by City</a></li>
+                                            <li><a href="search-result-listing.html">Search by Job Role</a></li>
+                                            <li><a href="search-result-listing.html">Search by Industry</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hasDropdown"><a href="#">Jobs For You</a>
+                                        <ul>
+                                            <li><a href="employee-job-alerts.html">Job Alerts</a></li>
+                                            <li><a href="employee-applied-jobs.html">Applied Job</a></li>
+                                            <li><a href="employee-savedjobs.html">Saved Job</a></li>
+                                            <li><a href="employee-apply-hiring.html">Local Walk-in</a></li>
+                                            <li><a href="">International Walk-in</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="employee-application-status.html">Application Status</a></li>
+                                    <!-- <li><a href="#">Recruiter Action</a></li> -->
+                                    <li class="hasDropdown"><a href="#">We Offer Training</a>
+                                        <ul>
+                                            <li><a href="training_getting_job.html">Training Getting Job</a></li>
+                                            <li><a href="working_visa_training.html">Working Visa Training</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="employee-mailbox.html">Mailbox</a></li>
+                                    <li class="hasDropdown"><a href="employee-profile.html" class="active">Profile</a>
+                                        <ul>
+                                            <li><a href="#">Change Password</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-0 col-sm-12 col-xs-12">
+                    <ul class="afterLoginEmployee">
+                        <li>
+                            <h5>Welcome User</h5>
+                        </li>
+                        <li><a href="#"><img src="images/msgIcon.png" alt="msgIcon"><span class="count">1</span></a>
+                        </li>
+                        <li><a href="#"><img src="images/bellIcon.png" alt="bellIcon"><span class="count">1</span></a>
+                        </li>
+                        <li><a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                            <ul>
+                                <li><a href="#">LogOut</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- START SECOND HEADER -->
+    <section class="menuBar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <ul>
+                        <li><a href="employee-dashboard.html">Dashboard</a></li>
+                        <li class="hasDropdown"><a href="#">Search by Category</a>
+                            <ul>
+                                <li><a href="employee-search-country.html">Search by Country</a></li>
+                                <li><a href="employee-search-city.html">Search by City</a></li>
+                                <li><a href="employee-search-jobrole.html">Search by Job Role</a></li>
+                                <li><a href="employee-search-industry.html">Search by Industry</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasDropdown"><a href="#">Jobs For You</a>
+                            <ul>
+                                <li><a href="employee-job-alerts.html">Job Alerts</a></li>
+                                <li><a href="employee-applied-jobs.html">Applied Job</a></li>
+                                <li><a href="employee-savedjobs.html">Saved Job</a></li>
+                                <li><a href="employee-apply-hiring.html">Local Walk-in</a></li>
+                                <li><a href="employee-apply-hiring-international.html">International Walk-in</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="employee-application-status.html">Application Status</a></li>
+                        <li class="hasDropdown"><a href="#">We Offer Training</a>
+                            <ul>
+                                <li><a href="training_getting_job.html">Training Getting Job</a></li>
+                                <li><a href="working_visa_training.html">Working Visa Training</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="employee-mailbox.html">Mailbox</a></li>
+                        <li><a href="employee-profile.html">Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECOND HEADER -->
+    <!-- START REGISTRATION FORM -->
+    <section class="newSearchSection">
+        <div class="container">
+            <div class="card border shadow-none rounded">
+                <div class="card-content">
+                    <div class="tab-container">
+                        <h1 class="h3 mt-2 d-md-flex d-block justify-content-between mb-5">
+                            <div>Post a Premium Domestic waik in intervew<span class="badge badge-success text-white font-weight-normal mt-1">Now FREE</span><br/><span class="small text-muted">A great hire, Delivering quality hires</span></div>
+                              <!-- Dropdown Trigger -->
+                              <!-- <div class="d-inline-block d-md-none">
+                                <a class='dropdown-trigger' href='#' data-target='dropdown1'><span class="material-icons">
+                                    more_vert
+                                    </span></a>
+
+                                <ul id='dropdown1' class='dropdown-content w-50'>
+                                    <li><a href="search-history-listing.html">Search&nbsp;history</a></li>
+                                    <li><a href="save-search-listing.html">Saved&nbsp;Search</a></li>
+                                </ul>
+                            </div> -->
+                                <div class="col-md-5 d-block d-md-inline-block p-0 mt-3 mt-md-0">
+                                    <!-- d-none d-md-inline-block -->
+                                   <select name="" id="">
+                                       <option value="">Previously posted a Premium Domestic waik in interview</option>
+                                        <option>Business Development Executive</option>
+                                        <option>Social Media Marketing</option>
+                                        <option>Senior UX Designer</option>
+                                        <option>Sr. Content writer at Mumbai Locatoon</option>
+                                        <option>Frontend Engineer at google</option>
+                                        <option>Fullstack Developer (Banglore)</option>
+                                   </select>
+                                </div>
+                        </h1>
+
+
+                        <div id="tabsearch-1" class="tab-content-search">
+                            <form action="" class="v2-formdesign">
+                                <div class="row">
+                                    <div class="input-field col-md-6">
+                                        <span class="material-icons  prefix">
+                                            business_center
+                                        </span>
+                                        <input id="icon_prefix" type="text" class="validate">
+                                        <label for="icon_prefix">Job title</label>
+                                      </div>
+
+                                      <!-- <div class="input-field col-md-4">
+                                        <span class="material-icons prefix">
+                                            language
+                                            </span>
+                                        <select multiple>
+                                          <option value="" disabled>Select Country</option>
+                                          <option>France</option>
+                                          <option>Italy</option>
+                                          <option>Australia</option>
+                                          <option>India</option>
+                                        </select>
+                                        <label>Job Location Country</label>
+                                      </div> -->
+                                      <div class="input-field col-md-6">
+                                        <span class="material-icons  prefix">
+                                            location_on
+                                        </span>
+                                        <select multiple>
+                                          <option value="" disabled>Select City</option>
+                                          <option>Paris</option>
+                                          <option>Milan </option>
+                                          <option>Rome</option>
+                                          <option>Sydney</option>
+                                          <option>Melbourne</option>
+                                          <option>Kolkata</option>
+                                        </select>
+                                        <label>Job Location City</label>
+                                      </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mb-3">
+                                        <div for="">About this Job <span class="text-danger">*</span></div>
+                                        <div class="v2-summernote">
+                                            <div id="summernote"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                      <div class="input-field col-md-4">
+                                        <span class="material-icons prefix">
+                                            business
+                                            </span>
+                                        <select multiple>
+                                          <option value="" disabled>Industry</option>
+                                          <option>Advertising / MR / PR / Events</option>
+                                          <option>Advertisment</option>
+                                          <option>Agriculture</option>
+                                          <option>Agriculture / Dairy</option>
+                                          <option>Animation</option>
+                                          <option>Architecture / Interior Design</option>
+                                          <option>Astrology</option>
+                                          <option>Automobile / Auto Ancillaries</option>
+                                          <option>Aviation / Airline</option>
+                                          <option>BPO / Call Center</option>
+                                          <option>Banking / Financial Services</option>
+                                          <option>Broking</option>
+                                          <option>Catering</option>
+                                        </select>
+                                        <label>Select Industry</label>
+                                      </div>
+                                      <div class="input-field col-md-4">
+                                        <span class="material-icons prefix">
+                                            badge
+                                            </span>
+                                        <select>
+                                          <option value="" disabled selected>Employment for</option>
+                                          <option>International jobs</option>
+                                          <option>Domestic Jobs</option>
+                                          <option>Domestic / International jobs</option>
+                                        </select>
+                                        <!-- <label>Employment for</label> -->
+                                      </div>
+                                      <div class="input-field col-md-4">
+                                        <!-- <span class="material-icons  prefix">
+                                            location_on
+                                        </span> -->
+                                        <div class="chips chips-placeholder chips-autocomplete"></div>
+                                        <!-- <label>Job Location City</label> -->
+                                      </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mb-3">
+                                        <div for="">Primary Responsibility <span class="text-danger">*</span></div>
+                                        <div class="v2-summernote">
+                                            <div id="primaryResponsibility"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col-md-4">
+                                      <span class="material-icons prefix">
+                                          work
+                                          </span>
+                                      <select>
+                                        <option value="" disabled selected>- Select Exp -</option>
+                                        <option>Fresher</option>
+                                        <option>1 year</option>
+                                        <option>2 years</option>
+                                      </select>
+                                      <label>Minimum Experience</label>
+                                    </div>
+                                    <div class="input-field col-md-4">
+                                        <span class="material-icons prefix">
+                                            work
+                                            </span>
+                                        <select>
+                                          <option value="" disabled selected>- Select Exp -</option>
+                                          <option>Fresher</option>
+                                          <option>1 year</option>
+                                          <option>2 years</option>
+                                        </select>
+                                        <label>Maximum Experience</label>
+                                      </div>
+                                      <div class="input-field col-md-4">
+                                        <span class="material-icons prefix">
+                                            portrait
+                                            </span>
+                                        <select>
+                                          <option value="" disabled selected>- Select Type -</option>
+                                        <option>Select Candidate Type</option>
+                                        <option>Male &amp; Female both</option>
+                                        <option>Only for Male</option>
+                                        <option>Only for Female</option>
+                                        </select>
+                                        <label>Select Cadidate Type</label>
+                                      </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col-md-4">
+                                  <span class="material-icons prefix">
+                                      badge
+                                      </span>
+                                  <select>
+                                    <option value="" disabled selected>- Select Type -</option>
+                                    <option>Full Time</option>
+                                    <option>Part Time</option>
+                                    <option>Internship</option>
+                                    <option>Temporary</option>
+                                    <option>Work from home</option>
+                                    <option>Contract</option>
+                                    <option>Volunteer</option>
+                                  </select>
+                                  <label>Employment Type</label>
+                                </div>
+                                <div class="input-field col-md-4">
+                                    <span class="material-icons prefix">
+                                        people alt
+                                        </span>
+                                        <input id="icon_vacancy" type="text" class="validate">
+                                        <label for="icon_vacancy">No. of Vacancy</label>
+                                  </div>
+                                  <div class="input-field col-md-4">
+                                    <span class="material-icons prefix">
+                                        subtitles
+                                        </span>
+                                    <select>
+                                      <option value="" disabled selected>- Select -</option>
+                                      <option>English</option>
+                                      <option>German</option>
+                                      <option>Spanish</option>
+                                      <option>Hindi</option>
+                                    </select>
+                                    <label>Language Preference</label>
+                                  </div>
+                          </div>
+                        <div class="row">
+                            <div class="col mb-4">
+                                <div class="mb-2">Working Days and Timing <span class="text-danger">*</span></div>
+                                <div class="mb-2 ml-n2 text-muted">
+                                    <span class="day-time-chip">Sunday - <span class="opacity-3">Closed</span> </span>
+                                    <span class="day-time-chip">Monday - <span class="opacity-3">9AM to 5PM</span> </span>
+                                    <span class="day-time-chip">Tuesday - <span class="opacity-3">9AM to 5PM</span> </span>
+                                    <span class="day-time-chip">Wednesday - <span class="opacity-3">9AM to 5PM</span> </span>
+                                    <span class="day-time-chip">Thursday - <span class="opacity-3">9AM to 5PM</span> </span>
+                                    <span class="day-time-chip">Friday - <span class="opacity-3">9AM to 5PM</span> </span>
+                                    <span class="day-time-chip">Saturday - <span class="opacity-3">9AM to 1:30PM</span> </span>
+                                </div>
+                                <div>
+                                    <!-- <a class="btn btn-outline-primary"  data-toggle="modal"
+                                                            data-target="#saveToFolder"><i class="material-icons left text-success mr-2">add_circle_outline</i>Add</a> -->
+                                    <a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#saveToFolder"><i
+                                            class="material-icons left  mr-2">edit</i>Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-3">
+                                <div for="">Benefit for Employee <span class="text-danger">*</span></div>
+                                <div class="v2-summernote">
+                                    <div id="benefitEmployee"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div>
+                                    <span class="font-weight-bold">Education Details</span>
+                                </div>
+                                <div class="input-field">
+                                    <span class="material-icons  prefix">
+                                        school
+                                    </span>
+                                    <div class="select-wrapper">
+                                        <div class="chips chips-placeholder-degree"></div>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field col-md-6">
+                                <div>
+                                    <div class="mb-3">
+                                        <span class="font-weight-bold">Salary</span>
+                                    </div>
+                                    <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span>Hourly</span>
+                                        </label>
+                                    </p>
+                                    <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span>Weekly</span>
+                                        </label>
+                                    </p>
+                                    <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span>Monthly</span>
+                                        </label>
+                                    </p>
+                                    <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span>Annually</span>
+                                        </label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+
+                              <div class="input-field col-md-4">
+                                <span class="material-icons prefix">
+                                    payments
+                                    </span>
+                                <select>
+                                  <option value="" disabled selected>Currency</option>
+                                  <option>France</option>
+                                  <option>Italy</option>
+                                  <option>Australia</option>
+                                  <option>India</option>
+                                </select>
+                                <label>Select Currency</label>
+                              </div>
+                              <div class="input-field col-md-4">
+                                <span class="material-icons  prefix">
+                                    local_atm
+                                </span>
+                                <input id="icon_prefix_salary" type="number" class="validate">
+                                <label for="icon_prefix_salary">Min Salary</label>
+                              </div>
+                              <div class="input-field col-md-4">
+                                <span class="material-icons  prefix">
+                                    local_atm
+                                </span>
+                                <input id="icon_prefix_maxsalary" type="number" class="validate">
+                                <label for="icon_prefix_maxsalary">Max Salary</label>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 mt-3">
+                                <div>
+                                    <span class="font-weight-bold">Interview Details</span>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="row">    
+                                <div class="input-field col-md-4">
+                                    <span class="material-icons  prefix">
+                                        event
+                                    </span>
+                                    <input id="date" type="number" class="validate">
+                                    <label for="date">Select Date</label>
+                                </div>
+                                <div class="input-field col-md-4">
+                                    <span class="material-icons  prefix">
+                                        schedule
+                                    </span>
+                                    <input id="stime" type="number" class="validate">
+                                    <label for="stime">Start Time</label>
+                                </div>
+                                <div class="input-field col-md-4">
+                                    <span class="material-icons  prefix">
+                                        schedule
+                                    </span>
+                                    <input id="etime" type="number" class="validate">
+                                    <label for="etime">End Time</label>
+                                </div>
+                          
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-md-6">
+                              <span class="material-icons prefix">
+                                  fact_check
+                                  </span>
+                              <select>
+                                <option value="" disabled selected>Select Slot</option>
+                                <option>5 Mins</option>
+                                <option>10 Mins</option>
+                                <option>15 Mins</option>
+                                <option>20 Mins</option>
+                              </select>
+                              <label>Time Slot Per Candidate</label>
+                            </div>
+                            <div class="input-field col-md-6">
+                                <span class="material-icons prefix">
+                                    format_list_bulleted
+                                    </span>
+                                <select>
+                                  <option value="" disabled selected>Select Type</option>
+                                  <option>Walk in</option>
+                                  <option>Spot</option>
+                                  <option>Bulk Hiring</option>
+                                </select>
+                                <label>Interview Type</label>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mt-3">
+                                <div>
+                                    <span class="font-weight-bold">Interview</span>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="row">    
+                                <div class="input-field col-md-6">
+                                    <span class="material-icons  prefix">
+                                        meeting_room
+                                    </span>
+                                    <input id="venue" type="text" class="validate">
+                                    <label for="venue">Venue name</label>
+                                </div>
+                                <!-- <div class="input-field col-md-4">
+                                    <span class="material-icons prefix">
+                                        language
+                                        </span>
+                                    <select multiple>
+                                      <option value="" disabled>Select Country</option>
+                                      <option>France</option>
+                                      <option>Italy</option>
+                                      <option>Australia</option>
+                                      <option>India</option>
+                                    </select>
+                                    <label>Interview Location - Country</label>
+                                  </div> -->
+                                  <div class="input-field col-md-6">
+                                    <span class="material-icons  prefix">
+                                        location_on
+                                    </span>
+                                    <select multiple>
+                                      <option value="" disabled>Select City</option>
+                                      <option>Paris</option>
+                                      <option>Milan </option>
+                                      <option>Rome</option>
+                                      <option>Sydney</option>
+                                      <option>Melbourne</option>
+                                      <option>Kolkata</option>
+                                    </select>
+                                    <label>Interview Location - City</label>
+                                  </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-3 mt-2">
+                                <div for="">Venue Address<span class="text-danger">*</span></div>
+                                <div class="v2-summernote">
+                                    <div id="venueAddress"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col mb-3 mt-2">
+                                <div for="">Special Notes for Employee<span class="text-danger">*</span></div>
+                                <div class="v2-summernote">
+                                    <div id="specialNotes"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <span class="font-weight-normal h6 text-danger font-italic"> “Asking job seekers for any kind of payment is strictly prohibited.”</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="job-feature-wraper">
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                                    Receive only relevant job applications
+                                    <span class="d-block small p-0 subspan">Receive only relevant job applications</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                    Receive all job applications
+                                    <span class="d-block small p-0 subspan">60% Accuracy cv received</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                    Question answer wise job applications
+                                    <span class="d-block small p-0 subspan">95% Accuracy cv received</span>
+                                  </a>
+                                </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                   <div class="row">
+                                    <div class="input-field col s6 d-md-flex">
+                                        <div class="d-md-flex align-items-center">
+                                        <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                            <label>
+                                            <input type="checkbox" checked/>
+                                            <span> Experiance</span>
+                                            </label>
+                                        </p>
+                                        <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                            <label>
+                                            <input type="checkbox" />
+                                            <span> Industry</span>
+                                            </label>
+                                        </p>
+                                        <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                            <label>
+                                            <input type="checkbox" checked/>
+                                            <span> Location</span>
+                                            </label>
+                                        </p>
+                                        <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                            <label>
+                                            <input type="checkbox" checked/>
+                                            <span> Gender</span>
+                                            </label>
+                                        </p>
+                                        <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                            <label>
+                                            <input type="checkbox" checked/>
+                                            <span> Salary</span>
+                                            </label>
+                                        </p>
+                                        <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                            <label>
+                                            <input type="checkbox" />
+                                            <span> Education</span>
+                                            </label>
+                                        </p>
+                                        </div>
+                                        <div class="text-muted ml-3"><i>“It helps to avoid junk cv recived from the job seeker and get filtered accurate data.”</i></div>
+                                    </div>
+                                   </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    
+                                    <div class="row">
+                                        <div class="input-field col s6 d-md-flex">
+                                            <div class="d-md-flex align-items-center">
+                                            <p class="custom-control custom-radio custom-control-inline pl-0 pr-md-3">
+                                                <label>
+                                                <input type="checkbox" checked/>
+                                                <span> All</span>
+                                                </label>
+                                            </p>
+                                            </div>
+                                            <div class="text-muted ml-md-5">“It helps to avoid junk cv recived from the job seeker and get filtered accurate data.”</div>
+                                        </div>
+                                       </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                    
+                                    <div class="row">
+                                        <div class="col mb-3 mt-2">
+                                            <div class="d-flex justify-content-between">
+                                                <div>Question <span>1</span></div>
+                                                <a href="#" class="">
+                                                    <span class="material-icons">
+                                                    delete
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="v2-summernote">
+                                                <div id="AddQuestions"></div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#saveToFolder"><i class="material-icons left mr-2">add</i>Add Question</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                                <div class="row">
+                                    <div class="input-field col text-center">
+                                        <button type="submit" class="btn btn-primary mr-2">Preview</button>
+                                        <button type="submit" class="btn btn-outline-primary">Reset</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+
+               
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- END REGISTRATION FORM -->
+
+      <!-- Start Save to folder Modal -->
+      <div class="modal" tabindex="-1" role="dialog" id="saveToFolder">
+        <div class="modal-content p-0">
+            <div class="modal-header pb-0 border-bottom-0">
+                <h5 class="modal-title pl-3">Working Days and Timings</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="pl-3 pr-3">
+                    <form action="" class="working-time-form v2-formdesign">
+                        <div class="part-sec">
+                            <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                <div class="col-md-3">
+                                    <label class="mb-0">
+                                        <input name="check-working" type="checkbox" />
+                                        <span class="text-dark">Sunday
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="mb-0 p" style="color:#a6acbd">
+                                        Closed
+                                    </span>
+                                </div>
+                               
+                            </div>
+                                    <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                        <div class="col-md-3">
+                                            <label class="mb-0">
+                                                <input name="check-working" type="checkbox" checked />
+                                                <span class="text-dark">Monday
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="input-field mb-0 mt-2">
+                                                <select>
+                                                    <option value="">24 Hours</option>
+                                                    <option selected>12:00 AM</option>
+                                                    <option>12:30 AM</option>
+                                                  </select>
+                                                  <label>Start Time</label>
+                                              </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="input-field mb-0 mt-2">
+                                                <select>
+                                                    <option value="">24 Hours</option>
+                                                    <option>6:00 PM</option>
+                                                    <option selected>6:30 PM</option>
+                                                  </select>
+                                                  <label>Start Time</label>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                        <div class="col-md-3">
+                                            <label class="mb-0">
+                                                <input name="check-working" type="checkbox" checked />
+                                                <span class="text-dark">Tuesday
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="input-field mb-0 mt-2">
+                                                <select>
+                                                    <option value="">24 Hours</option>
+                                                    <option>12:00 AM</option>
+                                                    <option>12:30 AM</option>
+                                                  </select>
+                                                  <label>Open</label>
+                                              </div>
+                                        </div>
+                                        <div class="col-md-3" style="display: none;">
+                                            <div class="input-field mb-0 mt-2">
+                                                <select>
+                                                    <option value="">24 Hours</option>
+                                                    <option>12:00 AM</option>
+                                                    <option>12:30 AM</option>
+                                                  </select>
+                                                  <label>Start Time</label>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                        <div class="col-md-3">
+                                            <label class="mb-0">
+                                                <input name="check-working" type="checkbox" checked/>
+                                                <span class="text-dark">Wednesday
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="input-field mb-0 mt-2">
+                                                <select>
+                                                    <option value="">24 Hours</option>
+                                                    <option selected>12:00 AM</option>
+                                                    <option>12:30 AM</option>
+                                                  </select>
+                                                  <label>Start Time</label>
+                                              </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="input-field mb-0 mt-2">
+                                                <select>
+                                                    <option value="">24 Hours</option>
+                                                    <option>6:00 PM</option>
+                                                    <option selected>6:30 PM</option>
+                                                  </select>
+                                                  <label>Start Time</label>
+                                              </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                        <div class="col-md-3">
+                                            <label class="mb-0">
+                                                <input name="check-working" type="checkbox" checked/>
+                                                <span class="text-dark">Thursday
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="input-field mb-0 mt-2">
+                                                <select>
+                                                    <option value="">24 Hours</option>
+                                                    <option selected>12:00 AM</option>
+                                                    <option>12:30 AM</option>
+                                                  </select>
+                                                  <label>Start Time</label>
+                                              </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="input-field mb-0 mt-2">
+                                                <select>
+                                                    <option value="">24 Hours</option>
+                                                    <option>6:00 PM</option>
+                                                    <option selected>6:30 PM</option>
+                                                  </select>
+                                                  <label>Start Time</label>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                        <div class="col-md-3">
+                                            <label class="mb-0">
+                                                <input name="check-working" type="checkbox" checked/>
+                                                <span class="text-dark">Friday
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="input-field mb-0 mt-2">
+                                                <select>
+                                                    <option value="">24 Hours</option>
+                                                    <option selected>12:00 AM</option>
+                                                    <option>12:30 AM</option>
+                                                  </select>
+                                                  <label>Start Time</label>
+                                              </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="input-field mb-0 mt-2">
+                                                <select>
+                                                    <option value="">24 Hours</option>
+                                                    <option>6:00 PM</option>
+                                                    <option selected>6:30 PM</option>
+                                                  </select>
+                                                  <label>Start Time</label>
+                                              </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                        <div class="col-md-3">
+                                            <label class="mb-0">
+                                                <input name="check-working" type="checkbox" />
+                                                <span class="text-dark">Saturday
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <span class="mb-0 p" style="color:#a6acbd">
+                                                Closed
+                                            </span>
+                                        </div>
+                                    </div>
+                        </div>
+                        <!-- <div class="alert alert-success" role="alert">
+                            Saved successfully
+                        </div> -->
+                        <div class="submitOuter">
+                            <button type="submit" class="btn">Save</button>
+                            <button type="submit" class="btn btn-outline-primary">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Save to folder Modal -->
+
+
+    <!-- START FOOTER -->
+    <footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12 col-xs-12">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12">
+                        <div class="copyrightPara">
+                            <p>&copy; 2018. All rights reserved. Developed by <a href="#" target="_blank">Pixel
+                                    Solutionz</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- START FOOTER -->
+
+    <!-- jQuery first, then Bootstrap JS -->
+
+    <!-- <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script> -->
+
+    <script type="text/javascript" src=".././node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/toastr/build/toastr.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/flatpickr/dist/flatpickr.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/sweetalert2/dist/sweetalert2.js"></script>
+    <script type="text/javascript" src=".././node_modules/sharer.js/sharer.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="../node_modules/summernote/dist/summernote-lite.js"></script>
+    <script type="text/javascript" src=".././node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/jszip/dist/jszip.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/jszip-utils/dist/jszip-utils.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/file-saver/dist/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/othersource/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/othersource/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/othersource/circular_test.js"></script>
+    <script type="text/javascript" src="../src/assets/js/othersource/TextPlugin.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/custom.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#summernote').summernote({
+                // placeholder: 'Hello Bootstrap 4',
+        // tabsize: 2,
+        height: 100
+            });
+            $('#primaryResponsibility').summernote({
+                // placeholder: 'Hello Bootstrap 4',
+        // tabsize: 2,
+        height: 100
+            });
+            
+            $('#benefitEmployee').summernote({
+                // placeholder: 'Hello Bootstrap 4',
+        // tabsize: 2,
+        height: 100
+            });
+            $('#specialNotes').summernote({
+                // placeholder: 'Hello Bootstrap 4',
+        // tabsize: 2,
+        height: 100
+            });
+            $('#AddQuestions').summernote({
+                // placeholder: 'Hello Bootstrap 4',
+        // tabsize: 2,
+        height: 100
+            });
+            $('#venueAddress').summernote({
+                // placeholder: 'Hello Bootstrap 4',
+        // tabsize: 2,
+        height: 100
+            });
+        });
+       
+            
+
+        
+      </script>
+
+    <script>
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.chips');
+    var instances = M.Chips.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $('.chips').chips();
+  $('.chips-initial').chips({
+    data: [{
+      tag: 'PHP',
+    }, {
+      tag: 'HTML',
+    }, {
+      tag: 'CSS',
+    }],
+  });
+  $('.chips-placeholder').chips({
+    placeholder: 'Add Skill',
+    secondaryPlaceholder: '+Skill',
+  });
+  $('.chips-autocomplete').chips({
+    autocompleteOptions: {
+      data: {
+        'PHP': null,
+        'HTML': null,
+        'CSS': null
+      },
+      limit: Infinity,
+      minLength: 1
+    }
+  });
+  $('.chips-placeholder-degree').chips({
+    placeholder: 'Choose Degree',
+    secondaryPlaceholder: '+Degree',
+  });
+  
+
+
+
+      
+  $('.dropdown-trigger').dropdown();
+
+
+    </script>
+
+
+</body>
+
+</html>

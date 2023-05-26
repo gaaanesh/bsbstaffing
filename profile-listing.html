@@ -1,0 +1,1929 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bsb Job Portal</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- Materialize -->
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <!-- Viewbox -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- owl -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style-profile-listing.css">
+    <link rel="stylesheet" type="text/css" href="css/common-style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- remove after submit -->
+    <style>
+        .profileMenu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .newProfileSection {
+                padding: 60px 0 20px 0;
+            }
+        }
+
+        .tab-navigation input[type=text]:not(.browser-default) {
+            font-size: 1.2rem;
+            font-family: roboto;
+            font-weight: 500;
+            color: #212529
+        }
+    </style>
+</head>
+
+<body>
+    <!-- START HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="logoContainer">
+                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-9 col-sm-6 col-6">
+                    <div class="navMenu">
+                    </div>
+                    <div class="menuhold">
+                        <div class="profileMenu">
+                            <a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                            <ul>
+                                <li><a href="#">Messages <span>1</span></a></li>
+                                <li><a href="#">Notifications <span>1</span></a></li>
+                                <li><a href="#">LogOut</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="hmburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <div class="menu-wrap">
+                            <span class="menuClose">
+                                <span class="item"></span>
+                                <span class="item"></span>
+                                <span class="item"></span>
+                            </span>
+                            <div class="navMenuOuter">
+                                <ul class="mobileMenu">
+                                    <li><a href="employee-dashboard.html">Dashboard</a></li>
+                                    <li class="hasDropdown"><a href="#">Search by Category</a>
+                                        <ul>
+                                            <li><a href="search-result-listing.html">Search by Country</a></li>
+                                            <li><a href="search-result-listing.html">Search by City</a></li>
+                                            <li><a href="search-result-listing.html">Search by Job Role</a></li>
+                                            <li><a href="search-result-listing.html">Search by Industry</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hasDropdown"><a href="#">Jobs For You</a>
+                                        <ul>
+                                            <li><a href="employee-job-alerts.html">Job Alerts</a></li>
+                                            <li><a href="employee-applied-jobs.html">Applied Job</a></li>
+                                            <li><a href="employee-savedjobs.html">Saved Job</a></li>
+                                            <li><a href="employee-apply-hiring.html">Local Walk-in</a></li>
+                                            <li><a href="">International Walk-in</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="employee-application-status.html">Application Status</a></li>
+                                    <!-- <li><a href="#">Recruiter Action</a></li> -->
+                                    <li class="hasDropdown"><a href="#">We Offer Training</a>
+                                        <ul>
+                                            <li><a href="training_getting_job.html">Training Getting Job</a></li>
+                                            <li><a href="working_visa_training.html">Working Visa Training</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="employee-mailbox.html">Mailbox</a></li>
+                                    <li class="hasDropdown"><a href="employee-profile.html" class="active">Profile</a>
+                                        <ul>
+                                            <li><a href="#">Change Password</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-0 col-sm-12 col-xs-12">
+                    <ul class="afterLoginEmployee">
+                        <li>
+                            <h5>Welcome User</h5>
+                        </li>
+                        <li><a href="#"><img src="images/msgIcon.png" alt="msgIcon"><span class="count">1</span></a>
+                        </li>
+                        <li><a href="#"><img src="images/bellIcon.png" alt="bellIcon"><span class="count">1</span></a>
+                        </li>
+                        <li><a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                            <ul>
+                                <li><a href="#">LogOut</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- START SECOND HEADER -->
+    <section class="menuBar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <ul>
+                        <li><a href="employee-dashboard.html">Dashboard</a></li>
+                        <li class="hasDropdown"><a href="#">Search by Category</a>
+                            <ul>
+                                <li><a href="employee-search-country.html">Search by Country</a></li>
+                                <li><a href="employee-search-city.html">Search by City</a></li>
+                                <li><a href="employee-search-jobrole.html">Search by Job Role</a></li>
+                                <li><a href="employee-search-industry.html">Search by Industry</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasDropdown"><a href="#">Jobs For You</a>
+                            <ul>
+                                <li><a href="employee-job-alerts.html">Job Alerts</a></li>
+                                <li><a href="employee-applied-jobs.html">Applied Job</a></li>
+                                <li><a href="employee-savedjobs.html">Saved Job</a></li>
+                                <li><a href="employee-apply-hiring.html">Local Walk-in</a></li>
+                                <li><a href="employee-apply-hiring-international.html">International Walk-in</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="employee-application-status.html">Application Status</a></li>
+                        <li class="hasDropdown"><a href="#">We Offer Training</a>
+                            <ul>
+                                <li><a href="training_getting_job.html">Training Getting Job</a></li>
+                                <li><a href="working_visa_training.html">Working Visa Training</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="employee-mailbox.html">Mailbox</a></li>
+                        <li><a href="employee-profile.html">Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECOND HEADER -->
+    <!-- START REGISTRATION FORM -->
+    <section class="profileListingSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-content pb-3 pt-0">
+                            <h1 class="h5 mt-2 d-flex justify-content-between">
+                                <div><span class="d-none d-md-inline-block">Cadidate</span> Search by
+                                    <div class="tab-navigation d-inline-block" style="width: auto;">
+                                        <select id="select-box-search">
+                                            <option value="1"> keyword, skill etc.</option>
+                                            <option value="2">Name</option>
+                                            <option value="3">Email</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- <button class="openbtn" >☰ Open Sidebar</button>  -->
+                            </h1>
+                            <form action="">
+                                <div class="row">
+                                    <div class="input-field  mt-2 mb-2 mt-md-0 mb-md-0 col-md-12 s6">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="input-field mt-2 mb-2 mt-md-0 mb-md-0 flex-grow-1 search-head">
+                                                <i
+                                                    class="material-icons prefix text-muted d-none d-md-inline">search</i>
+                                                <input id="icon_prefix" type="text" class="validate">
+                                                <label for="icon_prefix">Search</label>
+                                            </div>
+                                            <div class="d-none d-md-flex justify-content-center">
+                                                <div class="btn-group align-items-center">
+                                                    <a href="" data-toggle="modal" data-target="#saveSearch">Save
+                                                        Search</a>
+                                                    <a class="dropdown-toggle dropdown-toggle-split"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">PHP people
+                                                            <div class="small text-muted">28 May 2021 6:45 AM</div>
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">HTML for US team
+                                                            <div class="small text-muted">28 May 2021 6:45 AM</div>
+                                                        </a>
+                                                        <a class="dropdown-item" href="#"><u>View All</u></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </form>
+                            <div class="row">
+                                <div class="col-md-10 p-1 mt-3 bg-light border">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="d-flex">
+                                            <span class="material-icons text-muted mr-2"
+                                                style="line-height: 0.6;"><small>history</small></span>
+                                            <p class="text-muted small">HTML, PHP, Wordpress, CSS, Javascript, Java |
+                                                India, United states, China | Mumbai, Navi mumbai, Delhi</p>
+                                        </a>
+                                        <a href="#" class="text-muted small d-none d-md-inline-block"><u>Continue last
+                                                search ></u></a>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-2 d-flex align-items-center pt-3">
+                                    <a href="#" class="d-flex">Recent search <span
+                                            class="material-icons">chevron_right</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="mySidebar" class="card sidebar-filter">
+                        <a href="javascript:void(0)" class="closebtn d-block d-md-none" onclick="closeNav()">×</a>
+                        <div class="card-content p-3">
+                            <ul class="nav nav-tabs nav-custom-tabs filter-tab" id="myTab" role="tablist">
+                                <li class="nav-item w-50" role="presentation">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                        aria-controls="home" aria-selected="true">Filter</a>
+                                </li>
+                                <li class="nav-item w-50" role="presentation">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="false">Advance filter</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content filterwrap" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <form action="">
+                                        <div class="row d-block d-md-none">
+                                            <div class="col">
+                                                <div class="input-field">
+                                                    <select>
+                                                        <option value="" selected>All</option>
+                                                        <option value="">Now online</option>
+                                                        <option value="">3 Days</option>
+                                                        <option value="">15 Days</option>
+                                                        <option value="">1 Month</option>
+                                                        <option value="">2 Months</option>
+                                                        <option value="">3 Months</option>
+                                                        <option value="">6 Months</option>
+                                                        <option value="">9 Months</option>
+                                                        <option value="">1 year</option>
+                                                    </select>
+                                                    <label>Candidates active in</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row d-block d-md-none">
+                                            <div class="col">
+                                                <div class="input-field">
+                                                    <select>
+                                                        <option value="" selected>All profiles</option>
+                                                        <option value="">Active job seeker</option>
+                                                        <option value="">Passive job seeker</option>
+                                                    </select>
+                                                    <label>Show</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="input-field">
+                                                    <i class="material-icons prefix">language</i>
+                                                    <input id="country" type="text" class="validate" value="India">
+                                                    <label for="country">Select country</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="input-field">
+                                                    <i class="material-icons prefix">location_on</i>
+                                                    <input id="city" type="text" class="validate" value="Mumbai, Delhi">
+                                                    <label for="city">Select city</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="input-field">
+                                                    <i class="material-icons prefix">business</i>
+                                                    <input id="Industry" type="text" class="validate">
+                                                    <label for="Industry">Select Industry</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h5 class="h5 mb-2 mt-4">Experience</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s6 mob-remove-icon">
+                                                <input id="minExp" type="text" class="validate">
+                                                <label for="minExp">Min Experience</label>
+                                            </div>
+                                            <div class="input-field col s6 mob-remove-icon">
+                                                <input id="maxExp" type="text" class="validate">
+                                                <label for="maxExp">Max Experience</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col-12 s6 mb-0">
+                                                <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        <span class="text-dark">Also include candidates with similar
+                                                            skills</span>
+                                                    </label>
+                                                </p>
+                                            </div>
+                                            <div class="input-field col-12 s6 mb-0">
+                                                <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        <span class="text-dark">Premium candidates only</span>
+                                                    </label>
+                                                </p>
+                                            </div>
+                                            <div class="input-field col-12 s6 mb-0">
+                                                <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        <span class="text-dark">Women candidates only</span>
+                                                    </label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h5 class="h5 mb-2 ">Salary</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                                    <label>
+                                                        <input name="group1" type="radio" />
+                                                        <span>Hourly</span>
+                                                    </label>
+                                                </p>
+                                                <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                                    <label>
+                                                        <input name="group1" type="radio" />
+                                                        <span>Weekly</span>
+                                                    </label>
+                                                </p>
+                                                <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                                    <label>
+                                                        <input name="group1" type="radio" />
+                                                        <span>Monthly</span>
+                                                    </label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col-12 s6">
+                                                <!-- <span class="material-icons prefix text-muted">
+                                                    payment
+                                                </span> -->
+                                                <select>
+                                                    <option disabled selected value>- Select Currency -</option>
+                                                    <option>France</option>
+                                                    <option>Italy</option>
+                                                    <option>Australia</option>
+                                                    <option>India</option>
+                                                </select>
+                                                <label>Currency</label>
+                                            </div>
+                                            <div class="input-field col-6 s6">
+                                                <input id="mini_salary" type="number" class="validate">
+                                                <label for="mini_salary">Min Salary</label>
+                                            </div>
+
+                                            <div class="input-field col-6 s6">
+                                                <input id="max_salary" type="number" class="validate">
+                                                <label for="max_salary">Max Salary</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h5 class="h5 mb-2 ">Employment details</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col-6 s6">
+                                                <input id="mini_age" type="number" class="validate">
+                                                <label for="mini_age">Min Age</label>
+                                            </div>
+
+                                            <div class="input-field col-6 s6">
+                                                <input id="max_age" type="number" class="validate">
+                                                <label for="max_age">Max Age</label>
+                                            </div>
+
+                                            <div class="input-field col-12 s6">
+                                                <select>
+                                                    <option disabled selected value>- Select language -</option>
+                                                    <option>English</option>
+                                                    <option>German</option>
+                                                    <option>Spanish</option>
+                                                    <option>Hindi</option>
+                                                </select>
+                                                <label>Language preference</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h5 class="h5 mb-2 ">Education details</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col-12 s6">
+                                                <select>
+                                                    <option value="" disabled selected>- Choose your option -</option>
+                                                    <option value="Bachelor of Arts.">Bachelor of Arts.</option>
+                                                    <option value="Bachelor of Science.">Bachelor of Science.</option>
+                                                    <option value="Bachelor of Commerce.">Bachelor of Commerce.</option>
+                                                    <option value="Bachelor of Engg./Tech.">Bachelor of Engg./Tech.
+                                                    </option>
+                                                    <option value="BMS/BBA/BBS.">BMS/BBA/BBS.</option>
+                                                    <option value="Bachelor of Law.">Bachelor of Law.</option>
+                                                    <option value="Bachelor of Medicine (MBBS)">Bachelor of Medicine
+                                                        (MBBS)</option>
+                                                    <option value="IIM 5-year Integrated Mgmt. Programme">IIM 5-year
+                                                        Integrated Mgmt. Programme</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                                <label>Qualifications</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div id="footer-mobile-filter" class="footer-filter d-block d-md-none">
+                                <div class="p-2 d-flex justify-content-between">
+                                    <div>
+                                        <button class="btn mr-2">Apply</button>
+                                        <a href="#">Reset filter</a>
+                                    </div>
+                                    <div class="d-flex align-self-center">
+                                        <div class="btn-group dropup align-items-center">
+                                            <a href="#" data-toggle="modal" data-target="#saveSearch">Save Search</a>
+                                            <a class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">PHP people
+                                                    <div class="small text-muted">28 May 2021 6:45 AM</div>
+                                                </a>
+                                                <a class="dropdown-item" href="#">HTML for US team
+                                                    <div class="small text-muted">28 May 2021 6:45 AM</div>
+                                                </a>
+                                                <a class="dropdown-item" href="save-search-listing.html"><u>View All</u></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+
+
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-content p-0">
+                                    <div class="profile-list-filter profile-list-filter-scroll">
+                                        <div class="row">
+                                            <div class="col">
+                                                <form action="">
+                                                    <div
+                                                        class="topfilter d-flex justify-content-between align-items-center">
+                                                        <div class="input-field  mt-2 mb-2 mt-md-0 mb-md-0 s6">
+                                                            <div class="d-md-flex d-block">
+                                                                <div class="pr-3">
+                                                                    <span>
+                                                                        <label class="m-0">
+                                                                            <input type="checkbox" id="checkFilter" />
+                                                                            <span class="pl-4">Select All</span>
+                                                                        </label>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="d-md-flex d-none">
+                                                                    <div class="input-field show m-0" id="checkButtons"
+                                                                        style="display: none;">
+                                                                        <!-- d-none d-md-flex-->
+                                                                        <a href="send-email-template.html"
+                                                                            class="btn btn-primary btn-small mr-2"><i
+                                                                                class="material-icons left">email</i>Send
+                                                                            Mail</a>
+                                                                        <a href="#" class="btn btn-primary btn-small"
+                                                                            data-toggle="modal"
+                                                                            data-target="#saveToFolder"><i
+                                                                                class="material-icons left">folder</i>Save
+                                                                            to folder</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-field cadidate-active pr-4 m-0 d-none d-md-flex"
+                                                                    id="show-check-filter">
+                                                                    <span class="mr-2">Candidates active in</span>
+                                                                    <select>
+                                                                        <option value="" selected>All</option>
+                                                                        <option value="">Now online</option>
+                                                                        <option value="">3 Days</option>
+                                                                        <option value="">15 Days</option>
+                                                                        <option value="">1 Month</option>
+                                                                        <option value="">2 Months</option>
+                                                                        <option value="">3 Months</option>
+                                                                        <option value="">6 Months</option>
+                                                                        <option value="">9 Months</option>
+                                                                        <option value="">1 year</option>
+                                                                    </select>
+                                                                    <!-- <label>Candidates active in</label> -->
+                                                                </div>
+                                                                <div class="input-field show m-0 d-none d-md-flex"
+                                                                    id="show-check-filter-1">
+                                                                    <span class="mr-2">Show</span>
+                                                                    <select>
+                                                                        <option value="" selected>All profiles</option>
+                                                                        <option value="">Active job seeker</option>
+                                                                        <option value="">Passive job seeker</option>
+                                                                    </select>
+                                                                    <!-- <label>Show</label> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex">
+                                                            <div class="d-flex justify-content-end custom-pagination">
+                                                                <span class="mr-3 small only-text">1-10 0f 28
+                                                                    results</span>
+                                                            </div>
+                                                            <a href="#" onclick="openNav()"
+                                                                class="d-inline-block d-md-none"><span
+                                                                    class="material-icons">filter_alt</span></a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="d-md-none d-flex">
+                                                        <div class="input-field show m-0" id="checkButtons2"
+                                                            style="display: none;">
+                                                            <!-- d-none d-md-flex-->
+                                                            <a href="send-email-template.html" class="btn btn-primary btn-small mr-2"><i
+                                                                    class="material-icons left">email</i>Send Mail</a>
+                                                            <a href="#" class="btn btn-primary btn-small"
+                                                                data-toggle="modal" data-target="#saveToFolder"><i
+                                                                    class="material-icons left">folder</i>Save to
+                                                                folder</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="profile-list">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="position-absolute listing-tophead-action">
+                                                    <div class="pl-2 pl-md-0 pr-2 pr-md-0">
+                                                        <span>
+                                                            <label>
+                                                                <input type="checkbox" />
+                                                                <span class="pl-4">&nbsp;</span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                    <div class="listing-action">
+                                                        <a href="#" class="text-muted"><span class="material-icons">
+                                                            favorite_border
+                                                            </span></a>
+                                                            <a href="#" class="text-info"><span class="material-icons">
+                                                                favorite
+                                                                </span></a>
+                                                        <a class='dropdown-trigger' href='#'
+                                                            data-target='dropdown1'><span class="material-icons">
+                                                                more_vert
+                                                            </span></a>
+
+                                                        <!-- Dropdown Structure -->
+                                                        <ul id='dropdown1' class='dropdown-content'>
+                                                            <li><a href="#!" data-toggle="modal"
+                                                                    data-target="#StageRecruitment">Select recruitment
+                                                                    stage</a></li>
+                                                            <li><a href="#!" data-toggle="modal"
+                                                                    data-target="#viewNoteModal">Add / view note</a>
+                                                            </li>
+                                                            <li><a href="#!"><span id="viewNumber1"
+                                                                        style="display:block" onclick="replace()">View
+                                                                        mobile no</span><span id="viewNumber2"
+                                                                        style="display:none"><strong>
+                                                                            <!--<span class="material-icons">call</span>-->+91
+                                                                            9867735357
+                                                                        </strong></span></a></li>
+                                                            <li><a href="#!" data-toggle="modal"
+                                                                    data-target="#viewHistory">View history</a></li>
+                                                            <li><a href="#!">View similar profiles</a></li>
+                                                            <li><a href="#!" data-toggle="modal"
+                                                                    data-target="#reportCandidate">Report candidate</a>
+                                                            </li>
+                                                            <li><a href="#!" data-toggle="modal"
+                                                                    data-target="#emailfroward">Forward</a></li>
+                                                            <li><a href="#!" data-toggle="modal"
+                                                                    data-target="#emailcompose">Send email</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 listing-avtar-column">
+                                                        <div class="row">
+                                                            <div class="col-4 col-md-4">
+                                                                <div class="mt-3 mt-md-2">
+                                                                    <div
+                                                                        class="d-flex align-items-center justify-content-center">
+                                                                        <div
+                                                                            class="z-depth-2 eprofilePic position-relative">
+                                                                            <a href="employee-profile-new.html">
+                                                                                <img src="images/profilePic1.jpg"
+                                                                                    class="w-100">
+                                                                                <div
+                                                                                    style="position: absolute;bottom: 0;">
+                                                                                    <img src="images/active-job-seeker.png"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <span class="now-online"></span>
+                                                                    </div>
+                                                                    <p class="text-muted mb-2 mt-3 text-center"><a
+                                                                            href="#" class="text-muted"
+                                                                            data-toggle="modal"
+                                                                            data-target="#viewNoteModal"><i
+                                                                                class="fa fa-eye"></i> View Note</a></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-8 col-8">
+                                                                <h2 class="h5 mt-3"><a
+                                                                        href="employee-profile-new.html">Sam Sundaram
+                                                                    </a></h2>
+                                                                <p class="h6 mb-2">Sr. UI/UX Designer</p>
+                                                                <p class="text-muted d-flex align-items-center"><span
+                                                                        class="material-icons mr-1"><small
+                                                                            class="position-relative"
+                                                                            style="top: -3px;">location_on</small></span>Mumbai,
+                                                                    Maharashtra</p>
+                                                                <p class="text-muted d-flex align-items-center"><span
+                                                                        class="material-icons mr-1"><small
+                                                                            class="position-relative"
+                                                                            style="top: -3px;">school</small></span>B.
+                                                                    Tech, BE, Other</p>
+                                                                <p class="mt-2"><a href="#" class="text-success mb-2"
+                                                                        data-toggle="modal"
+                                                                        data-target="#StageRecruitment">Matiching
+                                                                        profile <i class="fa fa-eye"></i></a></p>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="profile-head-desc pt-2">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <p class="pb-2">
+                                                                        <span
+                                                                            class="d-block text-muted">Experience:</span>
+                                                                        <strong>10 years, 6 months</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Current
+                                                                            Salary:</span>
+                                                                        <strong>12 Rp/hourly</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Skills:</span>
+                                                                        <strong>HTML, CSS, Javascript</strong>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="pb-2">
+                                                                        <span
+                                                                            class="d-block text-muted">Language:</span>
+                                                                        <strong>English, Hindi, Marathi</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Prefer
+                                                                            Country:</span>
+                                                                        <strong>India, US, Singapore</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Prefer
+                                                                            city:</span>
+                                                                        <strong>Banglore, Chennai, Mumbai</strong>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col text-md-right text-center text-muted mb-1">
+                                                        Last active: 6th Sep 2020
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-list premium-account">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="position-absolute listing-tophead-action">
+                                                    <div class="pl-2 pl-md-0 pr-2 pr-md-0">
+                                                        <span>
+                                                            <label>
+                                                                <input type="checkbox" />
+                                                                <span class="pl-4">&nbsp;</span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                    <div class="listing-action">
+                                                        <span class="material-icons text-warning">verified</span>
+                                                        <a class='dropdown-trigger' href='#'
+                                                            data-target='dropdown4'><span class="material-icons">
+                                                                more_vert
+                                                            </span></a>
+
+                                                        <!-- Dropdown Structure -->
+                                                        <ul id='dropdown4' class='dropdown-content'>
+                                                            <li><a href="#!">Select recruitment stage</a></li>
+                                                            <li><a href="#!">Add / view note</a></li>
+                                                            <li><a href="#!">View mobile no</a></li>
+                                                            <li><a href="#!">View history</a></li>
+                                                            <li><a href="#!">View similar profiles</a></li>
+                                                            <li><a href="#!">Report candidate</a></li>
+                                                            <li><a href="#!">Forward</a></li>
+                                                            <li><a href="#!">Send email</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6 listing-avtar-column">
+                                                        <div class="row">
+                                                            <div class="col-4 col-md-4">
+                                                                <div class="mt-3 mt-md-2">
+                                                                    <div
+                                                                        class="d-flex align-items-center justify-content-center">
+                                                                        <div
+                                                                            class="z-depth-2 eprofilePic position-relative">
+                                                                            <a href="employee-profile-new.html">
+                                                                                <img src="images/profilePic1.jpg"
+                                                                                    class="w-100">
+                                                                                <div
+                                                                                    style="position: absolute;bottom: 0;">
+                                                                                    <img src="images/active-job-seeker.png"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                            
+                                                                        </div>
+                                                                        <span class="now-online"></span>
+                                                                    </div>
+                                                                    <p class="text-muted mb-2 mt-3 text-center"><a
+                                                                            href="#" class="text-muted"><i
+                                                                                class="fa fa-eye"></i> View Note</a></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-8 col-8">
+                                                                <h2 class="h5 mt-3"><a
+                                                                        href="employee-profile-new.html">Sam Sundaram
+                                                                    </a></h2>
+                                                                <p class="h6 mb-2">Sr. UI/UX Designer</p>
+                                                                <p class="text-muted d-flex align-items-center"><span
+                                                                        class="material-icons mr-1"><small
+                                                                            class="position-relative"
+                                                                            style="top: -3px;">location_on</small></span>Mumbai,
+                                                                    Maharashtra</p>
+                                                                <p class="text-muted d-flex align-items-center"><span
+                                                                        class="material-icons mr-1"><small
+                                                                            class="position-relative"
+                                                                            style="top: -3px;">school</small></span>B.
+                                                                    Tech, BE, Other</p>
+                                                                <p class="mt-2"><a href="#"
+                                                                        class="text-success mb-2">Matiching profile <i
+                                                                            class="fa fa-eye"></i></a></p>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="profile-head-desc pt-2">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <p class="pb-2">
+                                                                        <span
+                                                                            class="d-block text-muted">Experience:</span>
+                                                                        <strong>10 years, 6 months</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Current
+                                                                            Salary:</span>
+                                                                        <strong>12 Rp/hourly</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Skills:</span>
+                                                                        <strong>HTML, CSS, Javascript</strong>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="pb-2">
+                                                                        <span
+                                                                            class="d-block text-muted">Language:</span>
+                                                                        <strong>English, Hindi, Marathi</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Prefer
+                                                                            Country:</span>
+                                                                        <strong>India, US, Singapore</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Prefer
+                                                                            city:</span>
+                                                                        <strong>Banglore, Chennai, Mumbai</strong>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col text-md-right text-center text-muted mb-1">
+                                                        Last active: 6th Sep 2020
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-list">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="position-absolute listing-tophead-action">
+                                                    <div class="pl-2 pl-md-0 pr-2 pr-md-0">
+                                                        <span>
+                                                            <label>
+                                                                <input type="checkbox" />
+                                                                <span class="pl-4">&nbsp;</span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                    <div class="listing-action">
+                                                        <a class='dropdown-trigger' href='#'
+                                                            data-target='dropdown2'><span class="material-icons">
+                                                                more_vert
+                                                            </span></a>
+
+                                                        <!-- Dropdown Structure -->
+                                                        <ul id='dropdown2' class='dropdown-content'>
+                                                            <li><a href="#!">Select recruitment stage</a></li>
+                                                            <li><a href="#!">Add / view note</a></li>
+                                                            <li><a href="#!">View mobile no</a></li>
+                                                            <li><a href="#!">View history</a></li>
+                                                            <li><a href="#!">View similar profiles</a></li>
+                                                            <li><a href="#!">Report candidate</a></li>
+                                                            <li><a href="#!">Forward</a></li>
+                                                            <li><a href="#!">Send email</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6 listing-avtar-column">
+                                                        <div class="row">
+                                                            <div class="col-4 col-md-4">
+                                                                <div class="mt-3 mt-md-2">
+                                                                    <div
+                                                                        class="d-flex align-items-center justify-content-center">
+                                                                        <div
+                                                                            class="z-depth-2 eprofilePic position-relative">
+                                                                            <a href="employee-profile-new.html">
+                                                                                <img src="images/profilePic1.jpg"
+                                                                                    class="w-100">
+                                                                                <div
+                                                                                    style="position: absolute;bottom: 0;">
+                                                                                    <img src="images/active-job-seeker.png"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="text-muted mb-2 mt-3 text-center"><a
+                                                                            href="#" class="text-muted"><i
+                                                                                class="fa fa-eye"></i> View Note</a></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-8 col-8">
+                                                                <h2 class="h5 mt-3"><a
+                                                                        href="employee-profile-new.html">Sam Sundaram
+                                                                    </a></h2>
+                                                                <p class="h6 mb-2">Sr. UI/UX Designer</p>
+                                                                <p class="text-muted d-flex align-items-center"><span
+                                                                        class="material-icons mr-1"><small
+                                                                            class="position-relative"
+                                                                            style="top: -3px;">location_on</small></span>Mumbai,
+                                                                    Maharashtra</p>
+                                                                <p class="text-muted d-flex align-items-center"><span
+                                                                        class="material-icons mr-1"><small
+                                                                            class="position-relative"
+                                                                            style="top: -3px;">school</small></span>B.
+                                                                    Tech, BE, Other</p>
+                                                                <p class="mt-2"><a href="#"
+                                                                        class="text-success mb-2">Matiching profile <i
+                                                                            class="fa fa-eye"></i></a></p>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="profile-head-desc pt-2">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <p class="pb-2">
+                                                                        <span
+                                                                            class="d-block text-muted">Experience:</span>
+                                                                        <strong>10 years, 6 months</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Current
+                                                                            Salary:</span>
+                                                                        <strong>12 Rp/hourly</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Skills:</span>
+                                                                        <strong>HTML, CSS, Javascript</strong>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="pb-2">
+                                                                        <span
+                                                                            class="d-block text-muted">Language:</span>
+                                                                        <strong>English, Hindi, Marathi</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Prefer
+                                                                            Country:</span>
+                                                                        <strong>India, US, Singapore</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Prefer
+                                                                            city:</span>
+                                                                        <strong>Banglore, Chennai, Mumbai</strong>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col text-md-right text-center text-muted mb-1">
+                                                        Last active: 6th Sep 2020
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-list">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="position-absolute listing-tophead-action">
+                                                    <div class="pl-2 pl-md-0 pr-2 pr-md-0">
+                                                        <span>
+                                                            <label>
+                                                                <input type="checkbox" />
+                                                                <span class="pl-4">&nbsp;</span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                    <div class="listing-action">
+                                                        <a class='dropdown-trigger' href='#'
+                                                            data-target='dropdown3'><span class="material-icons">
+                                                                more_vert
+                                                            </span></a>
+
+                                                        <!-- Dropdown Structure -->
+                                                        <ul id='dropdown3' class='dropdown-content'>
+                                                            <li><a href="#!">Select recruitment stage</a></li>
+                                                            <li><a href="#!">Add / view note</a></li>
+                                                            <li><a href="#!">View mobile no</a></li>
+                                                            <li><a href="#!">View history</a></li>
+                                                            <li><a href="#!">View similar profiles</a></li>
+                                                            <li><a href="#!">Report candidate</a></li>
+                                                            <li><a href="#!">Forward</a></li>
+                                                            <li><a href="#!">Send email</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6 listing-avtar-column">
+                                                        <div class="row">
+                                                            <div class="col-4 col-md-4">
+                                                                <div class="mt-3 mt-md-2">
+                                                                    <div
+                                                                        class="d-flex align-items-center justify-content-center">
+                                                                        <div
+                                                                            class="z-depth-2 eprofilePic position-relative">
+                                                                            <a href="employee-profile-new.html">
+                                                                                <img src="images/profilePic1.jpg"
+                                                                                    class="w-100">
+                                                                                <div
+                                                                                    style="position: absolute;bottom: 0;">
+                                                                                    <img src="images/active-job-seeker.png"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="text-muted mb-2 mt-3 text-center"><a
+                                                                            href="#" class="text-muted"><i
+                                                                                class="fa fa-eye"></i> View Note</a></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-8 col-8">
+                                                                <h2 class="h5 mt-3"><a
+                                                                        href="employee-profile-new.html">Sam Sundaram
+                                                                    </a></h2>
+                                                                <p class="h6 mb-2">Sr. UI/UX Designer</p>
+                                                                <p class="text-muted d-flex align-items-center"><span
+                                                                        class="material-icons mr-1"><small
+                                                                            class="position-relative"
+                                                                            style="top: -3px;">location_on</small></span>Mumbai,
+                                                                    Maharashtra</p>
+                                                                <p class="text-muted d-flex align-items-center"><span
+                                                                        class="material-icons mr-1"><small
+                                                                            class="position-relative"
+                                                                            style="top: -3px;">school</small></span>B.
+                                                                    Tech, BE, Other</p>
+                                                                <p class="mt-2"><a href="#"
+                                                                        class="text-success mb-2">Matiching profile <i
+                                                                            class="fa fa-eye"></i></a></p>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="profile-head-desc pt-2">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <p class="pb-2">
+                                                                        <span
+                                                                            class="d-block text-muted">Experience:</span>
+                                                                        <strong>10 years, 6 months</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Current
+                                                                            Salary:</span>
+                                                                        <strong>12 Rp/hourly</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Skills:</span>
+                                                                        <strong>HTML, CSS, Javascript</strong>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="pb-2">
+                                                                        <span
+                                                                            class="d-block text-muted">Language:</span>
+                                                                        <strong>English, Hindi, Marathi</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Prefer
+                                                                            Country:</span>
+                                                                        <strong>India, US, Singapore</strong>
+                                                                    </p>
+                                                                    <p class="pb-2">
+                                                                        <span class="d-block text-muted">Prefer
+                                                                            city:</span>
+                                                                        <strong>Banglore, Chennai, Mumbai</strong>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col text-md-right text-center text-muted mb-1">
+                                                        Last active: 6th Sep 2020
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="d-block d-md-flex justify-content-end custom-pagination">
+                <span class="mr-3 small only-text">1-10 0f 28 results</span>
+                <ul class="pagination p-0">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><span><input value="1" type="text" class="validate textbox-pagination" /></span>
+                    </li>
+                    <li><span class="only-text">of</span></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- END REGISTRATION FORM -->
+    <!-- Start recruitement stage Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="StageRecruitment">
+        <div class="modal-content p-0">
+            <div class="modal-header">
+                <h5 class="modal-title pl-3">Recruitment stage</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="pl-3 pr-3">
+                    <form action="">
+                        <div class="part-sec">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="input-field">
+                                            <select>
+                                                <option value="">- Select an option -</option>
+                                                <option value="" selected>Matching profile</option>
+                                                <option value="">Connected via call</option>
+                                                <option value="">Shortlisted</option>
+                                                <option value="">Interviewd - Telephonic</option>
+                                                <option value="">Interviewd - Face to face</option>
+                                                <option value="">Offered job</option>
+                                                <option value="">Joined</option>
+                                                <option value="">Rejected</option>
+                                            </select>
+                                            <label>Recruitment stage</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea2" class="materialize-textarea"
+                                            data-length="320"></textarea>
+                                        <label for="textarea2">Reason</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <h4 class="h6 mb-3">View history</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-9 order-2 mb-2">
+                                        <span class="d-block">Matching profile</span>
+                                    </div>
+                                    <div class="col-md-3 order-1">
+                                        <span class="text-muted ">27/05/2021 03:43 PM</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-9 order-2 mb-2">
+                                        <span class="d-block">Shortlisted</span>
+                                    </div>
+                                    <div class="col-md-3 order-1">
+                                        <span class="text-muted ">27/05/2021 03:43 PM</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-9 order-2 mb-2">
+                                        <span class="d-block">Rejected</span>
+                                        <span class="d-block text-muted small"><i>This applicant rejection letter sample
+                                                or rejection email template can save ... job position by sending the
+                                                required documents</i></span>
+                                    </div>
+                                    <div class="col-md-3 order-1">
+                                        <span class="text-muted ">27/05/2021 03:43 PM</span>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            Recruitment stage has been saved successfully
+                        </div>
+                        <div class="submitOuter">
+                            <button type="submit" class="btn">Save</button>
+                            <button type="submit" class="btn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End recruitement stage Modal -->
+    <!-- Start note Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="viewNoteModal">
+        <div class="modal-content p-0">
+            <div class="modal-header">
+                <h5 class="modal-title pl-3">Note</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="pl-3 pr-3">
+                    <form action="">
+                        <div class="part-sec">
+                            <form action="">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea2" class="materialize-textarea"
+                                            data-length="320"></textarea>
+                                        <label for="textarea2">Write note</label>
+                                    </div>
+                                </div>
+                                <!-- <div class="row">
+                                    <div class="col">
+                                        <h4 class="h6 mb-3">View history</h4>
+                                    </div>
+                                </div> -->
+                                <div class="row position-relative pr-1 pb-2 pt-2 border-bottom">
+                                    <div class="col-md-12">
+                                        <span class="d-block">Send email for job offerSend email for job offerSend
+                                            email</span>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <span class="text-muted small">28 May 2021 6:45 AM</span>
+                                    </div>
+                                    <a href="#" class="delete-note text-muted"><span
+                                            class="material-icons">delete</span></a>
+                                </div>
+                                <div class="row position-relative pr-1 pb-2 pt-2 border-bottom">
+                                    <div class="col-md-12">
+                                        <span class="d-block">OfferSend email for job offerSend email</span>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <span class="text-muted small">28 May 2021 6:45 AM</span>
+                                    </div>
+                                    <a href="#" class="delete-note text-muted"><span
+                                            class="material-icons">delete</span></a>
+                                </div>
+                                <div class="row position-relative pr-1 pb-2 pt-2 border-bottom">
+                                    <div class="col-md-12">
+                                        <span class="d-block">Email for job offerSend email</span>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <span class="text-muted small">28 May 2021 6:45 AM</span>
+                                    </div>
+                                    <a href="#" class="delete-note text-muted"><span
+                                            class="material-icons">delete</span></a>
+                                </div>
+
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            Note added / updated successfully
+                        </div>
+                        <div class="submitOuter">
+                            <button type="submit" class="btn">Save</button>
+                            <button type="submit" class="btn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End note Modal -->
+    <!-- Start viewHistory Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="viewHistory">
+        <div class="modal-content p-0">
+            <div class="modal-header">
+                <h5 class="modal-title pl-3">View History</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="pl-3 pr-3">
+                    <form action="">
+                        <div class="part-sec">
+                            <div class="row border-bottom pb-2 pt-2">
+                                <div class="col-md-9 order-2">
+                                    <span class="d-block"><strong>Candidate online</strong></span>
+                                </div>
+                                <div class="col-md-3 order-1">
+                                    <span class="text-muted ">27/05/2021 03:43 PM</span>
+                                </div>
+                            </div>
+                            <div class="row border-bottom pb-2 pt-2">
+                                <div class="col-md-9 order-2">
+                                    <span class="d-block"><strong>Profile updated</strong></span>
+                                </div>
+                                <div class="col-md-3 order-1">
+                                    <span class="text-muted ">27/05/2021 03:43 PM</span>
+                                </div>
+                            </div>
+                            <div class="row border-bottom pb-2 pt-2">
+                                <div class="col-md-9 order-2">
+                                    <span class="d-block"><strong>Resume uploaded</strong></span>
+                                </div>
+                                <div class="col-md-3 order-1">
+                                    <span class="text-muted ">27/05/2021 03:43 PM</span>
+                                </div>
+                            </div>
+                            <div class="row border-bottom pb-2 pt-2">
+                                <div class="col-md-9 order-2">
+                                    <span class="d-block"><strong>Status change to Active job seeker</strong></span>
+                                </div>
+                                <div class="col-md-3 order-1">
+                                    <span class="text-muted ">27/05/2021 03:43 PM</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End viewHistory Modal -->
+    <!-- Start Report candidate Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="reportCandidate">
+        <div class="modal-content p-0">
+            <div class="modal-header">
+                <h5 class="modal-title pl-3">Report Candidate</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="pl-3 pr-3">
+                    <form action="">
+                        <div class="part-sec">
+                            <form action="">
+                                <div class="input-field col s6">
+                                    <p>
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span class="text-dark">Delete Everywhere <small
+                                                    class="small text-muted d-block">This candidate will not be visible
+                                                    to you for the next 6 months.</small></span>
+                                        </label>
+                                    </p>
+                                </div>
+                                <div class="input-field col s6">
+                                    <p>
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span class="text-dark">Report Abuse
+                                                <small class="small text-muted d-block">Please let us know why you want
+                                                    to report this candidate.</small>
+                                                <p class="ml-5 mb-1">
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        <span class="text-dark">Incorrect Email Id</span>
+                                                    </label>
+                                                </p>
+                                                <p class="ml-5 mb-1">
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        <span class="text-dark">Incorrect Mobile Number</span>
+                                                    </label>
+                                                </p>
+                                                <p class="ml-5 mb-1">
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        <span class="text-dark">Mobile Not Reachable</span>
+                                                    </label>
+                                                </p>
+                                                <p class="ml-5 mb-1">
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        <span class="text-dark">Incorrect Profile / Resume</span>
+                                                    </label>
+                                                </p>
+                                                <p class="ml-5 mb-1">
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        <span class="text-dark">Profile Not Updated</span>
+                                                    </label>
+                                                </p>
+                                            </span>
+                                        </label>
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            Report candidate successfully
+                        </div>
+                        <div class="submitOuter">
+                            <button type="submit" class="btn">Report</button>
+                            <button type="submit" class="btn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Report candidate Modal -->
+
+    <!-- Start Save to folder Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="saveToFolder">
+        <div class="modal-content p-0">
+            <div class="modal-header">
+                <h5 class="modal-title pl-3">Save to folder</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="pl-3 pr-3">
+                    <form action="">
+                        <div class="part-sec">
+                            <form action="">
+                                <div class="input-field col s6">
+                                    <p class="mb-0">
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span class="text-dark">Save to existing folder
+                                            </span>
+                                        </label>
+                                    </p>
+                                    <p class="ml-5">
+                                        <select>
+                                            <option value="" selected>Select folder</option>
+                                            <option value="">Join</option>
+                                            <option value="">My folder</option>
+                                        </select>
+                                        <!-- <label>Candidates active in</label> -->
+                                    </p>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <p class="mb-0">
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span class="text-dark">Create new folder
+                                            </span>
+                                        </label>
+                                    </p>
+                                    <p class="ml-5">
+                                        <textarea id="textarea2" class="materialize-textarea" data-length="320"
+                                            placeholder="Type your folder name"></textarea>
+                                        <!-- <label for="textarea2">Type your folder name</label> -->
+
+                                        <!-- <label>Candidates active in</label> -->
+                                    </p>
+                                </div>
+
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            Saved successfully
+                        </div>
+                        <div class="submitOuter">
+                            <button type="submit" class="btn">Save</button>
+                            <button type="submit" class="btn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Save to folder Modal -->
+
+    <!-- Start Email compose Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="emailcompose">
+        <div class="modal-content p-0">
+            <div class="modal-header">
+                <h5 class="modal-title pl-3">Email compose</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="pl-3 pr-3">
+                    <form action="">
+                        <div class="row">
+                            <div class="input-field col">
+                                <i class="material-icons prefix text-muted">person</i>
+                                <input id="emailUser" type="text" class="validate" value="Sam Sundaram" disabled>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col">
+                                <i class="material-icons prefix text-muted">subject</i>
+                                <input id="subject" type="text" class="validate" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col">
+                                <textarea id="emailTextarea" class="materialize-textarea" data-length="320"
+                                    placeholder="Email compose"></textarea>
+                            </div>
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            Email sent
+                        </div>
+                        <div class="submitOuter d-flex align-items-center">
+                            <button type="submit" class="btn">Send</button>
+                            <label for="file-input" class="ml-3 mt-2 d-flex align-items-center">
+                                <span class="material-icons">attach_file</span>
+                            </label>
+                            <input type="file" class="form-control-file d-none" id="file-input">
+
+                            <!-- <button type="submit" class="btn">Cancel</button> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Email compose Modal -->
+
+
+    <!-- Start Forward Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="emailfroward">
+        <div class="modal-content p-0">
+            <div class="modal-header">
+                <h5 class="modal-title pl-3">Forward</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="pl-3 pr-3">
+                    <form action="">
+                        <div class="row">
+                            <div class="input-field col">
+                                <i class="material-icons prefix text-muted">email</i>
+                                <input id="emailUser" type="email" class="validate" placeholder="To">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col">
+                                <i class="material-icons prefix text-muted">subject</i>
+                                <input id="subject" type="text" class="validate" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 listing-avtar-column">
+                                <div class="card bg-light">
+                                    <div class="card-content p-2">
+                                        <div class="row">
+                                            <div class="col-4 col-md-2">
+                                                <div class="mt-3 mt-md-2">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <div class="z-depth-2 eprofilePic position-relative">
+                                                            <a href="employee-profile-new.html">
+                                                                <img src="images/profilePic1.jpg" class="w-100">
+                                                                <div style="position: absolute;bottom: 0;">
+                                                                    <img src="images/active-job-seeker.png" alt="">
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-8">
+                                                <h2 class="h5 mt-3"><a href="employee-profile-new.html">Sam Sundaram
+                                                    </a> | <small>Sr. UI/UX Designer | Mumbai, Maharashtra,
+                                                        India</small></h2>
+                                                <a href="#"
+                                                    class="small">https://www.bsbstaffing.com/employer/profile-view/sam-sundaram</a>
+                                                <p>A creative mind having expertise in designing engaging experiences
+                                                    with strong understanding of human behaviour.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col">
+                                <textarea id="emailTextarea" class="materialize-textarea" data-length="320"
+                                    placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            Forward successfully.
+                        </div>
+                        <div class="submitOuter d-flex align-items-center">
+                            <button type="submit" class="btn">Send</button>
+                            <label for="file-input" class="ml-3 mt-2 d-flex align-items-center">
+                                <span class="material-icons">attach_file</span>
+                            </label>
+                            <input type="file" class="form-control-file d-none" id="file-input">
+
+                            <!-- <button type="submit" class="btn">Cancel</button> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Forward Modal -->
+    <!-- Start Save search Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="saveSearch">
+        <div class="modal-content p-0">
+            <div class="modal-header">
+                <h5 class="modal-title pl-3">Save Search</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="pl-3 pr-3">
+                    <form action="">
+                        <div class="row">
+                            <div class="input-field col">
+                                <!-- <i class="material-icons prefix text-muted">email</i> -->
+                                <input id="saveTitle" type="text" class="validate" placeholder="Save title">
+                            </div>
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            Search save successfully.
+                        </div>
+                        <div class="submitOuter d-flex align-items-center">
+                            <button type="submit" class="btn mr-2">Save</button>
+                            <button type="submit" class="btn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Save search Modal -->
+
+    <!-- Start emailPreview Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="emailPreview">
+        <div class="modal-content p-0">
+            <div class="modal-header pt-0">
+                <h5 class="modal-title h5">User Interface Architect template</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <iframe src="email-preview.html" frameborder="0" style="width: 100%;height:100vh;"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- End emailPreview Modal -->
+
+    <!-- START FOOTER -->
+    <footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12 col-xs-12">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12">
+                        <div class="copyrightPara">
+                            <p>&copy; 2018. All rights reserved. Developed by <a href="#" target="_blank">Pixel
+                                    Solutionz</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- START FOOTER -->
+
+    <!-- jQuery first, then Bootstrap JS -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+        //hide all tabs first
+        $('.tab-content-search').hide();
+        //show the first tab content
+        $('#tabsearch-1').show();
+
+        $('#select-box-search').change(function () {
+            dropdown = $('#select-box-search').val();
+            //first hide all tabs again when a new option is selected
+            $('.tab-content-search').hide();
+            //then show the tab content of whatever option value was selected
+            $('#' + "tabsearch-" + dropdown).show();
+        });
+    </script>
+
+
+    <script>
+        $("#show_all").on("click", function () {
+            $(this).addClass("active").parent("li").siblings().find("a").removeClass("active");
+            $(".tab-pane-all").removeClass("fade").addClass("active").addClass("show");
+        });
+        $(".nav-link").not("#show_all").on("click", function () {
+            console.log(this.hash);
+            $(".tab-pane-all").not(this.hash).removeClass("active").removeClass("show");
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
+    <script>
+        $('.chips').chips();
+        $('.chips-initial').chips({
+            data: [{
+                tag: 'Apple',
+            }, {
+                tag: 'Microsoft',
+            }, {
+                tag: 'Google',
+            }],
+        });
+        $('.chips-placeholder-keyword').chips({
+            placeholder: 'Search by keyword, skills etc.',
+            secondaryPlaceholder: '+Tag',
+        });
+        $('.chips-placeholder-industry').chips({
+            placeholder: 'Search by Industry',
+            secondaryPlaceholder: '+Tag',
+        });
+        $('.chips-autocomplete').chips({
+            autocompleteOptions: {
+                data: {
+                    'Apple': null,
+                    'Microsoft': null,
+                    'Google': null
+                },
+                limit: Infinity,
+                minLength: 1
+            }
+        });
+
+        var chip = {
+            tag: 'chip content',
+            image: '', //optional
+        };
+
+
+
+        // Date picker
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('.datepicker').datepicker();
+        });
+
+        // New position hide div
+
+        $(function () {
+            $(".newPositiondiv").hide();
+            $(".newPositionlink, .clearPositionlink").bind("click", function () {
+                $(".newPositiondiv").hide();
+                if ($(this).attr("class") == "newPositionlink") {
+                    $(".newPositiondiv").show();
+                }
+                else {
+                    $(".newPositiondiv").hide();
+                }
+            });
+        });
+        $('.dropdown-trigger').dropdown();
+        $(document).ready(function () {
+            $('.tabs').tabs();
+        });
+
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "320px";
+            document.getElementById("footer-mobile-filter").style.width = "320px";
+
+            //   document.getElementById("mainleftbar").style.marginLeft = "320px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("footer-mobile-filter").style.width = "0";
+            //   document.getElementById("mainleftbar").style.marginLeft= "0";
+        }
+
+
+        //checkbox
+        document.getElementById("checkFilter").addEventListener("click", function toffi() {
+            var sw = document.getElementById("checkButtons");
+            if (sw.style.display === "flex") {
+                sw.style.display = "none";
+            } else {
+                sw.style.display = "flex";
+            };
+            var swf = document.getElementById("checkButtons2");
+            if (swf.style.display === "flex") {
+                swf.style.display = "none";
+            } else {
+                swf.style.display = "flex";
+            };
+            var cl = document.getElementById("show-check-filter");
+            if (cl.classList.contains("d-md-flex")) {
+                cl.classList.remove("d-md-flex");
+            } else {
+                cl.classList.add("d-md-flex");
+            };
+            var cone = document.getElementById("show-check-filter-1");
+            if (cone.classList.contains("d-md-flex")) {
+                cone.classList.remove("d-md-flex");
+            } else {
+                cone.classList.add("d-md-flex");
+            }
+            console.log(sw.style.display);
+        });
+
+        //View number
+        function replace() { document.getElementById("viewNumber1").style.display = "none"; document.getElementById("viewNumber2").style.display = "block"; }
+    </script>
+
+
+</body>
+
+</html>

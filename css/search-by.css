@@ -1,0 +1,66 @@
+.custom-pagination .pagination li.active {
+  background-color: transparent;
+}
+
+.custom-pagination .pagination li {
+  height: auto;
+}
+
+.tab-navigation .select-wrapper input[type=text]:not(.browser-default) {
+  color: #3346c1 !important;
+}
+
+.search-by-input .select-wrapper input.select-dropdown {
+  max-width: 120px;
+}
+
+.input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label {
+  width: calc(100% - 3rem - 1.5rem);
+}
+
+.alphabet-search li {
+  padding: .4rem;
+  display: list-item;
+}
+
+.alphabet-search li a {
+  color: #5F6B94;
+}
+
+.alphabet-search li a:hover, .alphabet-search li a.active {
+  color: #1754CA;
+}
+
+.alphabet-search li a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .alphabet-search li {
+    padding: .4rem;
+    display: inline-block;
+  }
+}
+
+.searchby-badges .badge-jobs {
+  background-color: #4C5474;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #fff;
+  padding: .8rem 1.2rem;
+  border-radius: 22px;
+  margin: .5rem;
+  min-width: inherit;
+  line-height: inherit;
+  height: inherit;
+  float: inherit;
+  box-sizing: inherit;
+  display: flex;
+  white-space: break-spaces;
+  justify-content: center;
+}
+
+.searchby-badges .col-badges {
+  padding: 0;
+}

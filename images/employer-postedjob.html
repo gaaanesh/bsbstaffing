@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bsb Job Portal</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- Materialize -->
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <!-- Viewbox -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- owl -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+  </head>
+  <body>
+    <!-- START HEADER -->
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+              <div class="logoContainer">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-9 col-sm-6 col-6">
+              <div class="navMenu">
+                <!-- <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#" class="active">Find Jobs</a>
+                    <ul>
+                      <li><a href="#">Job 1</a></li>
+                      <li><a href="#">Job 2</a></li>
+                      <li><a href="#">Job 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">New Posts</a></li>
+                  <li><a href="#">Resume</a></li>
+                  <li><a href="#">Analytics</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul> -->
+              </div>
+              <div class="menuhold">
+                <div class="profileMenu">
+                  <a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                  <ul>
+                    <li><a href="employer-profile.html">Profile</a></li>
+                    <li><a href="#">Messages <span>1</span></a></li>
+                    <li><a href="#">Notifications <span>1</span></a></li>
+                    <li><a href="#">Change Password</a></li>
+                    <li><a href="#">LogOut</a></li>
+                  </ul>
+                </div>
+                <a href="#" class="hmburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+                <div class="menu-wrap">
+                  <span class="menuClose">
+                      <span class="item"></span>
+                      <span class="item"></span>
+                      <span class="item"></span>
+                  </span>
+                  <div class="navMenuOuter">
+                      <ul class="mobileMenu">
+                        <li><a href="employer-dashboard.html">Dashboard</a></li>
+                        <li class="hasDropdown"><a href="#">CV Access</a>
+                          <ul>
+                            <li><a href="employer-cv-access.html">Simple Search</a></li>
+                            <li><a href="employer-cv-access-advance.html">Advance Search</a></li>
+                            <li><a href="employer-cv-access-people.html">Peolple Search</a></li>
+                          </ul>
+                        </li>
+                        <li class="hasDropdown"><a href="#" class="current-parent"><span>Free</span> Job Post</a>
+                          <ul>
+                            <li><a href="employer-jobPost.html">Free Post a Job</a></li>
+                            <li><a href="employer-postedjob.html" class="active">Free Posted Job</a></li>
+                            <li><a href="employer-jobPost-premium.html">Premium Post a Job</a></li>
+                            <li><a href="employer-postedjob-premium.html">Premium Posted Job</a></li>
+                            <li><a href="employer-post-conduct-hiring.html">Free Walk-in Interview Local</a></li>
+                            <li><a href="employer-posted-conduct-hiring.html">Free Posted Walk-in Interview Local</a></li>
+                            <li><a href="employer-post-conduct-international.html">Walk-in Interview International</a></li>
+                            <li><a href="employer-posted-conduct-hiring-international.html">Posted Walk-in Interview International</a></li>
+                          </ul>
+                        </li>
+                        <li class="hasDropdown"><a href="#">Mass Email Service</a>
+                          <ul>
+                            <li><a href="employer-create-email.html">Create Email Template</a></li>
+                            <li><a href="employer-manage-email.html">Manage Email Template</a></li>
+                            <li><a href="employer-mailbox.html">MailBox</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="employer-application-received.html">Application Received</a></li>
+                        <li><a href="cv-download.html">CV Download / View</a></li>
+                        <li class="hasDropdown"><a href="#">Folders</a>
+                          <ul>
+                            <li><a href="#" data-toggle="modal" data-target="#folderModal">Create Folder</a></li>
+                            <li><a href="employer-manage-folder.html">Manege Folders</a></li>
+                            <li><a href="cvsearch-listing.html">Reported Candidate</a></li>
+                            <li><a href="cvsearch-listing.html">Candidate You Like</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="employer-career.html">Career Page</a></li>
+                        <li class="hasDropdown"><a href="#">Admin</a>
+                          <ul>
+                            <li><a href="#">Account Report</a></li>
+                            <li><a href="#">Account Settings</a></li>
+                            <li><a href="#">Activity Tracking</a></li>
+                            <li><a href="employer-recent-postedjob.html">Recent Jobs</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                  </div> 
+                </div> 
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-0 col-sm-12 col-xs-12">
+              <ul class="afterLoginEmployee">
+                <li><h5>Welcome User</h5></li>
+                <li><a href="#"><img src="images/msgIcon.png" alt="msgIcon"><span class="count">1</span></a></li>
+                <li><a href="#"><img src="images/bellIcon.png" alt="bellIcon"><span class="count">1</span></a></li>
+                <li><a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                  <ul>
+                    <li><a href="employer-profile.html">Profile</a></li>
+                    <li><a href="#">Change Password</a></li>
+                    <li><a href="#">LogOut</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    <!-- END HEADER -->
+    <!-- START SECOND HEADER -->
+      <section class="menuBar">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <ul>
+                <li><a href="employer-dashboard.html">Dashboard</a></li>
+                <li class="hasDropdown"><a href="#">CV Access</a>
+                  <ul>
+                    <li><a href="employer-cv-access.html">Simple Search</a></li>
+                    <li><a href="employer-cv-access-advance.html">Advance Search</a></li>
+                    <li><a href="employer-cv-access-people.html">Peolple Search</a></li>
+                  </ul>
+                </li>
+                <li class="hasDropdown"><a href="#" class="current-parent"><span>Free</span> Job Post</a>
+                  <ul>
+                    <li><a href="employer-jobPost.html">Free Post a Job</a></li>
+                    <li><a href="employer-postedjob.html" class="active">Free Posted Job</a></li>
+                    <li><a href="employer-jobPost-premium.html">Premium Post a Job</a></li>
+                    <li><a href="employer-postedjob-premium.html">Premium Posted Job</a></li>
+                    <li><a href="employer-post-conduct-hiring.html">Free Walk-in Interview Local</a></li>
+                    <li><a href="employer-posted-conduct-hiring.html">Free Posted Walk-in Interview Local</a></li>
+                    <li><a href="employer-post-conduct-international.html">Walk-in Interview International</a></li>
+                    <li><a href="employer-posted-conduct-hiring-international.html">Posted Walk-in Interview International</a></li>
+                  </ul>
+                </li>
+                <li class="hasDropdown"><a href="#">Mass Email Service</a>
+                  <ul>
+                    <li><a href="employer-create-email.html">Create Email Template</a></li>
+                    <li><a href="employer-manage-email.html">Manage Email Template</a></li>
+                    <li><a href="employer-mailbox.html">MailBox</a></li>
+                  </ul>
+                </li>
+                <li><a href="employer-application-received.html">Application Received</a></li>
+                <li><a href="cv-download.html">CV Download / View</a></li>
+                <li class="hasDropdown"><a href="#">Folders</a>
+                  <ul>
+                    <li><a href="#" data-toggle="modal" data-target="#folderModal">Create Folder</a></li>
+                    <li><a href="employer-manage-folder.html">Manege Folders</a></li>
+                    <li><a href="cvsearch-listing.html">Reported Candidate</a></li>
+                    <li><a href="cvsearch-listing.html">Candidate You Like</a></li>
+                  </ul>
+                </li>
+                <li><a href="employer-career.html">Career Page</a></li>
+                <li class="hasDropdown"><a href="#">Admin</a>
+                  <ul>
+                    <li><a href="#">Account Report</a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Activity Tracking</a></li>
+                    <li><a href="employer-recent-postedjob.html">Recent Jobs</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- END SECOND HEADER -->
+    <!-- START REGISTRATION FORM -->
+      <section class="registrationForm employerInnerSection">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <h2 class="pageTitle">Free Posted Job</h2>
+              <div class="postedjobOuter">
+                <div class="postedjobTable">
+                  <div class="postedjobRow">
+                    <div class="postedjobCol postedjobHead">
+                      <p>Job</p>
+                    </div>
+                    <div class="postedjobCol postedjobHead">
+                      <p>Created</p>
+                    </div>
+                    <div class="postedjobCol postedjobHead">
+                      <p>Expiry</p>
+                    </div>
+                    <div class="postedjobCol postedjobHead">
+                      <p>Republish</p>
+                    </div>
+                    <div class="postedjobCol postedjobHead">
+                      <p>Location</p>
+                    </div>
+                    <div class="postedjobCol postedjobHead">
+                      <p>CV Received</p>
+                    </div>
+                    <div class="postedjobCol postedjobHead">
+                      <p>Post Views</p>
+                    </div>
+                    <div class="postedjobCol postedjobHead">
+                      <p>Action</p>
+                    </div>
+                  </div>
+                  <div class="postedjobRow">
+                    <div class="postedjobCol">
+                      <p><a href="#" class="jobLink">USA 5-star HOTEL are hiring salary up to 1,50,000 Per Month. APPLY NOW</a></p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p>06.02.2019</p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p>06.02.2020</p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p><a href="#" class="republish">Republish</a></p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p>USA</p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p><a href="#">200</a></p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p>238</p>
+                    </div>
+                    <div class="postedjobCol">
+                      <a href="#" title="edit"><img src="images/pencilIcon.png"></a>
+                      <a href="#" title="remove"><img src="images/cancel.png"></a>
+                      <div class="switch">
+                        <label>
+                          <input type="checkbox">
+                          <span class="lever"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="postedjobRow">
+                    <div class="postedjobCol">
+                      <p><a href="#" class="jobLink">USA 5-star HOTEL are hiring salary up to 1,50,000 Per Month. APPLY NOW</a></p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p>06.01.2019</p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p>06.02.2019</p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p><a href="#" class="republish disabled">Republish</a></p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p>USA</p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p><a href="#">200</a></p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p>238</p>
+                    </div>
+                    <div class="postedjobCol"> 
+                      <a href="#" title="edit"><img src="images/pencilIcon.png"></a>
+                      <a href="#" title="remove"><img src="images/cancel.png"></a>
+                      <div class="switch">
+                        <label>
+                          <input type="checkbox">
+                          <span class="lever"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="postedjobRow">
+                    <div class="postedjobCol">
+                      <p><a href="#" class="jobLink">USA 5-star HOTEL are hiring salary up to 1,50,000 Per Month. APPLY NOW</a></p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p>06.02.2019</p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p>06.02.2020</p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p><a href="#" class="republish">Republish</a></p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p>USA</p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p><a href="#">200</a></p>
+                    </div>
+                    <div class="postedjobCol">
+                      <p>238</p>
+                    </div>
+                    <div class="postedjobCol"> 
+                      <a href="#" title="edit"><img src="images/pencilIcon.png"></a>
+                      <a href="#" title="remove"><img src="images/cancel.png"></a>
+                      <div class="switch">
+                        <label>
+                          <input type="checkbox" checked="">
+                          <span class="lever"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="pagination">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li class="active"><a href="#"> 1 </a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- END REGISTRATION FORM -->
+    <!-- START FOOTER -->
+        <footer>
+          <div class="footerUpper">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6 col-6">
+                  <div class="footerLink">
+                    <h4>FEATURED JOB</h4>
+                    <ul>
+                      <li><a href="#">Manage Responses</a></li>
+                      <li><a href="#">Report a Problem</a></li>
+                      <li><a href="#">Mobile Site</a></li>
+                      <li><a href="#">Jobs by Skill</a></li>
+                      <li><a href="#">Manage Responses</a></li>
+                      <li><a href="#">Report a Problem</a></li>
+                      <li><a href="#">Mobile Site</a></li>
+                      <li><a href="#">Jobs by Skill</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6">
+                  <div class="footerLink">
+                    <h4>FEATURED JOB</h4>
+                    <ul>
+                      <li><a href="#">Manage Responses</a></li>
+                      <li><a href="#">Report a Problem</a></li>
+                      <li><a href="#">Mobile Site</a></li>
+                      <li><a href="#">Jobs by Skill</a></li>
+                      <li><a href="#">Manage Responses</a></li>
+                      <li><a href="#">Report a Problem</a></li>
+                      <li><a href="#">Mobile Site</a></li>
+                      <li><a href="#">Jobs by Skill</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6">
+                  <div class="footerLink">
+                    <h4>FEATURED JOB</h4>
+                    <ul>
+                      <li><a href="#">Manage Responses</a></li>
+                      <li><a href="#">Report a Problem</a></li>
+                      <li><a href="#">Mobile Site</a></li>
+                      <li><a href="#">Jobs by Skill</a></li>
+                      <li><a href="#">Manage Responses</a></li>
+                      <li><a href="#">Report a Problem</a></li>
+                      <li><a href="#">Mobile Site</a></li>
+                      <li><a href="#">Jobs by Skill</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6">
+                  <div class="footerLink">
+                    <h4>FEATURED JOB</h4>
+                    <ul>
+                      <li><a href="#">Manage Responses</a></li>
+                      <li><a href="#">Report a Problem</a></li>
+                      <li><a href="#">Mobile Site</a></li>
+                      <li><a href="#">Jobs by Skill</a></li>
+                      <li><a href="#">Manage Responses</a></li>
+                      <li><a href="#">Report a Problem</a></li>
+                      <li><a href="#">Mobile Site</a></li>
+                      <li><a href="#">Jobs by Skill</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">              
+                <div class="col-md-12 col-sm-12 col-12">
+                  <div class="regfooterLink">
+                    <ul>
+                      <li><a href="agency-registration.html" class="colregBtn blueBtn">Recruitment Agency Registration</a></li>
+                      <li><a href="franchise-registration.html" class="colregBtn blueBtn">Franchise Registration</a></li>                    
+                      <li><a href="college-registration.html" class="colregBtn blueBtn">College/ University/ Institution Registration</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12 col-xs-12">
+                  <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  </ul>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12">
+                  <div class="copyrightPara">
+                    <p>&copy; 2018. All rights reserved. Developed by <a href="#" target="_blank">Pixel Solutionz</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      <!-- START FOOTER -->
+
+    <!-- MODAL -->
+    <div class="modal fade signinModal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="signinModalLabel" aria-hidden="true">
+      <div class="modal-dialog bd-example-modal-sm" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <div class="loginmodalOuter">
+              <div class="loginmodalLeft">
+                <div class="loginSection">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <h4>Sign-in </h4>
+                    </div>
+                  </div>
+                  <form>
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="input-field">
+                          <input id="email" type="text" class="validate">
+                          <label for="email">Email Address</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="name" type="password" class="validate">
+                            <label for="name">Password</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="submitOuter">
+                          <input type="submit" name="" value="Login" class="blueBtn">
+                        </div>                    
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="forgotOuter">
+                          <a href="#" class="forgotPass">Forgot Password</a>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>New Member? <a href="#" class="registerBtn">Register Here</a></p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="regSection">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <h4>Sign-up </h4>
+                    </div>
+                  </div>
+                  <form>
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="input-field">
+                          <input id="fname" type="text" class="validate">
+                          <label for="fname">First Name</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="lname" type="text" class="validate">
+                          <label for="lname">Last Name</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="email" type="text" class="validate">
+                          <label for="email">Email Address</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="name" type="password" class="validate">
+                            <label for="name">Password</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="name" type="password" class="validate">
+                            <label for="name">Confirm Password</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="submitOuter">
+                          <input type="submit" name="" value="Register" class="blueBtn">
+                        </div>                    
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p class="">Already Registered? <a href="#" class="loginBtn">Login Here</a></p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="loginmodalRight">                
+                <img src="images/modalImg1.png"alt="modalImg">
+                <div class="layer3"></div>
+                <div class="otherLogin">
+                  <h4>Sign in with Social Network</h4>
+                  <a href="#" class="facebook">Login with Facebook</a>
+                  <a href="#" class="google">Login with Google+</a>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade signinModal" id="employeeloginModal" tabindex="-1" role="dialog" aria-labelledby="signinModalLabel" aria-hidden="true">
+      <div class="modal-dialog bd-example-modal-sm" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <div class="loginmodalOuter">
+              <div class="loginmodalLeft">
+                <div class="loginSection">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <h4>Sign-in </h4>
+                    </div>
+                  </div>
+                  <form action="cvsearch.html">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="input-field">
+                          <input id="email" type="text" class="validate">
+                          <label for="email">Email Address</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="name" type="password" class="validate">
+                            <label for="name">Password</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="submitOuter">
+                          <input type="submit" name="" value="Login" class="blueBtn">
+                        </div>                    
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="forgotOuter">
+                          <a href="#" class="forgotPass">Forgot Password</a>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>New Member? <a href="#" class="registerBtn">Register Here</a></p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="regSection">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <h4>Sign-up </h4>
+                    </div>
+                  </div>
+                  <form>
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="input-field">
+                          <input id="fname" type="text" class="validate">
+                          <label for="fname">First Name</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="lname" type="text" class="validate">
+                          <label for="lname">Last Name</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="email" type="text" class="validate">
+                          <label for="email">Email Address</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="name" type="password" class="validate">
+                            <label for="name">Password</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="name" type="password" class="validate">
+                            <label for="name">Confirm Password</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="submitOuter">
+                          <input type="submit" name="" value="Register" class="blueBtn">
+                        </div>                    
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p class="">Already Registered? <a href="#" class="loginBtn">Login Here</a></p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="loginmodalRight">                
+                <img src="images/modalImg1.png"alt="modalImg">
+                <div class="layer3"></div>
+                <div class="otherLogin">
+                  <h4>Sign in with Social Network</h4>
+                  <a href="#" class="facebook">Login with Facebook</a>
+                  <a href="#" class="google">Login with Google+</a>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+
+    <!-- Create Folder Modal -->
+    <div class="modal fade generalModal" id="folderModal" tabindex="-1" role="dialog" aria-labelledby="signinModalLabel" aria-hidden="true">
+      <div class="modal-dialog bd-example-modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Create New Folder</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="modalInput">
+                <label>Create Folder</label>
+                <input type="text" name="">
+              </div>
+              <div class="shareOuter">
+                <button type="submit" class="blueBtn">Cancel</button>
+                <button type="submit" class="blueBtn">Create</button>
+              </div>
+            </form>
+          </div>          
+        </div>
+      </div>
+    </div>                            
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>

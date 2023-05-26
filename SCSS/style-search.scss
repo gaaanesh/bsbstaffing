@@ -1,0 +1,30 @@
+.newSearchSection {
+    padding: 137px 0 20px 0;
+    background: #efeff5;
+}
+
+.tab-navigation .select-wrapper input[type=text]:not(.browser-default) {
+	color: #01A39D !important;
+}
+.tab-content-search .chips .input {
+	width: 220px !important;
+}
+#more {display: none;}
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed {
+  display: none;
+}
+@media (max-width: 768px){
+    .newSearchSection {
+        padding: 60px 0 20px 0;
+    }
+}
+// .btn, .btn-large, .btn-small {
+//     background-color: #12207c;
+//     &:hover {
+//         background-color: #293cb7;
+//     }
+//     &:focus {
+//         background-color: #293cb7;
+//     }
+// }

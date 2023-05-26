@@ -1,0 +1,1276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bsb Job Portal</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/style-search.css">
+    <link rel="stylesheet" type="text/css" href="css/common-style.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style-search.css">
+
+    <link rel="stylesheet" type="text/css" href="../src/styles.css">
+    <link rel="stylesheet" type="text/css" href=".././node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href=".././node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href=".././node_modules/toastr/build/toastr.css">
+    <link rel="stylesheet" type="text/css" href=".././node_modules/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href=".././node_modules/sweetalert2/dist/sweetalert2.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href=".././node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href=".././node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href=".././node_modules/ngx-lightbox/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/schedule.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/modal.css">
+    <link rel="stylesheet" type="text/css" href=".././node_modules/summernote/dist/summernote-lite.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/common-style.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/style_home.css">
+
+    <link rel="stylesheet" href="css/jquery.accordion.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/v2-form-style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-institute.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+
+    <!-- remove after submit -->
+    <style>
+        .profileMenu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .newProfileSection {
+                padding: 60px 0 20px 0;
+            }
+        }
+
+        .tab-navigation input[type=text]:not(.browser-default) {
+            font-size: 1.75rem;
+            font-family: roboto;
+            font-weight: 500;
+            color: #212529
+        }
+    </style>
+</head>
+
+<body class="top-img-bg">
+
+    <!-- START HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="logoContainer">
+                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-9 col-sm-6 col-6">
+                    <div class="navMenu d-none">
+                    </div>
+                    <div class="menuhold">
+                        <div class="profileMenu">
+                            <a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                            <ul>
+                                <li><a href="#">Messages <span>1</span></a></li>
+                                <li><a href="#">Notifications <span>1</span></a></li>
+                                <li><a href="#">LogOut</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="hmburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <div class="menu-wrap">
+                            <span class="menuClose">
+                                <span class="item"></span>
+                                <span class="item"></span>
+                                <span class="item"></span>
+                            </span>
+                            <div class="navMenuOuter">
+                                <ul class="mobileMenu">
+                                    <li><a href="employee-dashboard.html">Dashboard</a></li>
+                                    <li class="hasDropdown"><a href="#">Search by Category</a>
+                                        <ul>
+                                            <li><a href="search-result-listing.html">Search by Country</a></li>
+                                            <li><a href="search-result-listing.html">Search by City</a></li>
+                                            <li><a href="search-result-listing.html">Search by Job Role</a></li>
+                                            <li><a href="search-result-listing.html">Search by Industry</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hasDropdown"><a href="#">Jobs For You</a>
+                                        <ul>
+                                            <li><a href="employee-job-alerts.html">Job Alerts</a></li>
+                                            <li><a href="employee-applied-jobs.html">Applied Job</a></li>
+                                            <li><a href="employee-savedjobs.html">Saved Job</a></li>
+                                            <li><a href="employee-apply-hiring.html">Local Walk-in</a></li>
+                                            <li><a href="">International Walk-in</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="employee-application-status.html">Application Status</a></li>
+                                    <!-- <li><a href="#">Recruiter Action</a></li> -->
+                                    <li class="hasDropdown"><a href="#">We Offer Training</a>
+                                        <ul>
+                                            <li><a href="training_getting_job.html">Training Getting Job</a></li>
+                                            <li><a href="working_visa_training.html">Working Visa Training</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="employee-mailbox.html">Mailbox</a></li>
+                                    <li class="hasDropdown"><a href="employee-profile.html" class="active">Profile</a>
+                                        <ul>
+                                            <li><a href="#">Change Password</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-0 col-sm-12 col-xs-12">
+                    <ul class="afterLoginEmployee d-none">
+                        <li>
+                            <h5>Welcome User</h5>
+                        </li>
+                        <li><a href="#"><img src="images/msgIcon.png" alt="msgIcon"><span class="count">1</span></a>
+                        </li>
+                        <li><a href="#"><img src="images/bellIcon.png" alt="bellIcon"><span class="count">1</span></a>
+                        </li>
+                        <li><a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                            <ul>
+                                <li><a href="#">LogOut</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="text-md-right text-center mt-3 mt-md-2">
+                            <a class="btn btn-primary rounded-pill  animatebtn wow animate__animated animate__fadeInDown animate__faster" href="javascript:void(0)">Register for FREE <span class="animate-arrow"><span class="animate-arrow-first"></span></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- START SECOND HEADER -->
+    <section class="menuBar d-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <ul>
+                        <li><a href="employee-dashboard.html">Dashboard</a></li>
+                        <li class="hasDropdown"><a href="#">Search by Category</a>
+                            <ul>
+                                <li><a href="employee-search-country.html">Search by Country</a></li>
+                                <li><a href="employee-search-city.html">Search by City</a></li>
+                                <li><a href="employee-search-jobrole.html">Search by Job Role</a></li>
+                                <li><a href="employee-search-industry.html">Search by Industry</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasDropdown"><a href="#">Jobs For You</a>
+                            <ul>
+                                <li><a href="employee-job-alerts.html">Job Alerts</a></li>
+                                <li><a href="employee-applied-jobs.html">Applied Job</a></li>
+                                <li><a href="employee-savedjobs.html">Saved Job</a></li>
+                                <li><a href="employee-apply-hiring.html">Local Walk-in</a></li>
+                                <li><a href="employee-apply-hiring-international.html">International Walk-in</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="employee-application-status.html">Application Status</a></li>
+                        <li class="hasDropdown"><a href="#">We Offer Training</a>
+                            <ul>
+                                <li><a href="training_getting_job.html">Training Getting Job</a></li>
+                                <li><a href="working_visa_training.html">Working Visa Training</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="employee-mailbox.html">Mailbox</a></li>
+                        <li><a href="employee-profile.html">Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECOND HEADER -->
+    <!-- START REGISTRATION FORM -->
+    <section class="mt-5 pt-5 pt-md-4 pb-0">
+        <div class="container mt-4 mt-md-0">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-6 d-flex align-items-center">
+                    <div>
+                        <h1 class="mb-4 wow animate__animated animate__fadeIn text-center text-md-left">Esteemed <span class="heading-underline">Institute, College, University</span>
+                            welcome!</h1>
+                        <p class="p-big text-justify mr-md-4">We are one of the world’s leading global job portals and professional
+                            communities. Our mission is to connect your students and alumni with companies all over the
+                            globe. We are already registered in 206 countries and have forged strong tie-ups with top
+                            MNCs and Fortune 500 companies. Daily millions of job seekers connect with global companies
+                            and fulfil their dreams through our portal.</p>
+                        <p class="p-big text-justify mr-md-4">Your esteemed institution can now become a part of this thriving global
+                            community by registering on our portal free of cost. By registering on our site, your
+                            students and alumni will be able to connect with MNCs and Fortune 500 companies across the
+                            globe and secure their dream jobs/ internships.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-right p-3 p-md-0">
+
+
+                    <!-- <div class="head-badge-1">
+                        <div><img src="images/millions-of-jobs.png" class="img-fluid"></div>
+                        <div>Millions of jobs listed here</div>
+                    </div> -->
+                    <div class="position-relative mt-4">
+                        <div class="head-badge-1 head-badge wow animate__animated animate__fadeInRight animate__delay-1s animate__faster">
+                            <div class="mr-3 img-col">
+                                <img src="images/millions-of-jobs-1.png" class="img-fluid">
+                            </div>
+                            <div class="content-badge">Millions of jobs listed here</div>
+                        </div>
+                        <div class="head-badge-2 head-badge wow animate__animated animate__fadeInRight animate__delay-1s animate__faster">
+                            <div class="mr-3 img-col">
+                                <img src="images/countries-map-1.png" class="img-fluid">
+                            </div>
+                            <div class="content-badge">We are in 206+ Countries</div>
+                        </div>
+                        <div class="head-badge-3 head-badge d-inline-block text-left wow animate__animated animate__fadeInLeft animate__delay-1s animate__faster">
+                            <div class="content-badge">Trusted by 800+ companies</div>
+                            <img src="images/trusted-companies.png" class="img-fluid" style="max-height: 28px;">
+                        </div>
+
+                        <img src="images/surprised-happy-girl-bsb-college-institute-old.png" class="img-fluid  wow animate__animated  animate__zoomIn animate__faster" style="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-gray pt-5 pb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h2 class="h1 text-center pt-4 mb-2  wow animate__animated animate__fadeIn">
+                        Some reasons as to why you should <span class="heading-underline">register your institute on our
+                            portal</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12">
+                    <ul
+                        class="nav nav-tabs-over row border-0 horizantal-scroll m-0 wow animate__animated animate__fadeInUp">
+                        <li class="col d-flex">
+                            <a href="#one-reason-register" class="icon-name-box active">
+                                <div class="number-wrapper">
+                                    <span class="number">1</span>
+                                    <span class="bg-img"><img class="img-fluid" src="images/2-bsb-job.png"
+                                            alt="" /></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col d-flex">
+                            <a href="#two-reason-register" class="icon-name-box">
+                                <div class="number-wrapper">
+                                    <span class="number">2</span>
+                                    <span class="bg-img"><img class="img-fluid" src="images/1-bsb-job.jpg"
+                                            alt="" /></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col d-flex">
+                            <a href="#three-reason-register" class="icon-name-box">
+                                <div class="number-wrapper">
+                                    <span class="number">3</span>
+                                    <span class="bg-img"><img class="img-fluid" src="images/3-bsb-job.jpg"
+                                            alt="" /></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col d-flex">
+                            <a href="#four-reason-register" class="icon-name-box">
+                                <div class="number-wrapper">
+                                    <span class="number">4</span>
+                                    <span class="bg-img"><img class="img-fluid" src="images/4-bsb-job.jpg"
+                                            alt="" /></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col d-flex">
+                            <a href="#five-reason-register" class="icon-name-box">
+                                <div class="number-wrapper">
+                                    <span class="number">5</span>
+                                    <span class="bg-img"><img class="img-fluid" src="images/5-bsb-job.jpg"
+                                            alt="" /></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col d-flex">
+                            <a href="#six-reason-register" class="icon-name-box">
+                                <div class="number-wrapper">
+                                    <span class="number">6</span>
+                                    <span class="bg-img"><img class="img-fluid" src="images/6-bsb-job.jpg"
+                                            alt="" /></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col d-flex">
+                            <a href="#seven-reason-register" class="icon-name-box">
+                                <div class="number-wrapper">
+                                    <span class="number">7</span>
+                                    <span class="bg-img"><img class="img-fluid" src="images/7-bsb-job.jpg"
+                                            alt="" /></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col d-flex">
+                            <a href="#eight-reason-register" class="icon-name-box">
+                                <div class="number-wrapper">
+                                    <span class="number">8</span>
+                                    <span class="bg-img"><img class="img-fluid" src="images/8-bsb-job.jpg"
+                                            alt="" /></span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col">
+                            <div class="tab-content tab-content-icon-box wow animate__animated animate__fadeIn">
+                                <div class="tab-pane p-big active" id="one-reason-register">
+                                    Your students and alumni will be able to get jobs and internships across the globe
+                                    free of cost
+                                </div>
+                                <div class="tab-pane p-big" id="two-reason-register">
+                                    Your students and alumni can readily connect with global professionals and can be a
+                                    part of a global professional network
+                                </div>
+                                <div class="tab-pane p-big" id="three-reason-register">
+                                    You will be able to easily connect with top MNCs across the globe and invite them
+                                    for campus placements anytime
+                                </div>
+                                <div class="tab-pane p-big" id="four-reason-register">
+                                    Your institute will become a part of a thriving global community of professionals
+                                </div>
+                                <div class="tab-pane p-big" id="five-reason-register">
+                                    Opportunity to build visibility and grow your institute brand across geographies
+                                </div>
+                                <div class="tab-pane p-big" id="six-reason-register">
+                                    Dedicated representative to address every problem faced by your student and alumni
+                                    in the placement process
+                                </div>
+                                <div class="tab-pane p-big" id="seven-reason-register">
+                                    You can connect any company across the globe by sending email or messages through
+                                    our portal
+                                </div>
+                                <div class="tab-pane" id="eight-reason-register">
+                                    After registering your students and alumni on our portal you can track live status
+                                    of their application (So, you know how many students/ alumni applied for the job,
+                                    how many cleared the first round, and how many were finally offered the job)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center pt-3 pt-5">
+                            <h6 class="font-weight-normal p-biger mb-3 letter-spacing-custom">For your all student's placement <strong>local and
+                                    international with global companies</strong></h6>
+                            <a class="btn btn-primary rounded-pill btn-lg animatebtn" href="javascript:void(0)">Register for
+                                FREE <span class="animate-arrow"><span class="animate-arrow-first"></span></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <h2 class="h1 text-center pt-4 mb-5 wow animate__animated animate__fadeIn">
+                        Redefining your students and alumni <span class="heading-underline">placement journey</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center d-md-flex d-none">
+                <div class="col-md-12">
+                    <div id="accordion" class="step-accordion">
+                        <ul>
+                            <li>
+                                <h1 class="step-heading">Step <span class="number">01</span></h1>
+                                <div>
+                                    <img class="img-fluid" src="images/journey-img1.jpg" alt="" />
+                                    <span class="desc">Register your students/ alumni resume/CV</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h1 class="step-heading">Step <span class="number">02</span></h1>
+                                <div>
+                                    <img class="img-fluid" src="images/journey-img2.jpg" alt="" />
+                                    <span class="desc">Your students/ alumni can see the top jobs posted by MNCs/
+                                        Fortune 500 across the globe</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h1 class="step-heading">Step <span class="number">03</span></h1>
+                                <div>
+                                    <img class="img-fluid" src="images/journey-img3.jpg" alt="" />
+                                    <span class="desc">Your students/ alumni can connect or apply to jobs posted for
+                                        free across the globe</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h1 class="step-heading">Step <span class="number">04</span></h1>
+                                <div>
+                                    <img class="img-fluid" src="images/journey-img4.jpg" alt="" />
+                                    <span class="desc">Your students/ alumni can send direct message/email to company HR
+                                        across the globe</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h1 class="step-heading">Step <span class="number">05</span></h1>
+                                <div>
+                                    <img class="img-fluid" src="images/journey-img5.jpg" alt="" />
+                                    <span class="desc">The employer performs initial short listing of your students/
+                                        alumni</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h1 class="step-heading">Step <span class="number">06</span></h1>
+                                <div>
+                                    <img class="img-fluid" src="images/journey-img6.jpg" alt="" />
+                                    <span class="desc">The employer takes interview of shortlisted students/ alumni
+                                        through the portal</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h1 class="step-heading">Step <span class="number">07</span></h1>
+                                <div>
+                                    <img class="img-fluid" src="images/journey-img7.jpg" alt="" />
+                                    <span class="desc">The finally selected candidates get jobs across the globe</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-md-none d-flex">
+                <div class="col-12">
+                    <ul class="steps-journey-mobile">
+                        <li>
+                            <time datetime="10:03">
+                                <!-- Step 1 -->
+                            </time>
+                            <span><strong>Step 1</strong> Register your students/ alumni resume/CV</span>
+                        </li>
+
+                        <li>
+                            <time datetime="10:03">
+                                <!-- Step 2 -->
+                            </time>
+                            <span><strong>Step 2</strong> Your students/ alumni can see the top jobs posted by MNCs/
+                                Fortune 500 across the
+                                globe</span>
+                        </li>
+
+                        <li>
+                            <time datetime="10:03">
+                                <!-- Step 3 -->
+                            </time>
+                            <span><strong>Step 3</strong> Your students/ alumni can connect or apply to jobs posted for
+                                free across the globe</span>
+                        </li>
+
+                        <li>
+                            <time datetime="10:03">
+                                <!-- Step 4 -->
+                            </time>
+                            <span><strong>Step 4</strong> Your students/ alumni can connect or apply to jobs posted for
+                                free across the globe</span>
+                        </li>
+
+                        <li>
+                            <time datetime="10:03">
+                                <!-- Step 5 -->
+                            </time>
+                            <span><strong>Step 5</strong> The employer performs initial short listing of your students/
+                                alumni</span>
+                        </li>
+
+                        <li>
+                            <time datetime="10:03">
+                                <!-- Step 6 -->
+                            </time>
+                            <span><strong>Step 6</strong> The employer takes interview of shortlisted students/ alumni
+                                through the portal</span>
+                        </li>
+
+                        <li>
+                            <time datetime="10:03">
+                                <!-- Step 7 -->
+                            </time>
+                            <span><strong>Step 7</strong> The finally selected candidates get jobs across the
+                                globe</span>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center pt-3 pt-5">
+                    <h6 class="font-weight-normal p-biger mb-3 letter-spacing-custom">Given these benefits, what are you waiting for?</h6>
+                    <a class="btn btn-primary rounded-pill btn-lg animatebtn" href="javascript:void(0)">Register for FREE <span class="animate-arrow"><span class="animate-arrow-first"></span></span></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="client-logos">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <h2 class="h1 text-center pt-4 mb-5 text-white wow animate__animated animate__fadeIn">
+                        1,50,000+ top companies hiring from Us
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme wow animate__animated animate__fadeInUp">
+                        <div class="logo-owl">
+                            <img src="images/zomato-logo.jpg" alt="">
+                            <span class="vacancies">12</span>
+                        </div>
+                        <div class="logo-owl">
+                            <img src="images/burgerking.png" alt="">
+                            <span class="vacancies">10</span>
+                        </div>
+                        <div class="logo-owl">
+                            <img src="images/bharti.jpg" alt="">
+                            <span class="vacancies">9</span>
+                        </div>
+                        <div class="logo-owl">
+                            <img src="images/Byju's.png" alt="">
+                            <span class="vacancies">7</span>
+                        </div>
+                        <div class="logo-owl">
+                            <img src="images/Delhivery.png" alt="">
+                            <span class="vacancies">7</span>
+                        </div>
+                        <div class="logo-owl">
+                            <img src="images/teamLease.png" alt="">
+                            <span class="vacancies">6</span>
+                        </div>
+                        <div class="logo-owl">
+                            <img src="images/congnizent-logo.jpeg" alt="">
+                            <span class="vacancies">6</span>
+                        </div>
+                        <div class="logo-owl">
+                            <img src="images/companyLogo.png" alt="">
+                            <span class="vacancies">6</span>
+                        </div>
+                        <div class="logo-owl">
+                            <img src="images/zomato-logo.jpg" alt="">
+                            <span class="vacancies">5</span>
+                        </div>
+                        <div class="logo-owl">
+                            <img src="images/burgerking.png" alt="">
+                            <span class="vacancies">5</span>
+                        </div>
+                        <div class="logo-owl">
+                            <img src="images/zomato-logo.jpg" alt="">
+                            <span class="vacancies">4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs eProfile-tab mb-4 mt-5 horizantal-scroll" id="myTab" role="tablist">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" id="about-tab" data-toggle="tab" href="#jobstitle" role="tab"
+                                aria-controls="jobstitle" aria-selected="true">Jobs&nbsp;By&nbsp;Title</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="experience-tab" data-toggle="tab" href="#jobscity" role="tab"
+                                aria-controls="jobscity" aria-selected="false">Jobs&nbsp;By&nbsp;City</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="education-tab" data-toggle="tab" href="#jobsindustry" role="tab"
+                                aria-controls="jobsindustry" aria-selected="false">Jobs&nbsp;By&nbsp;Industry</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="certification-tab" data-toggle="tab" href="#jobsearches" role="tab"
+                                aria-controls="jobsearches" aria-selected="false">Popular&nbsp;Jobs&nbsp;Searches</a>
+                        </li>
+                    </ul>
+                    <!-- end tab nav-->
+
+                    <div class="tab-content" id="myTabContent">
+                        <!-- Start jobstitle tab-->
+                        <div class="tab-pane tab-pane-all fade show active" id="jobstitle" role="tabpanel"
+                            aria-labelledby="jobstitle-tab">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <span class="badge badge-jobs">Client Support Specialist</span><span
+                                        class="badge badge-jobs">Civil Faculty</span><span
+                                        class="badge badge-jobs">Instructional Designer</span><span
+                                        class="badge badge-jobs">Head of Sales - Solutions and Technology Alliances </span><span
+                                        class="badge badge-jobs">Security Guard</span><span
+                                        class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                                        class="badge badge-jobs">Software Engineer</span><span
+                                        class="badge badge-jobs">Telecaller Outbound</span><span
+                                        class="badge badge-jobs">Security Guard</span><span
+                                        class="badge badge-jobs">Sales Executive, India</span><span
+                                        class="badge badge-jobs">Software Engineer</span><span
+                                        class="badge badge-jobs">Painting and Coating Worker</span><span 
+                                        class="badge badge-jobs">Client Support Specialist</span><span
+                                        class="badge badge-jobs">Civil Faculty</span><span
+                                        class="badge badge-jobs">Instructional Designer</span><span
+                                        class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                                        class="badge badge-jobs">Software Engineer</span><span
+                                        class="badge badge-jobs">Telecaller Outbound</span>
+                                        <div class="mt-3">
+                                            <a class="btn btn-default-outline rounded-pill btn-lg" href="javascript:void(0)"><span class="material-icons">
+                                                add
+                                                </span>121 More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End about tab-->
+                        <!-- Start jobscity tab-->
+                        <div class="tab-pane tab-pane-all fade" id="jobscity" role="tabpanel"
+                            aria-labelledby="jobscity-tab">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <span
+                                        class="badge badge-jobs">Sales Executive, India</span><span
+                                        class="badge badge-jobs">Software Engineer</span><span
+                                        class="badge badge-jobs">Painting and Coating Worker</span><span 
+                                        class="badge badge-jobs">Client Support Specialist</span><span
+                                        class="badge badge-jobs">Civil Faculty</span><span
+                                        class="badge badge-jobs">Instructional Designer</span><span
+                                        class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                                        class="badge badge-jobs">Software Engineer</span><span
+                                        class="badge badge-jobs">Telecaller Outbound</span><span class="badge badge-jobs">Client Support Specialist</span><span
+                                        class="badge badge-jobs">Civil Faculty</span><span
+                                        class="badge badge-jobs">Instructional Designer</span><span
+                                        class="badge badge-jobs">Head of Sales - Solutions and Technology Alliances </span><span
+                                        class="badge badge-jobs">Security Guard</span><span
+                                        class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                                        class="badge badge-jobs">Software Engineer</span><span
+                                        class="badge badge-jobs">Telecaller Outbound</span><span
+                                        class="badge badge-jobs">Security Guard</span>
+                                        <div class="mt-3">
+                                            <a class="btn btn-default-outline rounded-pill btn-lg" href="javascript:void(0)"><span class="material-icons">
+                                                add
+                                                </span>121 More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Experience tab-->
+                        <!-- Start jobsindustry tab-->
+                        <div class="tab-pane tab-pane-all fade" id="jobsindustry" role="tabpanel"
+                            aria-labelledby="jobsindustry-tab">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <span
+                                        class="badge badge-jobs">Sales Executive, India</span><span
+                                        class="badge badge-jobs">Software Engineer</span><span
+                                        class="badge badge-jobs">Painting and Coating Worker</span><span 
+                                        class="badge badge-jobs">Client Support Specialist</span><span
+                                        class="badge badge-jobs">Civil Faculty</span><span
+                                        class="badge badge-jobs">Head of Sales - Solutions and Technology Alliances </span><span
+                                        class="badge badge-jobs">Security Guard</span><span
+                                        class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                                        class="badge badge-jobs">Software Engineer</span><span
+                                        class="badge badge-jobs">Telecaller Outbound</span><span
+                                        class="badge badge-jobs">Security Guard</span><span
+                                        class="badge badge-jobs">Instructional Designer</span><span
+                                        class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                                        class="badge badge-jobs">Software Engineer</span><span
+                                        class="badge badge-jobs">Telecaller Outbound</span><span class="badge badge-jobs">Client Support Specialist</span><span
+                                        class="badge badge-jobs">Civil Faculty</span><span
+                                        class="badge badge-jobs">Instructional Designer</span>
+                                        <div class="mt-3">
+                                            <a class="btn btn-default-outline rounded-pill btn-lg" href="javascript:void(0)"><span class="material-icons">
+                                                add
+                                                </span>121 More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Education tab-->
+                        <!-- Start jobsearches tab-->
+                        <div class="tab-pane tab-pane-all fade" id="jobsearches" role="tabpanel"
+                            aria-labelledby="jobsearches-tab">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <span
+                                        class="badge badge-jobs">Sales Executive, India</span><span
+                                        class="badge badge-jobs">Software Engineer</span><span
+                                        class="badge badge-jobs">Painting and Coating Worker</span><span 
+                                        class="badge badge-jobs">Client Support Specialist</span><span
+                                        class="badge badge-jobs">Instructional Designer</span><span
+                                        class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                                        class="badge badge-jobs">Software Engineer</span><span
+                                        class="badge badge-jobs">Telecaller Outbound</span><span class="badge badge-jobs">Client Support Specialist</span><span
+                                        class="badge badge-jobs">Civil Faculty</span><span
+                                        class="badge badge-jobs">Instructional Designer</span><span
+                                        class="badge badge-jobs">Civil Faculty</span><span
+                                        class="badge badge-jobs">Head of Sales - Solutions and Technology Alliances </span><span
+                                        class="badge badge-jobs">Security Guard</span><span
+                                        class="badge badge-jobs">Sales Executive, Multiple locations across India</span><span
+                                        class="badge badge-jobs">Software Engineer</span><span
+                                        class="badge badge-jobs">Telecaller Outbound</span><span
+                                        class="badge badge-jobs">Security Guard</span>
+                                        <div class="mt-3">
+                                            <a class="btn btn-default-outline rounded-pill btn-lg" href="javascript:void(0)"><span class="material-icons">
+                                                add
+                                                </span>121 More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Certification tab-->
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footershare">
+            <div class="container">
+                <div class="tophd">
+                    <h2 class="title">share with <span>others</span></h2>
+                </div>
+            </div>
+            <div style="display: block;" id="shareHide"></div>
+            <ul class="social">
+                <li><a class="button fb" href="javascript:void(0)" data-sharer="facebook" data-url="https://www.bsbstaffing.com/"><span class="ico"><i class="fa fa-facebook" aria-hidden="true"></i></span><span>Facebook<span class="sc_name">facebook</span></span></a></li>
+                <li><a class="button tweet" href="javascript:void(0)" data-sharer="twitter" data-url="https://www.bsbstaffing.com/"><span class="ico"><i class="fa fa-twitter" aria-hidden="true"></i></span><span>Twitter<span class="sc_name">twitter</span></span></a></li>
+                <!-- <li><a class="button insta" href="javascript:void(0)" (click)="shareinstaUrl('https://www.bsbstaffing.com/')"><span class="ico"><i class="fa fa-instagram" aria-hidden="true"></i></span><span>Instragram<span class="sc_name">instragram</span></span></a></li> -->
+                <li><a class="button in sharebtn" href="javascript:void(0)" data-sharer="linkedin" data-url="https://www.bsbstaffing.com/"><span class="ico"><i class="fa fa-linkedin" aria-hidden="true"></i></span><span>Linkedin<span class="sc_name">linkedin</span></span></a></li>
+                <li>
+                    <a class="button wapp" href="javascript:void(0)" data-sharer="whatsapp" data-title="Search for Job Vacancies across the World at bsbstaffing.com, Global Job Portal. Search and Discover Jobs across Top Companies. Apply Now!" data-url="https://www.bsbstaffing.com/"><span class="ico"><i class="fa fa-whatsapp" aria-hidden="true"></i></span><span>Whatsapp<span class="sc_name">whatsapp</span></span>
+                    </a>
+                </li>
+                <!-- <li><a class="button snap" href="javascript:void(0)" data-sharer="sharechat" data-url="https://www.bsbstaffing.com/"><span class="ico"><i class="fa fa-bell" aria-hidden="true"></i></span><span>Share me<span class="sc_name">sharechat</span></span></a></li> -->
+                <li><a class="button tel" href="javascript:void(0)" data-sharer="telegram" data-url="https://www.bsbstaffing.com/"><span class="ico"><i class="fa fa-telegram" aria-hidden="true"></i></span><span>Telegram<span class="sc_name">Telegram</span></span></a></li>
+
+                <li><a class="button skype" href="javascript:void(0)" data-sharer="skype" data-url="https://www.bsbstaffing.com/"><span class="ico bg-remove"><i class="fa fa-skype" aria-hidden="true"></i>
+            </span><span>Skype<span class="sc_name">Skype</span></span></a></li>
+                <li><a class="button viber" href="javascript:void(0)" data-sharer="viber" data-title="Checkout Sharer.js!" data-url="https://www.bsbstaffing.com/"><span class="ico bg-remove"><i class="fa fa-phone-square" aria-hidden="true"></i></span><span>Viber<span class="sc_name">Viber</span></span></a></li>
+                <li><a class="button pinterest" href="javascript:void(0)" data-sharer="pinterest" data-url="https://www.bsbstaffing.com/"><span class="ico bg-remove"><i class="fa fa-pinterest" aria-hidden="true"></i></span><span>Pinterest<span class="sc_name">Pinterest</span></span></a></li>
+                <li><a class="button weibo" href="javascript:void(0)" data-sharer="weibo" data-title="Checkout Sharer.js!" data-url="https://www.bsbstaffing.com/"><span class="ico bg-remove"><i class="fa fa-weibo" aria-hidden="true"></i></span><span>Weibo<span class="sc_name">Weibo</span></span></a></li>
+                <li><a class="button line" href="javascript:void(0)" data-sharer="line" data-url="https://www.bsbstaffing.com/"><span class="ico bg-remove"><i class="fa fa-comment" aria-hidden="true"></i></span><span>Line Me<span class="sc_name">Line Me</span></span></a></li>
+                <li><a class="button reddit" href="javascript:void(0)" data-sharer="reddit" data-url="https://www.bsbstaffing.com/"><span class="ico bg-remove"><i class="fa fa-reddit" aria-hidden="true"></i></span><span>Reddit<span class="sc_name">Reddit</span></span></a></li>
+                <li><a class="button vk" href="javascript:void(0)" data-sharer="vk" data-title="Checkout Sharer.js!" data-url="https://www.bsbstaffing.com/"><span class="ico bg-remove"><i class="fa fa-vk" aria-hidden="true"></i></span><span>Vk<span class="sc_name">Vk</span></span></a></li>
+                <li><a class="button renren" href="javascript:void(0)" data-sharer="renren" data-url="https://www.bsbstaffing.com/"><span class="ico bg-remove"><i class="fa fa-renren" aria-hidden="true"></i></span><span>Renren<span class="sc_name">Renren</span></span></a></li>
+                <li><a class="button xing" href="javascript:void(0)" data-sharer="xing" data-title="Sharer.js is the ultimate sharer js lib" data-url="https://www.bsbstaffing.com/"><span class="ico bg-remove"><i class="fa fa-xing" aria-hidden="true"></i></span><span>Xing<span class="sc_name">Xing</span></span></a></li>
+            </ul>
+            <div class="footershareimg">
+                <img src="images/bsb_share_bg.jpeg" alt="bsb_share_bg" />
+                <img src="images/bsb_share_bg.jpeg" alt="bsb_share_bg" />
+                <img src="images/bsb_share_bg.jpeg" alt="bsb_share_bg" />
+            </div>
+        </div>
+        <div class="footertop pt-4 pb-4" style="background-color:#F1F3F8">
+            <div class="container">
+                <a class="cmn_lgin_btn" href="javascript:void(0)" (click)="otherUserModalType='agency';otherUserSignInOpen=true;">Internal Login</a>
+                <a class="cmn_lgin_btn" href="javascript:void(0)" (click)="otherUserModalType='franchise';otherUserSignInOpen=true;">Franchise Registration</a>
+                <a href="javascript:void(0)" (click)="otherUserModalType='college';otherUserSignInOpen=true" class="cmn_lgin_btn"> College/ University/ Institution Registration</a>
+                <a class="cmn_lgin_btn" href="javascript:void(0)" (click)="otherUserModalType='trainer';otherUserSignInOpen=true;">Trainer Registration</a>
+            </div>
+        </div>
+        <div class="footermiddle">
+            <div class="container">
+                <p>Please note when you use <a href="https://www.bsbstaffing.com" class="bsblink1">bsbstaffing.com</a> if you face any technical problem or any business quires, please email us on <a href="mailto:support@bsbstaffing.com" class="bsbmail1">support@bsbstaffing.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <div class="container">
+                <div class="footerbottomhold">
+                    <ul class="ftr_btm_list">
+                        <li><a href="javascript:void(0);" routerLink="legal/user-agreement" target="_blank">User Agreement </a></li>
+                        <li><a href="javascript:void(0);" routerLink="legal/privacy-policy" target="_blank">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0);" routerLink="legal/terms-conditions" target="_blank">Terms Conditions</a></li>
+                        <li><a href="javascript:void(0);" routerLink="legal/cookie-policy" target="_blank">Cookie Policy</a></li>
+                    </ul>
+                    <p>
+                        &copy; 2020. All rights reserved. Developed by <a href="https://www.bsbstaffing.com" class="bsblink1">https://www.bsbstaffing.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- END REGISTRATION FORM -->
+
+    <!-- Start Save to folder Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="saveToFolder">
+        <div class="modal-content p-0">
+            <div class="modal-header pb-0 border-bottom-0">
+                <h5 class="modal-title pl-3">Working Days and Timings</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="pl-3 pr-3">
+                    <form action="" class="working-time-form v2-formdesign">
+                        <div class="part-sec">
+                            <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                <div class="col-md-3">
+                                    <label class="mb-0">
+                                        <input name="check-working" type="checkbox" />
+                                        <span class="text-dark">Sunday
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="mb-0 p" style="color:#a6acbd">
+                                        Closed
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                <div class="col-md-3">
+                                    <label class="mb-0">
+                                        <input name="check-working" type="checkbox" checked />
+                                        <span class="text-dark">Monday
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="input-field mb-0 mt-2">
+                                        <select>
+                                            <option value="">24 Hours</option>
+                                            <option selected>12:00 AM</option>
+                                            <option>12:30 AM</option>
+                                        </select>
+                                        <label>Start Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="input-field mb-0 mt-2">
+                                        <select>
+                                            <option value="">24 Hours</option>
+                                            <option>6:00 PM</option>
+                                            <option selected>6:30 PM</option>
+                                        </select>
+                                        <label>Start Time</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                <div class="col-md-3">
+                                    <label class="mb-0">
+                                        <input name="check-working" type="checkbox" checked />
+                                        <span class="text-dark">Tuesday
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="input-field mb-0 mt-2">
+                                        <select>
+                                            <option value="">24 Hours</option>
+                                            <option>12:00 AM</option>
+                                            <option>12:30 AM</option>
+                                        </select>
+                                        <label>Open</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="display: none;">
+                                    <div class="input-field mb-0 mt-2">
+                                        <select>
+                                            <option value="">24 Hours</option>
+                                            <option>12:00 AM</option>
+                                            <option>12:30 AM</option>
+                                        </select>
+                                        <label>Start Time</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                <div class="col-md-3">
+                                    <label class="mb-0">
+                                        <input name="check-working" type="checkbox" checked />
+                                        <span class="text-dark">Wednesday
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="input-field mb-0 mt-2">
+                                        <select>
+                                            <option value="">24 Hours</option>
+                                            <option selected>12:00 AM</option>
+                                            <option>12:30 AM</option>
+                                        </select>
+                                        <label>Start Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="input-field mb-0 mt-2">
+                                        <select>
+                                            <option value="">24 Hours</option>
+                                            <option>6:00 PM</option>
+                                            <option selected>6:30 PM</option>
+                                        </select>
+                                        <label>Start Time</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                <div class="col-md-3">
+                                    <label class="mb-0">
+                                        <input name="check-working" type="checkbox" checked />
+                                        <span class="text-dark">Thursday
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="input-field mb-0 mt-2">
+                                        <select>
+                                            <option value="">24 Hours</option>
+                                            <option selected>12:00 AM</option>
+                                            <option>12:30 AM</option>
+                                        </select>
+                                        <label>Start Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="input-field mb-0 mt-2">
+                                        <select>
+                                            <option value="">24 Hours</option>
+                                            <option>6:00 PM</option>
+                                            <option selected>6:30 PM</option>
+                                        </select>
+                                        <label>Start Time</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                <div class="col-md-3">
+                                    <label class="mb-0">
+                                        <input name="check-working" type="checkbox" checked />
+                                        <span class="text-dark">Friday
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="input-field mb-0 mt-2">
+                                        <select>
+                                            <option value="">24 Hours</option>
+                                            <option selected>12:00 AM</option>
+                                            <option>12:30 AM</option>
+                                        </select>
+                                        <label>Start Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="input-field mb-0 mt-2">
+                                        <select>
+                                            <option value="">24 Hours</option>
+                                            <option>6:00 PM</option>
+                                            <option selected>6:30 PM</option>
+                                        </select>
+                                        <label>Start Time</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row d-flex align-items-center" style="min-height: 46px;">
+                                <div class="col-md-3">
+                                    <label class="mb-0">
+                                        <input name="check-working" type="checkbox" />
+                                        <span class="text-dark">Saturday
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="mb-0 p" style="color:#a6acbd">
+                                        Closed
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="alert alert-success" role="alert">
+                            Saved successfully
+                        </div> -->
+                        <div class="submitOuter">
+                            <button type="submit" class="btn">Save</button>
+                            <button type="submit" class="btn btn-outline-primary">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Save to folder Modal -->
+
+
+    <!-- START FOOTER -->
+    <footer class="d-none">
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12 col-xs-12">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12">
+                        <div class="copyrightPara">
+                            <p>&copy; 2018. All rights reserved. Developed by <a href="#" target="_blank">Pixel
+                                    Solutionz</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- START FOOTER -->
+
+    <!-- jQuery first, then Bootstrap JS -->
+
+    <!-- <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script> -->
+
+    <script type="text/javascript" src=".././node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/toastr/build/toastr.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/flatpickr/dist/flatpickr.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/sweetalert2/dist/sweetalert2.js"></script>
+    <script type="text/javascript" src=".././node_modules/sharer.js/sharer.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="../node_modules/summernote/dist/summernote-lite.js"></script>
+    <script type="text/javascript" src=".././node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/jszip/dist/jszip.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/jszip-utils/dist/jszip-utils.min.js"></script>
+    <script type="text/javascript" src=".././node_modules/file-saver/dist/FileSaver.min.js"></script>
+    <!-- <script type="text/javascript" src="../src/assets/js/materialize.min.js"></script> -->
+    <script type="text/javascript" src="../src/assets/js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/othersource/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/othersource/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/othersource/circular_test.js"></script>
+    <script type="text/javascript" src="../src/assets/js/othersource/TextPlugin.min.js"></script>
+    <script type="text/javascript" src="../src/assets/js/custom.js"></script>
+
+    <script src="js/jquery.accordion-min.js"></script>
+    <script>
+        $("#accordion").awsAccordion({
+            type: "horizontal",
+            cssAttrsHor: {
+                ulWidth: "responsive",
+                liHeight: 400,
+                liWidth: 50
+            },
+            startSlide: 1,
+            //   openCloseHelper:{
+            //       openIcon:"plus",
+            //       closeIcon:"minus"
+            //   },
+            openOnebyOne: true,
+            classTab: "active",
+            slideOn: "click",
+            autoPlay: true,
+            autoPlaySpeed: 3000
+        })
+    </script>
+    <script>
+        var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 15,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 3,
+                        // nav:true
+                    },
+                    600: {
+                        items: 4,
+                        // nav:false
+                    },
+                    1000: {
+                        items: 8,
+                        // nav:true,
+                        loop: false
+                    }
+                }
+            })
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#summernote').summernote({
+                // placeholder: 'Hello Bootstrap 4',
+                // tabsize: 2,
+                height: 100
+            });
+            $('#primaryResponsibility').summernote({
+                // placeholder: 'Hello Bootstrap 4',
+                // tabsize: 2,
+                height: 100
+            });
+
+            $('#benefitEmployee').summernote({
+                // placeholder: 'Hello Bootstrap 4',
+                // tabsize: 2,
+                height: 100
+            });
+            $('#specialNotes').summernote({
+                // placeholder: 'Hello Bootstrap 4',
+                // tabsize: 2,
+                height: 100
+            });
+            $('#AddQuestions').summernote({
+                // placeholder: 'Hello Bootstrap 4',
+                // tabsize: 2,
+                height: 100
+            });
+
+        });
+
+        $('.nav-tabs-over > li').mouseover(function () {
+            $(this).find('a').tab('show');
+        });
+        $('.nav-tabs-over > li').mouseout(function () {
+            $(this).find('a').tab('hide');
+        });
+
+        $('.nav-tabs-over > li').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })
+
+
+
+    </script>
+
+    <script>
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.chips');
+            var instances = M.Chips.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $('.chips').chips();
+        $('.chips-initial').chips({
+            data: [{
+                tag: 'PHP',
+            }, {
+                tag: 'HTML',
+            }, {
+                tag: 'CSS',
+            }],
+        });
+        $('.chips-placeholder').chips({
+            placeholder: 'Add Skill',
+            secondaryPlaceholder: '+Skill',
+        });
+        $('.chips-autocomplete').chips({
+            autocompleteOptions: {
+                data: {
+                    'PHP': null,
+                    'HTML': null,
+                    'CSS': null
+                },
+                limit: Infinity,
+                minLength: 1
+            }
+        });
+        $('.chips-placeholder-degree').chips({
+            placeholder: 'Choose Degree',
+            secondaryPlaceholder: '+Degree',
+        });
+
+
+
+
+
+        $('.dropdown-trigger').dropdown();
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

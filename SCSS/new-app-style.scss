@@ -1,0 +1,27 @@
+.organic-search-wrapper {
+    width: 100%;
+    background-image: url(/assets/images/register-bg-bsb.png);
+    position: relative;
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 3px 16px #c1c1c1;
+    border-radius: 6px;
+    overflow: hidden;
+    &:after {
+        content: '';
+        background-image: linear-gradient(0deg, #131a53, #2a3cd4);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: .8;
+    }
+    .inner-organic-wrapper {
+        position: relative;
+        z-index: 1;
+    }
+}

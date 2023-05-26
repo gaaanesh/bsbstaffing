@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bsb Job Portal</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- Materialize -->
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <!-- Viewbox -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- owl -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style-search.css">
+    <link rel="stylesheet" type="text/css" href="css/common-style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- remove after submit -->
+    <style>
+        .profileMenu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .newProfileSection {
+                padding: 60px 0 20px 0;
+            }
+        }
+
+        .tab-navigation input[type=text]:not(.browser-default) {
+            font-size: 1.75rem;
+            font-family: roboto;
+            font-weight: 500;
+            color: #212529
+        }
+    </style>
+</head>
+
+<body>
+    <!-- START HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="logoContainer">
+                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-9 col-sm-6 col-6">
+                    <div class="navMenu">
+                    </div>
+                    <div class="menuhold">
+                        <div class="profileMenu">
+                            <a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                            <ul>
+                                <li><a href="#">Messages <span>1</span></a></li>
+                                <li><a href="#">Notifications <span>1</span></a></li>
+                                <li><a href="#">LogOut</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="hmburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <div class="menu-wrap">
+                            <span class="menuClose">
+                                <span class="item"></span>
+                                <span class="item"></span>
+                                <span class="item"></span>
+                            </span>
+                            <div class="navMenuOuter">
+                                <ul class="mobileMenu">
+                                    <li><a href="employee-dashboard.html">Dashboard</a></li>
+                                    <li class="hasDropdown"><a href="#">Search by Category</a>
+                                        <ul>
+                                            <li><a href="search-result-listing.html">Search by Country</a></li>
+                                            <li><a href="search-result-listing.html">Search by City</a></li>
+                                            <li><a href="search-result-listing.html">Search by Job Role</a></li>
+                                            <li><a href="search-result-listing.html">Search by Industry</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hasDropdown"><a href="#">Jobs For You</a>
+                                        <ul>
+                                            <li><a href="employee-job-alerts.html">Job Alerts</a></li>
+                                            <li><a href="employee-applied-jobs.html">Applied Job</a></li>
+                                            <li><a href="employee-savedjobs.html">Saved Job</a></li>
+                                            <li><a href="employee-apply-hiring.html">Local Walk-in</a></li>
+                                            <li><a href="">International Walk-in</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="employee-application-status.html">Application Status</a></li>
+                                    <!-- <li><a href="#">Recruiter Action</a></li> -->
+                                    <li class="hasDropdown"><a href="#">We Offer Training</a>
+                                        <ul>
+                                            <li><a href="training_getting_job.html">Training Getting Job</a></li>
+                                            <li><a href="working_visa_training.html">Working Visa Training</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="employee-mailbox.html">Mailbox</a></li>
+                                    <li class="hasDropdown"><a href="employee-profile.html" class="active">Profile</a>
+                                        <ul>
+                                            <li><a href="#">Change Password</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-0 col-sm-12 col-xs-12">
+                    <ul class="afterLoginEmployee">
+                        <li>
+                            <h5>Welcome User</h5>
+                        </li>
+                        <li><a href="#"><img src="images/msgIcon.png" alt="msgIcon"><span class="count">1</span></a>
+                        </li>
+                        <li><a href="#"><img src="images/bellIcon.png" alt="bellIcon"><span class="count">1</span></a>
+                        </li>
+                        <li><a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                            <ul>
+                                <li><a href="#">LogOut</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- START SECOND HEADER -->
+    <section class="menuBar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <ul>
+                        <li><a href="employee-dashboard.html">Dashboard</a></li>
+                        <li class="hasDropdown"><a href="#">Search by Category</a>
+                            <ul>
+                                <li><a href="employee-search-country.html">Search by Country</a></li>
+                                <li><a href="employee-search-city.html">Search by City</a></li>
+                                <li><a href="employee-search-jobrole.html">Search by Job Role</a></li>
+                                <li><a href="employee-search-industry.html">Search by Industry</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasDropdown"><a href="#">Jobs For You</a>
+                            <ul>
+                                <li><a href="employee-job-alerts.html">Job Alerts</a></li>
+                                <li><a href="employee-applied-jobs.html">Applied Job</a></li>
+                                <li><a href="employee-savedjobs.html">Saved Job</a></li>
+                                <li><a href="employee-apply-hiring.html">Local Walk-in</a></li>
+                                <li><a href="employee-apply-hiring-international.html">International Walk-in</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="employee-application-status.html">Application Status</a></li>
+                        <li class="hasDropdown"><a href="#">We Offer Training</a>
+                            <ul>
+                                <li><a href="training_getting_job.html">Training Getting Job</a></li>
+                                <li><a href="working_visa_training.html">Working Visa Training</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="employee-mailbox.html">Mailbox</a></li>
+                        <li><a href="employee-profile.html">Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECOND HEADER -->
+    <!-- START REGISTRATION FORM -->
+    <section class="newSearchSection">
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <div class="tab-container">
+                        <h1 class="h3 mt-2 d-flex justify-content-between">
+                            <div>Create email template</div>
+                              <!-- Dropdown Trigger -->
+                              <div class="d-inline-block d-md-none">
+                                <a class='dropdown-trigger' href='#' data-target='dropdown1'><span class="material-icons">
+                                    more_vert
+                                    </span></a>
+
+                                <!-- Dropdown Structure -->
+                                <ul id='dropdown1' class='dropdown-content w-50'>
+                                    <li><a href="search-history-listing.html">Search&nbsp;history</a></li>
+                                    <li><a href="save-search-listing.html">Saved&nbsp;Search</a></li>
+                                </ul>
+                            </div>
+                                <div class="d-none d-md-inline-block w-50">
+                                    <div class="input-field col s6 mob-remove-icon">
+                                        <select>
+                                          <option disabled selected value>Copy data from email template</option>
+                                          <option>Email template 1</option>
+                                          <option>Email template 2</option>
+                                          <option>Email template 3</option>
+                                          <option>Email template 4</option>
+                                        </select>
+                                        <!-- <label>Country</label> -->
+                                      </div>
+                                </div>
+                        </h1>
+
+
+                        <div id="tabsearch-1" class="tab-content-search">
+                            <form action="">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <!-- <i class="material-icons prefix">←</i> -->
+                                        <span class="material-icons prefix text-muted">
+                                            ballot
+                                        </span>
+                                        <input id="icon_prefix" type="text" class="validate">
+                                        <label for="icon_prefix">Template name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <span class="material-icons prefix text-muted">
+                                            subject
+                                        </span>
+                                        <textarea id="textarea2" class="materialize-textarea" data-length="320"></textarea>
+                                        <label for="textarea2">Subject</label>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea3" rows="3" class="materialize-textarea" data-length="320" style="height: inherit;"></textarea>
+                                        <label for="textarea3">About this job (Use smart text editor)</label>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="Benefits" rows="3" class="materialize-textarea" data-length="320" style="height: inherit;"></textarea>
+                                        <label for="Benefits">Benefits (Use smart text editor)</label>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="PrimaryResponsibility" rows="3" class="materialize-textarea" data-length="320" style="height: inherit;"></textarea>
+                                        <label for="PrimaryResponsibility">Primary Responsibility (Use smart text editor)</label>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="Specialnote" rows="3" class="materialize-textarea" data-length="320" style="height: inherit;"></textarea>
+                                        <label for="Specialnote">Special note (Use smart text editor)</label>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="h4">Job details</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="icon_prefix" type="text" class="validate">
+                                        <label for="icon_prefix">Job title</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6 mob-remove-icon">
+                                        <span class="material-icons prefix text-muted">
+                                            language
+                                        </span>
+                                        <select>
+                                          <option disabled selected value>- Select country -</option>
+                                          <option>France</option>
+                                          <option>Italy</option>
+                                          <option>Australia</option>
+                                          <option>India</option>
+                                        </select>
+                                        <label>Country</label>
+                                      </div>
+                                      <div class="input-field col s6 mob-remove-icon">
+                                        <span class="material-icons prefix text-muted">
+                                            location_on
+                                        </span>
+                                        <select>
+                                          <option disabled selected value>- Select City -</option>
+                                          <option>Paris</option>
+                                          <option>Milan </option>
+                                          <option>Rome</option>
+                                          <option>Sydney</option>
+                                          <option>Melbourne</option>
+                                          <option>Kolkata</option>
+                                        </select>
+                                        <label>City</label>
+                                      </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6 mob-remove-icon">
+                                        <span class="material-icons prefix text-muted">
+                                            work
+                                        </span>
+                                        <select>
+                                          <option disabled selected value>- Min Exp. -</option>
+                                        <option>Fresher</option>
+                                        <option>1 year</option>
+                                        <option>2 years</option>
+                                        </select>
+                                        <label>Min Experience</label>
+                                      </div>
+                                      <div class="input-field col s6 mob-remove-icon">
+                                        <span class="material-icons prefix text-muted">
+                                            work
+                                        </span>
+                                        <select>
+                                            <option disabled selected value>- Max Exp. -</option>
+                                            <option>Fresher</option>
+                                            <option>1 year</option>
+                                            <option>2 years</option>
+                                        </select>
+                                        <label>Max Experience</label>
+                                      </div>
+                                      <div class="input-field col-6 col-md-4 s6">
+                                        <select>
+                                            <option disabled selected value>- Select language -</option>
+                                            <option>English</option>
+                                            <option>German</option>
+                                            <option>Spanish</option>
+                                            <option>Hindi</option>
+                                        </select>
+                                        <label>Language preference</label>
+                                      </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="icon_prefix2" type="text" class="validate">
+                                        <label for="icon_prefix2">Skills</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="h4">Salary</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                            <label>
+                                                <input name="group1" type="radio" />
+                                                <span>Hourly</span>
+                                              </label>
+                                        </p>
+                                        <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                            <label>
+                                                <input name="group1" type="radio" />
+                                                <span>Weekly</span>
+                                              </label>
+                                        </p>
+                                        <p class="custom-control custom-radio custom-control-inline pl-0 pr-3">
+                                            <label>
+                                                <input name="group1" type="radio" />
+                                                <span>Monthly</span>
+                                              </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col-12 col-md-4 s6">
+                                        <span class="material-icons prefix text-muted">
+                                            payment
+                                        </span>
+                                        <select>
+                                          <option disabled selected value>- Select Currency -</option>
+                                          <option>France</option>
+                                          <option>Italy</option>
+                                          <option>Australia</option>
+                                          <option>India</option>
+                                        </select>
+                                        <label>Currency</label>
+                                      </div>
+                                      <div class="input-field col-6 col-md-4 s6">
+                                        <input id="mini_salary" type="number" class="validate">
+                                        <label for="mini_salary">Min Salary</label>
+                                      </div>
+
+                                      <div class="input-field col-6 col-md-4 s6">
+                                        <input id="max_salary" type="number" class="validate">
+                                        <label for="max_salary">Max Salary</label>
+                                      </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-primary mr-2">Save</button>
+                                        <a href="#" class="btn btn-outline-primary mr-2" data-toggle="modal" data-target="#emailPreview">Preview</a>
+                                        <button type="submit" class="btn btn-outline-primary">Reset</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <ul class="nav nav-pills mb-3 tab-navigation" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2...</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">3...</div>
+</div> -->
+                <!--   <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1">Test 1</a></li>
+        <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+        <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+        <li class="tab col s3"><a href="#test4">Test 4</a></li>
+      </ul>
+    </div>
+    <div id="test1" class="col s12">Test 1</div>
+    <div id="test2" class="col s12">Test 2</div>
+    <div id="test3" class="col s12">Test 3</div>
+    <div id="test4" class="col s12">Test 4</div>
+  </div>
+ -->
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- END REGISTRATION FORM -->
+    <!-- Start emailPreview Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="emailPreview">
+        <div class="modal-content p-0">
+            <div class="modal-header pt-0">
+                <h5 class="modal-title h5">User Interface Architect template</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <iframe src="email-preview.html" frameborder="0" style="width: 100%;height:100vh;"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- End emailPreview Modal -->
+
+    <!-- START FOOTER -->
+    <footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12 col-xs-12">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12">
+                        <div class="copyrightPara">
+                            <p>&copy; 2018. All rights reserved. Developed by <a href="#" target="_blank">Pixel
+                                    Solutionz</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- START FOOTER -->
+
+    <!-- jQuery first, then Bootstrap JS -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+        //hide all tabs first
+        $('.tab-content-search').hide();
+        //show the first tab content
+        $('#tabsearch-1').show();
+
+        $('#select-box-search').change(function () {
+            dropdown = $('#select-box-search').val();
+            //first hide all tabs again when a new option is selected
+            $('.tab-content-search').hide();
+            //then show the tab content of whatever option value was selected
+            $('#' + "tabsearch-" + dropdown).show();
+        });
+    </script>
+
+
+    <script>
+        $("#show_all").on("click", function () {
+            $(this).addClass("active").parent("li").siblings().find("a").removeClass("active");
+            $(".tab-pane-all").removeClass("fade").addClass("active").addClass("show");
+        });
+        $(".nav-link").not("#show_all").on("click", function () {
+            console.log(this.hash);
+            $(".tab-pane-all").not(this.hash).removeClass("active").removeClass("show");
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
+    <script>
+        
+
+
+
+        // Date picker
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('.datepicker').datepicker();
+        });
+
+        // New position hide div
+
+        $(function () {
+            $(".newPositiondiv").hide();
+            $(".newPositionlink, .clearPositionlink").bind("click", function () {
+                $(".newPositiondiv").hide();
+                if ($(this).attr("class") == "newPositionlink") {
+                    $(".newPositiondiv").show();
+                }
+                else {
+                    $(".newPositiondiv").hide();
+                }
+            });
+        });
+  $('.dropdown-trigger').dropdown();
+
+
+    </script>
+
+
+</body>
+
+</html>

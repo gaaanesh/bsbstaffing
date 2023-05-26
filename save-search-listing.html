@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bsb Job Portal</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- Materialize -->
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <!-- Viewbox -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- owl -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style-search.css">
+    <link rel="stylesheet" type="text/css" href="css/common-style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- remove after submit -->
+    <style>
+        .profileMenu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .newProfileSection {
+                padding: 60px 0 20px 0;
+            }
+        }
+
+        .tab-navigation input[type=text]:not(.browser-default) {
+            font-size: 1.75rem;
+            font-family: roboto;
+            font-weight: 500;
+            color: #212529
+        }
+    </style>
+</head>
+
+<body>
+    <!-- START HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="logoContainer">
+                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-9 col-sm-6 col-6">
+                    <div class="navMenu">
+                    </div>
+                    <div class="menuhold">
+                        <div class="profileMenu">
+                            <a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                            <ul>
+                                <li><a href="#">Messages <span>1</span></a></li>
+                                <li><a href="#">Notifications <span>1</span></a></li>
+                                <li><a href="#">LogOut</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="hmburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <div class="menu-wrap">
+                            <span class="menuClose">
+                                <span class="item"></span>
+                                <span class="item"></span>
+                                <span class="item"></span>
+                            </span>
+                            <div class="navMenuOuter">
+                                <ul class="mobileMenu">
+                                    <li><a href="employee-dashboard.html">Dashboard</a></li>
+                                    <li class="hasDropdown"><a href="#">Search by Category</a>
+                                        <ul>
+                                            <li><a href="search-result-listing.html">Search by Country</a></li>
+                                            <li><a href="search-result-listing.html">Search by City</a></li>
+                                            <li><a href="search-result-listing.html">Search by Job Role</a></li>
+                                            <li><a href="search-result-listing.html">Search by Industry</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hasDropdown"><a href="#">Jobs For You</a>
+                                        <ul>
+                                            <li><a href="employee-job-alerts.html">Job Alerts</a></li>
+                                            <li><a href="employee-applied-jobs.html">Applied Job</a></li>
+                                            <li><a href="employee-savedjobs.html">Saved Job</a></li>
+                                            <li><a href="employee-apply-hiring.html">Local Walk-in</a></li>
+                                            <li><a href="">International Walk-in</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="employee-application-status.html">Application Status</a></li>
+                                    <!-- <li><a href="#">Recruiter Action</a></li> -->
+                                    <li class="hasDropdown"><a href="#">We Offer Training</a>
+                                        <ul>
+                                            <li><a href="training_getting_job.html">Training Getting Job</a></li>
+                                            <li><a href="working_visa_training.html">Working Visa Training</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="employee-mailbox.html">Mailbox</a></li>
+                                    <li class="hasDropdown"><a href="employee-profile.html" class="active">Profile</a>
+                                        <ul>
+                                            <li><a href="#">Change Password</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-0 col-sm-12 col-xs-12">
+                    <ul class="afterLoginEmployee">
+                        <li>
+                            <h5>Welcome User</h5>
+                        </li>
+                        <li><a href="#"><img src="images/msgIcon.png" alt="msgIcon"><span class="count">1</span></a>
+                        </li>
+                        <li><a href="#"><img src="images/bellIcon.png" alt="bellIcon"><span class="count">1</span></a>
+                        </li>
+                        <li><a href="#"><span class="userIcon"><img src="images/userIcon.png" alt="userIcon"></span></a>
+                            <ul>
+                                <li><a href="#">LogOut</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- START SECOND HEADER -->
+    <section class="menuBar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <ul>
+                        <li><a href="employee-dashboard.html">Dashboard</a></li>
+                        <li class="hasDropdown"><a href="#">Search by Category</a>
+                            <ul>
+                                <li><a href="employee-search-country.html">Search by Country</a></li>
+                                <li><a href="employee-search-city.html">Search by City</a></li>
+                                <li><a href="employee-search-jobrole.html">Search by Job Role</a></li>
+                                <li><a href="employee-search-industry.html">Search by Industry</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasDropdown"><a href="#">Jobs For You</a>
+                            <ul>
+                                <li><a href="employee-job-alerts.html">Job Alerts</a></li>
+                                <li><a href="employee-applied-jobs.html">Applied Job</a></li>
+                                <li><a href="employee-savedjobs.html">Saved Job</a></li>
+                                <li><a href="employee-apply-hiring.html">Local Walk-in</a></li>
+                                <li><a href="employee-apply-hiring-international.html">International Walk-in</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="employee-application-status.html">Application Status</a></li>
+                        <li class="hasDropdown"><a href="#">We Offer Training</a>
+                            <ul>
+                                <li><a href="training_getting_job.html">Training Getting Job</a></li>
+                                <li><a href="working_visa_training.html">Working Visa Training</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="employee-mailbox.html">Mailbox</a></li>
+                        <li><a href="employee-profile.html">Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECOND HEADER -->
+    <!-- START REGISTRATION FORM -->
+    <section class="newSearchSection">
+        <div class="container">
+            <h1 class="h3 mt-2 d-flex justify-content-between mb-3">
+                <div>Saved search
+                </div>
+                  <!-- Dropdown Trigger -->
+                  <div class="d-inline-block d-md-none">
+                    <a class='dropdown-trigger' href='#' data-target='dropdown1'><span class="material-icons">
+                        more_vert
+                        </span></a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content w-50'>
+                        <li><a href="search-history-listing.html">Search&nbsp;history</a></li>
+                    </ul>
+                </div>
+                    <div class="d-none d-md-inline-block">
+                        <a href="search-history-listing.html" class="btn btn-primary rounded-pill">Search&nbsp;history</a>
+                    </div>
+            </h1>
+            <div class="card">
+                <div class="card-content pb-2">
+                    <form action="">
+                        <div class="row">
+                            <div class="input-field  mt-2 mb-2 mt-md-0 mb-md-0 col-md-4 s6">
+                                <div class="d-flex">
+                                <div>
+                                    <span>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>&nbsp;</span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="input-field mt-2 mb-2 mt-md-0 mb-md-0 flex-grow-1">
+                                    <!-- <i class="material-icons prefix text-muted">search</i> -->
+                                    <input id="icon_prefix" type="text" class="validate">
+                                    <label for="icon_prefix">Search history</label>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="input-field  mt-2 mb-2 mt-md-0 mb-md-0 col-6 col-md-2 s6">
+                                <i class="material-icons prefix text-muted">date_range</i>
+                                <input id="date_picker" type="text" class="datepicker">
+                                <label for="date_picker">From date</label>
+                            </div>
+                            <div class="input-field  mt-2 mb-2 mt-md-0 mb-md-0  col-6 col-md-2 s6">
+                                <i class="material-icons prefix text-muted">date_range</i>
+                                <input id="date2_picker" type="text" class="datepicker">
+                                <label for="date2_picker">To date</label>
+                            </div>
+                            <div class="col-md-4 s6">
+                                <div class="d-flex justify-content-md-end justify-content-center custom-pagination">   
+                                    <span class="mr-3 small only-text">1-10 0f 28 results</span>
+                                    <ul class="pagination p-0 d-none d-md-flex">
+                                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                                        <li class="active"><span><input  value="1" type="text" class="validate textbox-pagination" /></span></li>
+                                        <li><span class="only-text">of</span></li>
+                                        <li class="waves-effect"><a href="#!">3</a></li>
+                                        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                                    </ul>
+                                </div>
+                                  
+                                
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="tab-container"> 
+                        <ul class="listliketable">
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <span>
+                                            <label>
+                                                <input type="checkbox" />
+                                                <span>&nbsp;</span>
+                                            </label>
+                                        </span>
+                                        <div class="mr-2">
+                                                <p class="h5 mb-1"><a href="profile-listing.html">Software engineer for US</a></p>
+                                                <p class="text-dark">HTML, PHP, Wordpress, CSS, Javascript, Java  |  India, United states, China |  Mumbai, Navi mumbai, Delhi</p>
+                                                <p class="text-muted small">09 Jun 2021 4:21 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <span>
+                                            <label>
+                                                <input type="checkbox" />
+                                                <span>&nbsp;</span>
+                                            </label>
+                                        </span>
+                                        <div class="mr-2">
+                                            <p class="h5 mb-1"><a href="profile-listing.html">PHP engineer for US</a></p>
+                                            <p>HTML, PHP, Wordpress, CSS, Javascript, Java  |  India, United states, China |  Mumbai, Navi mumbai, Delhi</p>
+                                            <p class="text-muted small">09 Jun 2021 4:21 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <span>
+                                            <label>
+                                                <input type="checkbox" />
+                                                <span>&nbsp;</span>
+                                            </label>
+                                        </span>
+                                        <div class="mr-2">
+                                            <p class="h5 mb-1"><a href="profile-listing.html">Frontend engineer</a></p>
+                                            <p>HTML, PHP, Wordpress, CSS, Javascript, Java  |  India, United states, China |  Mumbai, Navi mumbai, Delhi</p>
+                                            <p class="text-muted small">09 Jun 2021 4:21 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <span>
+                                            <label>
+                                                <input type="checkbox" />
+                                                <span>&nbsp;</span>
+                                            </label>
+                                        </span>
+                                        <div class="mr-2">
+                                            <p class="h5 mb-1"><a href="profile-listing.html">JavaScript Engineer</a></p>
+                                            <p>HTML, PHP, Wordpress, CSS, Javascript, Java  |  India, United states, China |  Mumbai, Navi mumbai, Delhi</p>
+                                            <p class="text-muted small">09 Jun 2021 4:21 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <span>
+                                            <label>
+                                                <input type="checkbox" />
+                                                <span>&nbsp;</span>
+                                            </label>
+                                        </span>
+                                        <div class="mr-2">
+                                            <p class="h5 mb-1"><a href="profile-listing.html">Java devloper</a></p>
+                                            <p>HTML, PHP, Wordpress, CSS, Javascript, Java  |  India, United states, China |  Mumbai, Navi mumbai, Delhi</p>
+                                            <p class="text-muted small">09 Jun 2021 4:21 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <span>
+                                            <label>
+                                                <input type="checkbox" />
+                                                <span>&nbsp;</span>
+                                            </label>
+                                        </span>
+                                        <div class="mr-2">
+                                            <p class="h5 mb-1"><a href="profile-listing.html">Software engineer for US</a></p>
+                                            <p>HTML, PHP, Wordpress, CSS, Javascript, Java  |  India, United states, China |  Mumbai, Navi mumbai, Delhi</p>
+                                            <p class="text-muted small">09 Jun 2021 4:21 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <span>
+                                            <label>
+                                                <input type="checkbox" />
+                                                <span>&nbsp;</span>
+                                            </label>
+                                        </span>
+                                        <div class="mr-2">
+                                            <p class="h5 mb-1"><a href="profile-listing.html">Software engineer for US</a></p>
+                                            <p>HTML, PHP, Wordpress, CSS, Javascript, Java  |  India, United states, China |  Mumbai, Navi mumbai, Delhi</p>
+                                            <p class="text-muted small">09 Jun 2021 4:21 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <span>
+                                            <label>
+                                                <input type="checkbox" />
+                                                <span>&nbsp;</span>
+                                            </label>
+                                        </span>
+                                        <div class="mr-2">
+                                            <p class="h5 mb-1"><a href="profile-listing.html">Software engineer for US</a></p>
+                                            <p>HTML, PHP, Wordpress, CSS, Javascript, Java  |  India, United states, China |  Mumbai, Navi mumbai, Delhi</p>
+                                            <p class="text-muted small">09 Jun 2021 4:21 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <span>
+                                            <label>
+                                                <input type="checkbox" />
+                                                <span>&nbsp;</span>
+                                            </label>
+                                        </span>
+                                        <div class="mr-2">
+                                            <p class="h5 mb-1"><a href="profile-listing.html">Software engineer for US</a></p>
+                                            <p>HTML, PHP, Wordpress, CSS, Javascript, Java  |  India, United states, China |  Mumbai, Navi mumbai, Delhi</p>
+                                            <p class="text-muted small">09 Jun 2021 4:21 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <span>
+                                            <label>
+                                                <input type="checkbox" />
+                                                <span>&nbsp;</span>
+                                            </label>
+                                        </span>
+                                        <div class="mr-2">
+                                            <p class="h5 mb-1"><a href="profile-listing.html">Software engineer for US</a></p>
+                                            <p>HTML, PHP, Wordpress, CSS, Javascript, Java  |  India, United states, China |  Mumbai, Navi mumbai, Delhi</p>
+                                            <p class="text-muted small">09 Jun 2021 4:21 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+
+                
+
+
+            </div>
+            <div class="d-flex justify-content-end custom-pagination">   
+                <span class="mr-3 small only-text">1-10 0f 28 results</span>
+                <ul class="pagination p-0">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><span><input  value="1" type="text" class="validate textbox-pagination" /></span></li>
+                    <li><span class="only-text">of</span></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- END REGISTRATION FORM -->
+    <!-- START FOOTER -->
+    <footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12 col-xs-12">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12">
+                        <div class="copyrightPara">
+                            <p>&copy; 2018. All rights reserved. Developed by <a href="#" target="_blank">Pixel
+                                    Solutionz</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- START FOOTER -->
+
+    <!-- jQuery first, then Bootstrap JS -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+        //hide all tabs first
+        $('.tab-content-search').hide();
+        //show the first tab content
+        $('#tabsearch-1').show();
+
+        $('#select-box-search').change(function () {
+            dropdown = $('#select-box-search').val();
+            //first hide all tabs again when a new option is selected
+            $('.tab-content-search').hide();
+            //then show the tab content of whatever option value was selected
+            $('#' + "tabsearch-" + dropdown).show();
+        });
+    </script>
+
+
+    <script>
+        $("#show_all").on("click", function () {
+            $(this).addClass("active").parent("li").siblings().find("a").removeClass("active");
+            $(".tab-pane-all").removeClass("fade").addClass("active").addClass("show");
+        });
+        $(".nav-link").not("#show_all").on("click", function () {
+            console.log(this.hash);
+            $(".tab-pane-all").not(this.hash).removeClass("active").removeClass("show");
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
+    <script>
+        $('.chips').chips();
+        $('.chips-initial').chips({
+            data: [{
+                tag: 'Apple',
+            }, {
+                tag: 'Microsoft',
+            }, {
+                tag: 'Google',
+            }],
+        });
+        $('.chips-placeholder-keyword').chips({
+            placeholder: 'Search by keyword, skills etc.',
+            secondaryPlaceholder: '+Tag',
+        });
+        $('.chips-placeholder-industry').chips({
+            placeholder: 'Search by Industry',
+            secondaryPlaceholder: '+Tag',
+        });
+        $('.chips-autocomplete').chips({
+            autocompleteOptions: {
+                data: {
+                    'Apple': null,
+                    'Microsoft': null,
+                    'Google': null
+                },
+                limit: Infinity,
+                minLength: 1
+            }
+        });
+
+        var chip = {
+            tag: 'chip content',
+            image: '', //optional
+        };
+
+
+
+        // Date picker
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('.datepicker').datepicker();
+        });
+
+        // New position hide div
+
+        $(function () {
+            $(".newPositiondiv").hide();
+            $(".newPositionlink, .clearPositionlink").bind("click", function () {
+                $(".newPositiondiv").hide();
+                if ($(this).attr("class") == "newPositionlink") {
+                    $(".newPositiondiv").show();
+                }
+                else {
+                    $(".newPositiondiv").hide();
+                }
+            });
+        });
+  $('.dropdown-trigger').dropdown();
+
+
+    </script>
+
+
+</body>
+
+</html>
